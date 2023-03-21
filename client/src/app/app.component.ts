@@ -9,11 +9,10 @@ import { TranslateService } from '@ngx-translate/core';
 
 export class AppComponent {
   title = 'front';
-  language: string;
 
   constructor(protected translate: TranslateService) {
-    this.language = (localStorage.getItem('language') || 'es');
-    translate.setDefaultLang(this.language);
-    translate.use(this.language);
+    let language = (localStorage.getItem('language') || 'es');
+    translate.setDefaultLang(language);
+    translate.use(language);
   }
 }
