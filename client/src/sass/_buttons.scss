@@ -1,0 +1,33 @@
+@import './mixin';
+@import './colors';
+.register-btn {
+    @include filled-button(15px, $turquoise, whitesmoke, 10px, 10px, 125px);
+}
+
+.login-btn{
+    @include outlined-button(15px, $turquoise, whitesmoke, 10px, 10px, 125px);
+}
+.login-btn, .register-btn {
+    font-weight: bolder;
+    margin: 10px;
+    & svg{
+        transform-origin: center center;
+        transition: transform 0.3s;
+        transform: translateY(5px);
+    }
+    & span{
+        margin-left: 15px;
+        transition: all 0.3s ;
+    }
+    &:hover{
+        svg{ transform: translateY(2.5px) rotate(45deg) scale(1.2); }
+        .wrapper{ animation: fly-1 .6s ease-in-out infinite alternate; }
+        span { display: none; }
+    } 
+
+    &:active{transform: scale(0.95);}
+}
+
+.btn-google{
+    @include filled-button(15px, lightgray, black, 15px 25px, 10px, 500px);
+}

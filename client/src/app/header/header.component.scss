@@ -1,0 +1,43 @@
+@import '../../sass/colors';
+
+nav {
+    height: 75px;
+    background-color: $dark-gray;
+    color: $white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: bolder;
+    margin: 0 20px;
+    width: 150px;
+    text-align: center;
+    &::before {
+        margin-left: auto;
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: $turquoise;
+        display: block;
+        transition: 0.4s;
+    }
+
+    &:hover::after,
+    &:hover::before {
+        width: 100%;
+    }
+}

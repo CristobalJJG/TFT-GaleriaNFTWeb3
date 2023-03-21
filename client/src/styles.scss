@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./sass/buttons";
+@import "./sass/colors";
+@import "./sass/keyframes";
+@import "./sass/mixin";
+@import "./sass/variable";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
