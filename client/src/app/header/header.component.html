@@ -1,0 +1,25 @@
+<nav class="flex">
+    <div>
+        <!-- <img src="" alt=""> --> Logo to guapo cuando haya
+    </div>
+
+    <!-- Botones de la cabecera -->
+    <div class="flex buttons">
+        <!-- Botón galería -->
+        <a href="" class="head h1">{{'header.gallery'   | translate}}</a>
+        <!-- Botón cartera -->
+        <a href="" class="head h2">{{'header.wallet'    | translate}}</a>
+        <!-- Botón idioma -->
+        <div class="dropdown">
+            <a href="" class="head h3 dropdown">{{'header.languages' | translate}}</a>
+            <div class="dropdown-content">
+                <div class="opt" (click)="changeLanguage('en')">English</div>
+                <div class="opt" (click)="changeLanguage('es')">Español</div>
+            </div>
+        </div>
+    </div>
+    <div class="flex">
+        <button class="login-btn">{{'header.login'       | translate}}</button>
+        <button class="register-btn">{{'header.register' | translate}}</button>
+    </div>
+</nav>

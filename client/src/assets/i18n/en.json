@@ -1,0 +1,45 @@
+{
+  "header":{
+    "gallery": "Gallery",
+    "wallet": "Wallets",
+    "languages": "Languages",
+    "login": "Log In",
+    "register": "Register"
+  },
+  "landing-page":{
+    "title": "NFT's Gallery",
+    "description1": {
+      "first": "This web page is the",
+      "tfg": "Final Degree Project",
+      "name": "Cristóbal José Jiménez Gómez's",
+      "intention": "with the intention of delving into",
+      "web3": "Web 3.0",
+      "end": "and all that it enlails."
+    },
+    "description2": "Delve into Web 3.0, view NFT's and save your different portfolios within the page",
+    "btn1":"Sign In",
+    "btn2":"You can enter with your Google account"
+  },
+  "access":{
+    "forms":{
+      "fullname":"Fullname",
+      "mail":"E-mail",
+      "password":"Password",
+      "rpassword":"Repeat Password"
+    },
+    "login":{
+      "title": "Log In",
+      "description": "Access with your account to the web 3.0",
+      "btn": "Log In!",
+      "goTo":"Don't have an account yet?",
+      "register":"Go to Register"
+    },
+    "register":{
+      "title": "Register",
+      "description": "Create an account in order to access with your account to the web 3.0",
+      "btn": "Send!",
+      "goTo":"Already have an account?",
+      "login":"Go to Login"
+    }
+  }
+}
