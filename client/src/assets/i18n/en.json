@@ -9,9 +9,10 @@
   "landing-page":{
     "title": "NFT's Gallery",
     "description1": {
-      "first": "This web page is the",
+      "first": "This web page is a",
       "tfg": "Final Degree Project",
-      "name": "Cristóbal José Jiménez Gómez's",
+      "de": ", made by ",
+      "name": "Cristóbal José Jiménez Gómez",
       "intention": "with the intention of delving into",
       "web3": "Web 3.0",
       "end": "and all that it enlails."

@@ -11,7 +11,8 @@
     "description1": {
       "first": "Esta página web es el",
       "tfg": "Trabajo de Fin de Título",
-      "name": "de Cristóbal José Jiménez Gómez",
+      "de": " de ",
+      "name": "Cristóbal José Jiménez Gómez",
       "intention": "con la intención de adentrarse en la",
       "web3": "Web 3.0",
       "end": "y todo lo que eso conlleva."

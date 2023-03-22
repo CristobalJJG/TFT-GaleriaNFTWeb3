@@ -1,0 +1,60 @@
+@import '../../styles.scss';
+
+.flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-gray;
+    overflow: hidden;
+}
+
+.text-container {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 75px); //100vh - 75px de la cabecera
+}
+
+.img-container {
+    width: 100%;
+    height: calc(100vh - 75px); //100vh - 75px de la cabecera
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.desc1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 40px;
+
+    span {
+        font-weight: bolder;
+    }
+
+    .pink {
+        color: $pink;
+    }
+
+    .yellow {
+        color: $yellow;
+    }
+
+    .turquoise {
+        color: $turquoise;
+    }
+}
+
+.desc2 {
+    display: grid;
+    justify-items: center;
+    padding: 0 30px;
+    font-size: 20px;
+
+    .action-btn{
+        margin-top: 30px;
+        @include filled-button(20px, $yellow, $dark-gray, 10px, 5px, 450px);
+    }
+}
