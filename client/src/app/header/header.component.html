@@ -6,15 +6,30 @@
     <!-- Botones de la cabecera -->
     <div class="flex buttons">
         <!-- Botón galería -->
-        <a href="" class="head h1">{{'header.gallery'   | translate}}</a>
+        <a href="" class="head h1">
+            <img src="../../assets/images/header/image-gallery.png" alt="Logo Gallery" class="icon">
+            {{'header.gallery' | translate}}
+        </a>
         <!-- Botón cartera -->
-        <a href="" class="head h2">{{'header.wallet'    | translate}}</a>
+        <a href="" class="head h2">
+            <img src="../../assets/images/header/wallet.png" alt="Logo Wallet" class="icon">
+            {{'header.wallet' | translate}}
+        </a>
         <!-- Botón idioma -->
         <div class="dropdown">
-            <a href="" class="head h3 dropdown">{{'header.languages' | translate}}</a>
+            <a href="" class="head h3 dropdown">
+                <img src="../../assets/images/header/translation.png" alt="Logo tranlations" class="icon">
+                {{'header.languages' | translate}}
+            </a>
             <div class="dropdown-content">
-                <div class="opt" (click)="changeLanguage('en')">English</div>
-                <div class="opt" (click)="changeLanguage('es')">Español</div>
+                <div class="opt" (click)="changeLanguage('en')">
+                    <img src="../../assets/images/header/united-kingdom.png" alt="UK flag" class="ico">
+                    English
+                </div>
+                <div class="opt" (click)="changeLanguage('es')">
+                    <img src="../../assets/images/header/spain.png" alt="Spain flag" class="ico">
+                    Español
+                </div>
             </div>
         </div>
     </div>

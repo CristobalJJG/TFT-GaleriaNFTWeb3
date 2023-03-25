@@ -1,29 +1,61 @@
-@mixin filled-button($size: 20px, $bg-color, $txt-color, 
-              $padding, $bd-radius:10px, 
-              $width: 175px){
+@import './variable';
+
+@mixin filled-button($size: 20px, $bg-color, $txt-color,
+    $padding, $bd-radius: 10px,
+    $width: 175px) {
     @include btn($size, $bd-radius, $padding, $width, $bg-color);
     background: $bg-color;
     color: $txt-color;
-    width: $width;
+    
     &:hover{
-        filter: brightness(.9);
+        background-color: $purple;
+        border-color: $white;
     }
 }
 
-@mixin outlined-button($size: 20px, $bg-color, $txt-color, 
-              $padding, $bd-radius:10px, 
-              $width: 175px){
+@mixin outlined-button($size: 20px, $bg-color, $txt-color,
+    $padding, $bd-radius: 10px,
+    $width: 175px) {
     @include btn($size, $bd-radius, $padding, $width, $bg-color);
     background-color: rgba($bg-color, 0);
     color: $bg-color;
-    &:hover{
-        background-color: rgba($bg-color, 1);
-        color: $txt-color;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        transition: $transition3s;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        background-color: $bg-color;
+        z-index: -1;
+    }
+
+    &:hover,
+    &:focus {
+        color: $white;
+        border-color: $white;
+    }
+
+    &:hover:before,
+    &:focus:before {
+        transition: $transition3s;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+
+    &:active {
+        transform: scale(0.9);
     }
 }
 
-@mixin btn($size, $bd-radius, $padding, $width, $bg-color){
-    font-size: $size; 
+@mixin btn($size, $bd-radius, $padding, $width, $bg-color) {
+    font-size: $size;
     border-radius: $bd-radius;
     padding: $padding;
     width: $width;
@@ -32,5 +64,6 @@
     align-items: center;
     overflow: hidden;
     border: 3px solid rgba($bg-color, 1);
-    transition: all 0.2s;
+    transition: $transition4s;
+    text-transform: uppercase;
 }

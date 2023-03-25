@@ -1,12 +1,15 @@
 @import './mixin';
 @import './colors';
+@import './variable';
+
 .register-btn {
-    @include filled-button(15px, $turquoise, whitesmoke, 10px, 10px, 125px);
+    @include filled-button(15px, $pink, whitesmoke, 10px, 10px, $short-btn);
 }
 
 .login-btn{
-    @include outlined-button(15px, $turquoise, whitesmoke, 10px, 10px, 125px);
+    @include outlined-button(15px, $turquoise, whitesmoke, 10px, 10px, $short-btn);
 }
+
 .login-btn, .register-btn {
     font-weight: bolder;
     margin: 10px;
@@ -17,7 +20,7 @@
     }
     & span{
         margin-left: 15px;
-        transition: all 0.3s ;
+        transition: $transition3s;
     }
     &:hover{
         svg{ transform: translateY(2.5px) rotate(45deg) scale(1.2); }
@@ -28,6 +31,7 @@
     &:active{transform: scale(0.95);}
 }
 
-.btn-google{
-    @include filled-button(15px, lightgray, black, 15px 25px, 10px, 500px);
+.action-btn{
+    @include filled-button(20px, $yellow, $black, 15px 25px, 10px, $long-btn);
+    font-weight: bolder;
 }
