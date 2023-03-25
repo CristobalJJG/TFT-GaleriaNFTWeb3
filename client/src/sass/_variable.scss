@@ -2,15 +2,33 @@
 
 $font-letter: 'Poppins', sans-serif; 
 
-
-$long-btn: 500px;
-$short-btn: 125px;
-
 $transition4s: all .4s ease-in-out;
 $transition3s: all .3s ease-in-out;
 
-.ico{
-    width: 24px;
-    height: 24px;
+$size: 24px;
+
+.icon{
+    width: $size;
+    height: $size;
     margin-right: 24px;
+}
+
+/* Menos de 1024px */
+@media (max-width: 1024px) {
+    $size: 32px;
+    .head .icon{
+        width: $size;
+        height: $size;
+        margin: 0;
+    }
+}
+
+/* Menos de 768px */
+@media (max-width: 768px) {
+
+}
+
+/* Menos de 500px */
+@media (max-width: 500px) {
+
 }

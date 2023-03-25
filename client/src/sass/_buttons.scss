@@ -2,36 +2,75 @@
 @import './colors';
 @import './variable';
 
+$font-btn: 15px;
+
+$short-btn: 125px;
+$long-btn: 500px;
+
 .register-btn {
-    @include filled-button(15px, $pink, whitesmoke, 10px, 10px, $short-btn);
+    @include filled-button($font-btn, $pink, whitesmoke, 10px, 10px, $short-btn);
 }
 
-.login-btn{
-    @include outlined-button(15px, $turquoise, whitesmoke, 10px, 10px, $short-btn);
+.login-btn {
+    @include outlined-button($font-btn, $turquoise, whitesmoke, 10px, 10px, $short-btn);
 }
 
-.login-btn, .register-btn {
+.login-btn,
+.register-btn {
     font-weight: bolder;
     margin: 10px;
-    & svg{
+
+    & svg {
         transform-origin: center center;
         transition: transform 0.3s;
         transform: translateY(5px);
     }
-    & span{
+
+    & span {
         margin-left: 15px;
         transition: $transition3s;
     }
-    &:hover{
-        svg{ transform: translateY(2.5px) rotate(45deg) scale(1.2); }
-        .wrapper{ animation: fly-1 .6s ease-in-out infinite alternate; }
-        span { display: none; }
-    } 
 
-    &:active{transform: scale(0.95);}
+    &:hover {
+        svg {
+            transform: translateY(2.5px) rotate(45deg) scale(1.2);
+        }
+
+        .wrapper {
+            animation: fly-1 .6s ease-in-out infinite alternate;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
-.action-btn{
+.action-btn {
     @include filled-button(20px, $yellow, $black, 15px 25px, 10px, $long-btn);
     font-weight: bolder;
 }
+
+/* Menos de 1024px */
+@media (max-width: 1024px) {
+    $font-btn: 12px;
+    $short-btn: 100px;
+
+    .register-btn {
+        @include filled-button($font-btn, $pink, whitesmoke, 10px, 10px, $short-btn);
+    }
+
+    .login-btn {
+        @include outlined-button($font-btn, $turquoise, whitesmoke, 10px, 10px, $short-btn);
+    }
+}
+
+/* Menos de 768px */
+@media (max-width: 768px) {}
+
+/* Menos de 500px */
+@media (max-width: 500px) {}

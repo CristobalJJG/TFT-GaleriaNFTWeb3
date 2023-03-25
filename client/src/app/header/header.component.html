@@ -8,33 +8,33 @@
         <!-- Botón galería -->
         <a href="" class="head h1">
             <img src="../../assets/images/header/image-gallery.png" alt="Logo Gallery" class="icon">
-            {{'header.gallery' | translate}}
+            <span>{{'header.gallery' | translate}}</span>
         </a>
         <!-- Botón cartera -->
         <a href="" class="head h2">
             <img src="../../assets/images/header/wallet.png" alt="Logo Wallet" class="icon">
-            {{'header.wallet' | translate}}
+            <span>{{'header.wallet' | translate}}</span>
         </a>
         <!-- Botón idioma -->
         <div class="dropdown">
-            <a href="" class="head h3 dropdown">
+            <a href="#" class="head h3 dropdown">
                 <img src="../../assets/images/header/translation.png" alt="Logo tranlations" class="icon">
-                {{'header.languages' | translate}}
+                <span>{{'header.languages' | translate}}</span>
             </a>
             <div class="dropdown-content">
                 <div class="opt" (click)="changeLanguage('en')">
-                    <img src="../../assets/images/header/united-kingdom.png" alt="UK flag" class="ico">
-                    English
+                    <img src="../../assets/images/header/united-kingdom.png" alt="UK flag" class="icon">
+                    <span>English</span>    
                 </div>
                 <div class="opt" (click)="changeLanguage('es')">
-                    <img src="../../assets/images/header/spain.png" alt="Spain flag" class="ico">
-                    Español
+                    <img src="../../assets/images/header/spain.png" alt="Spain flag" class="icon">
+                    <span>Español</span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex">
-        <button class="login-btn">{{'header.login'       | translate}}</button>
+    <div class="flex enter-btn">
+        <button class="login-btn">{{'header.login' | translate}}</button>
         <button class="register-btn">{{'header.register' | translate}}</button>
     </div>
 </nav>
