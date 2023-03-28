@@ -1,5 +1,5 @@
 <div class="flex">
-    <div class="text-container">
+    <div class="text-container"  *ngIf="flag" >
         <h1>{{'landing-page.title' | translate}}</h1>
         <div class="desc1">
             {{'landing-page.description1.first' | translate}}
@@ -30,6 +30,9 @@
                 {{'landing-page.btn3' | translate}}
             </button>
         </div>
+    </div>
+    <div *ngIf="!flag" class="text-container">
+        <router-outlet></router-outlet>
     </div>
     <div class="img-container">
         <!-- Cubo turquesa -->
