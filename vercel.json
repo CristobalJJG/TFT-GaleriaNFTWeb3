@@ -1,0 +1,8 @@
+{
+    "crons":[
+        {
+            "path": "/server/handler",
+            "schedule": "0 0 * * *"
+          }
+    ]
+}
