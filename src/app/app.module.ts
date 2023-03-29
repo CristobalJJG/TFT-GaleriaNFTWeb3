@@ -9,7 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { LoginRegisterPageComponent } from './login-register-page/login-register-page.component';
+import { LoginComponent } from './home-page/login/login.component';
+import { RegisterComponent } from './home-page/register/register.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -20,7 +22,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppComponent,
     HeaderComponent,
     HomePageComponent,
-    LoginRegisterPageComponent
+    LoginComponent,
+    RegisterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

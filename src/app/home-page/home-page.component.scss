@@ -8,21 +8,22 @@ $font2: 20px;
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: $dark-gray;
-    background-color: $black;
     overflow: hidden;
+    background-color: $dark-gray;
 }
 
 .text-container {
     display: grid;
     align-items: center;
+}
+
+.text-container, .img-container {
     width: 100%;
     height: calc(100vh - 75px); //100vh - 75px de la cabecera
 }
 
-.img-container {
-    width: 100%;
-    height: calc(100vh - 75px); //100vh - 75px de la cabecera
+.logo{
+    fill: $white;
 }
 
 h1 {
@@ -35,21 +36,14 @@ h1 {
     text-align: center;
     padding: 0 40px;
 
+    .a-c{
+        color: $purple;
+    }
+
     span {
         font-weight: bolder;
     }
-
-    .pink {
-        color: $pink;
-    }
-
-    .yellow {
-        color: $yellow;
-    }
-
-    .turquoise {
-        color: $turquoise;
-    }
+    
 }
 
 .desc2 {
@@ -60,8 +54,9 @@ h1 {
     text-align: center;
 
     .action-btn {
-        @include filled-button(20px, $yellow, $dark-gray, 10px, 5px, 450px);
+        @include filled-button(20px, $purple, $white, 10px, 5px, 450px);
         margin-top: 100px;
+        font-weight: bolder;
     }
 
     .btn1 {
@@ -91,7 +86,7 @@ h1 {
         }
 
         .btn1{
-            margin-top: 30px;
+            margin-top: 10px;
         }
     }
 }

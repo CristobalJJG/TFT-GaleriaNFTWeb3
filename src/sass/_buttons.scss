@@ -8,11 +8,11 @@ $short-btn: 125px;
 $long-btn: 500px;
 
 .register-btn {
-    @include filled-button($font-btn, $pink, whitesmoke, 10px, 10px, $short-btn);
+    @include filled-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
 }
 
 .login-btn {
-    @include outlined-button($font-btn, $turquoise, whitesmoke, 10px, 10px, $short-btn);
+    @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
 }
 
 .login-btn,
@@ -50,22 +50,17 @@ $long-btn: 500px;
     }
 }
 
-.action-btn {
-    @include filled-button(20px, $yellow, $black, 15px 25px, 10px, $long-btn);
-    font-weight: bolder;
-}
-
 /* Menos de 1024px */
 @media (max-width: 1024px) {
     $font-btn: 12px;
     $short-btn: 100px;
 
     .register-btn {
-        @include filled-button($font-btn, $pink, whitesmoke, 10px, 10px, $short-btn);
+        @include filled-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
     }
 
     .login-btn {
-        @include outlined-button($font-btn, $turquoise, whitesmoke, 10px, 10px, $short-btn);
+        @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
     }
 }
 
