@@ -34,7 +34,11 @@
         </div>
     </div>
     <div class="flex enter-btn">
-        <button class="login-btn">{{'header.login' | translate}}</button>
-        <button class="register-btn">{{'header.register' | translate}}</button>
+        <button class="login-btn" routerLink="/login" routerLinkActive="activebutton">
+            {{'header.login' | translate}}
+        </button>
+        <button class="register-btn" routerLink="/register" routerLinkActive="activebutton">
+            {{'header.register' | translate}}
+        </button>
     </div>
 </nav>
