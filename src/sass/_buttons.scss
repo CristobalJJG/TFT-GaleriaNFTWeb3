@@ -5,6 +5,7 @@
 $font-btn: 15px;
 
 $short-btn: 125px;
+$mid-btn: 350PX;
 $long-btn: 500px;
 
 .register-btn {
@@ -28,7 +29,7 @@ $long-btn: 500px;
 
     & span {
         margin-left: 15px;
-        transition: $transition3s;
+        transition: $transition4s;
     }
 
     &:hover {
@@ -37,7 +38,7 @@ $long-btn: 500px;
         }
 
         .wrapper {
-            animation: fly-1 .6s ease-in-out infinite alternate;
+            animation: fly-1 .6s ease infinite alternate;
         }
 
         span {

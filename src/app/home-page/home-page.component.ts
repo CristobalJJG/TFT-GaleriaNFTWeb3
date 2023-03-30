@@ -1,19 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent implements OnInit {
-  // Flag para comprobar si mostrar el login/register o no
-  flag:boolean = false;
-
-  constructor(){
-
-  }
-
-  ngOnInit(){
-    this.flag = location.href.endsWith('home');    
-  }
+export class HomePageComponent {
+  constructor(){}
 }

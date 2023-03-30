@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss', '../../../styles.scss']
+  styleUrls: ['./login.component.scss', '../home-page.component.scss']
 })
 export class LoginComponent {
 
