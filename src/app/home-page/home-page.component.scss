@@ -44,7 +44,7 @@ h1 {
     text-align: center;
     padding: 0 40px;
     margin: 0 0;
-    width: 900px;
+    width: 75%;
     .a-c{
         color: $purple;
     }
@@ -82,18 +82,34 @@ h1 {
     $font1: 24px;
 
     .desc1 {
+        width: 85%;
         font-size: $font1;
     }
 
-    $font2: 20;
+    $font2: 20px;
 
     .desc2 {
+        width: 50%;
         font-size: $font2;
     }
 }
 
 /* Menos de 768px */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    $font1: 22px;
+
+    .desc1 {
+        width: 85%;
+        font-size: $font1;
+    }
+
+    $font2: 18px;
+
+    .desc2 {
+        width: 80%;
+        font-size: $font2;
+    }
+}
 
 /* Menos de 500px */
 @media (max-width: 500px) {}
