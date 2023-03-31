@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import './colors';
 
 $font-letter: 'Poppins', sans-serif; 
 
@@ -11,6 +12,7 @@ $size: 24px;
     width: $size;
     height: $size;
     margin-right: 24px;
+    fill: $white;
 }
 
 /* Menos de 1024px */
@@ -31,8 +33,4 @@ $size: 24px;
 /* Menos de 500px */
 @media (max-width: 500px) {
 
-}
-
-/* .flex{
-    display: flex;
 }

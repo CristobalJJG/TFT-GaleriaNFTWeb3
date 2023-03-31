@@ -7,10 +7,9 @@
     background: $bg-color;
     color: $txt-color;
     
-    
     &:hover{
         background-color: $purple;
-        border-color: $white;
+        /* border-color: $white; */
     }
 }
 
@@ -56,6 +55,7 @@
 }
 
 @mixin btn($size, $bd-radius, $padding, $width, $bg-color) {
+    cursor: pointer;
     font-size: $size;
     border-radius: $bd-radius;
     padding: $padding;
