@@ -4,7 +4,8 @@
     "wallet": "Wallets",
     "languages": "Languages",
     "login": "Log In",
-    "register": "Register"
+    "register": "Register",
+    "logout": "Log Out"
   },
   "landing-page":{
     "title": "NFT's Gallery",

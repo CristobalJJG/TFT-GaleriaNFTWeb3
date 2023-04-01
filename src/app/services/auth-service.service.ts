@@ -4,6 +4,7 @@ import {
   GoogleAuthProvider,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signOut,
   User
 } from 'firebase/auth';
 
@@ -20,7 +21,6 @@ export class AuthService {
   user: User | null = null;
 
   app = initializeApp(environment.firebaseConfig);
-  analytics = getAnalytics(this.app);
 
   auth = getAuth(this.app);
   constructor() {}
@@ -31,7 +31,13 @@ export class AuthService {
   }
 
   async logInEmailPass(mail: string, pass: string) {
+    debugger
     await signInWithEmailAndPassword(this.auth, mail, pass)
+      .then((data) => {
+        if(data.user.email != null)
+          localStorage.setItem("userInfo", data.user.email)
+        window.location.reload();
+      })
       .catch((error) => { console.error(error.code); });
   }
 
@@ -45,5 +51,10 @@ export class AuthService {
     provider.addScope("profile");
     provider.addScope("email");
     await signInWithPopup(this.auth, provider)
+  }
+
+  async logOut(){
+    await signOut(this.auth);
+    localStorage.removeItem('userInfo');
   }
 }

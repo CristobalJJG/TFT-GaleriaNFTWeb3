@@ -4,7 +4,8 @@
     "wallet": "Carteras",
     "languages": "Idiomas",
     "login": "Entrar",
-    "register": "Registrarse"
+    "register": "Registrarse",
+    "logout": "Cerrar Sesión"
   },
   "landing-page": {
     "title": "Galería de NFT's",

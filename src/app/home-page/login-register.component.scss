@@ -9,16 +9,17 @@ h2 {
 
 .form {
     margin-top: 100px;
-    width: 28rem;
-    height: 38rem;
+    width: 30%;
+    height: 70%;
+    overflow-y: auto;
     background-color: $white;
     border-radius: 20px;
     box-shadow: 0 5px 10px 10px rgba($black, .75);
     transition: $transition4s;
 
     &:hover {
-        width: 30rem;
-        height: 40rem;
+        width: 32%;
+        height: 77%;
         transform: translateY(-20px);
         box-shadow: 0 20px 15px 15px $black;
 
@@ -35,7 +36,7 @@ section {
         color: $black;
     }
 
-    &>.container {
+    &>.f-container {
         display: flex;
         flex-direction: column;
         align-items: center;

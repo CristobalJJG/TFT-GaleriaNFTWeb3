@@ -24,7 +24,7 @@
             <div class="dropdown-content">
                 <div class="opt" (click)="changeLanguage('en')">
                     <img src="../../assets/images/header/united-kingdom.png" alt="UK flag" class="icon">
-                    <span>English</span>    
+                    <span>English</span>
                 </div>
                 <div class="opt" (click)="changeLanguage('es')">
                     <img src="../../assets/images/header/spain.png" alt="Spain flag" class="icon">
@@ -33,13 +33,23 @@
             </div>
         </div>
     </div>
-    <div>{{user}}</div>
-    <div class="flex enter-btn">
-        <button class="login-btn" routerLink="/login" routerLinkActive="activebutton">
-            {{'header.login' | translate}}
-        </button>
-        <button class="register-btn" routerLink="/register" routerLinkActive="activebutton">
-            {{'header.register' | translate}}
-        </button>
+    <!-- parte de la derecha - botones o usuario -->
+    <div class="right">
+        <div *ngIf="user!=null" class="dropdown profile">
+            <span>{{user}}</span>
+            <div class="dropdown-content profile">
+                <div class="opt" (click)="onLogout()">
+                    <span>{{'header.logout' | translate}}</span>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="user==null" class="flex enter-btn">
+            <button class="login-btn" routerLink="/login" routerLinkActive="activebutton">
+                {{'header.login' | translate}}
+            </button>
+            <button class="register-btn" routerLink="/register" routerLinkActive="activebutton">
+                {{'header.register' | translate}}
+            </button>
+        </div>
     </div>
 </nav>
