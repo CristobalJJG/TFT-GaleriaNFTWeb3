@@ -70,6 +70,14 @@ h1 {
     }
     .btn1 {
         @include filled-button(20px, $purple, $white, 10px, 5px, $mid-btn);
+        &:hover{
+            background-color: $white;
+            color: $purple;
+
+            & .icon {
+                fill: $purple;
+            }
+        }
     }
 
     .btn2{

@@ -9,11 +9,11 @@ $mid-btn: 350PX;
 $long-btn: 500px;
 
 .register-btn {
-    @include filled-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
+    @include filled-button($font-btn, $light-purple, $dark-gray, 10px, 10px, $short-btn);
 }
 
 .login-btn {
-    @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
+    @include outlined-button($font-btn, $light-purple, $white, 10px, 10px, $short-btn);
 }
 
 .fly,
@@ -60,11 +60,11 @@ $long-btn: 500px;
     $short-btn: 100px;
 
     .register-btn {
-        @include filled-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
+        @include filled-button($font-btn, $light-purple, $dark-gray, 10px, 10px, $short-btn);
     }
 
     .login-btn {
-        @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
+        @include outlined-button($font-btn, $light-purple, $white, 10px, 10px, $short-btn);
     }
 }
 

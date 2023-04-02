@@ -17,7 +17,7 @@
         </a>
         <!-- Botón idioma -->
         <div class="dropdown">
-            <a href="#" class="head h3 dropdown">
+            <a class="head h3 dropdown">
                 <img src="../../assets/images/header/translation.png" alt="Logo tranlations" class="icon">
                 <span>{{'header.languages' | translate}}</span>
             </a>
@@ -38,7 +38,7 @@
         <div *ngIf="user!=null" class="dropdown profile">
             <span>{{user}}</span>
             <div class="dropdown-content">
-                <div class="opt" (click)="onLogout()">
+                <div class="opt lo" (click)="onLogout()">
                     <span>{{'header.logout' | translate}}</span>
                 </div>
             </div>

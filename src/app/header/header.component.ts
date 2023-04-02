@@ -18,7 +18,7 @@ export class HeaderComponent {
 
   changeLanguage(lang: string){
     localStorage.setItem('language', lang)
-    //window.location.reload();
+    window.location.reload();
   }
 
   onLogout(){

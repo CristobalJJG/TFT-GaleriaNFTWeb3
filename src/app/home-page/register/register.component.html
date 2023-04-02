@@ -1,9 +1,31 @@
 <div class="flex">
     <div class="container">
         <section class="form">
-
-            <h2>{{'access.register.title' | translate}}</h2>
-            <span class="desc2">
+            <div style="display:flex; align-items: center;">
+                <svg viewBox="-80.5 0 417 417" width="64" height="64">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <polygon fill="#343434"
+                                points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32">
+                            </polygon>
+                            <polygon fill="#8C8C8C" points="127.962 0 0 212.32 127.962 287.959 127.962 154.158">
+                            </polygon>
+                            <polygon fill="#3C3C3B"
+                                points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866">
+                            </polygon>
+                            <polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852"> </polygon>
+                            <polygon fill="#141414" points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587">
+                            </polygon>
+                            <polygon fill="#393939" points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588">
+                            </polygon>
+                        </g>
+                    </g>
+                </svg>
+                <h2>{{'access.register.title' | translate}}</h2>
+            </div>
+            <span class="desc2 ">
                 {{'access.register.description' | translate}}
             </span>
             <form class="f-container">
@@ -13,8 +35,8 @@
                         <path
                             d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                     </svg>
-                    <input type="email" class="input first" placeholder="{{'access.forms.mail'| translate}}" 
-                        [(ngModel)]="mail" name="mail" required/>
+                    <input type="email" class="input first" placeholder="{{'access.forms.mail'| translate}}"
+                        [(ngModel)]="mail" name="mail" required />
                 </div>
                 <!-- Nombre completo para registro -->
                 <div class="input-flex">
@@ -22,8 +44,8 @@
                         <path
                             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
                     </svg>
-                    <input type="email" class="input" placeholder="{{'access.forms.mail'| translate}}" 
-                        [(ngModel)]="name" name="name" required/>
+                    <input type="email" class="input" placeholder="{{'access.forms.fullname'| translate}}"
+                        [(ngModel)]="name" name="name" required />
                 </div>
                 <!-- Contraseña para registro -->
                 <div class="input-flex">
@@ -32,8 +54,8 @@
                             d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
                         <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                     </svg>
-                    <input type="password" class="input" placeholder="{{'access.forms.password'| translate}}" 
-                        [(ngModel)]="pass" name="pass" required/>
+                    <input type="password" class="input" placeholder="{{'access.forms.password'| translate}}"
+                        [(ngModel)]="pass" name="pass" required />
                 </div>
                 <!-- Repetir Contraseña para registro -->
                 <div class="input-flex">
@@ -41,8 +63,8 @@
                         <path
                             d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                     </svg>
-                    <input type="password" class="input last" placeholder="{{'access.forms.password'| translate}}" 
-                        [(ngModel)]="rpass" name="rpass" required/>
+                    <input type="password" class="input last" placeholder="{{'access.forms.rpassword'| translate}}"
+                        [(ngModel)]="rpass" name="rpass" required />
                 </div>
                 <button class="fly" (click)="onRegister()">
                     <div class="wrapper">
@@ -55,6 +77,13 @@
                     <span>{{'access.register.btn' | translate}}</span>
                 </button>
             </form>
+
+            <section class="change">
+                <span class="black">{{'access.register.goTo' | translate}}</span>
+                <a routerLink="/login" routerLinkActive="activebutton" class="link">
+                    {{'access.register.login' | translate}}
+                </a>
+            </section>
         </section>
     </div>
 </div>
