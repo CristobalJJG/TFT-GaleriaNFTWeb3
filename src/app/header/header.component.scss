@@ -26,6 +26,15 @@ nav {
 
     &.profile{
         cursor: pointer;
+        
+        width: 200px;
+        text-overflow: ellipsis;
+        text-align: center;
+
+        & .dropdown-content{
+            width: 200px;
+            transform: translateX(-20px);
+        }
     }
 
     .dropdown-content {
@@ -41,10 +50,6 @@ nav {
         z-index: -1;
         left: 20px;
         text-align: center;
-
-        &.profile{
-            transform: translateX(-40px);
-        }
     }
 
     &:hover .dropdown-content {

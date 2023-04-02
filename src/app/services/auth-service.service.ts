@@ -10,7 +10,6 @@ import {
 
 
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from "firebase/analytics";
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -31,11 +30,10 @@ export class AuthService {
   }
 
   async logInEmailPass(mail: string, pass: string) {
-    debugger
     await signInWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
         if(data.user.email != null)
-          localStorage.setItem("userInfo", data.user.email)
+          localStorage.setItem("userInfo", data.user.email);
         window.location.reload();
       })
       .catch((error) => { console.error(error.code); });
@@ -43,7 +41,12 @@ export class AuthService {
 
   async registerEmailPass(mail: string, pass: string) {
     await createUserWithEmailAndPassword(this.auth, mail, pass)
-      .catch((error) => { console.log(error.code); });
+    .then((data) => {
+      if(data.user.email != null)
+        localStorage.setItem("userInfo", data.user.email);
+      window.location.reload();
+    })
+    .catch((error) => { console.log(error.code); });
   }
 
   async enterWithGoogle() {
