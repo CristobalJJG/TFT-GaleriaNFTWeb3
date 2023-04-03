@@ -20,6 +20,10 @@ nav {
     display: none;
 }
 
+.register-btn:hover{
+    background-color: $light-purple;
+}
+
 .dropdown {
     position: relative;
     display: block;

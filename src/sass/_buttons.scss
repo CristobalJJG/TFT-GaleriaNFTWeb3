@@ -5,15 +5,33 @@
 $font-btn: 15px;
 
 $short-btn: 125px;
-$mid-btn: 350PX;
+$mid-btn: 300PX;
 $long-btn: 500px;
 
 .register-btn {
-    @include filled-button($font-btn, $light-purple, $dark-gray, 10px, 10px, $short-btn);
+    @include filled-button($font-btn, $purple, $dark-gray, 10px, 10px, $short-btn);
 }
 
 .login-btn {
-    @include outlined-button($font-btn, $light-purple, $white, 10px, 10px, $short-btn);
+    @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
+}
+
+.net-btn {
+    $color: $light-gray;
+    @include filled-button($font-btn, $gray, $color, 10px, 10px, $mid-btn);
+
+    &:hover {
+        background-color: $dark-gray;
+    }
+
+    span {
+        color: $color;
+        font-weight: bolder;
+    }
+
+    svg {
+        fill: $light-gray;
+    }
 }
 
 .fly,
@@ -34,10 +52,7 @@ $long-btn: 500px;
 
     &:hover {
         svg {
-            transform: translateY(2.5px)
-                translateX(2.75rem)
-                rotate(45deg) 
-                scale(1.4);
+            transform: translateY(2.5px) translateX(2.75rem) rotate(45deg) scale(1.4);
         }
 
         .wrapper {
@@ -60,16 +75,10 @@ $long-btn: 500px;
     $short-btn: 100px;
 
     .register-btn {
-        @include filled-button($font-btn, $light-purple, $dark-gray, 10px, 10px, $short-btn);
+        @include filled-button($font-btn, $purple, $dark-gray, 10px, 10px, $short-btn);
     }
 
     .login-btn {
-        @include outlined-button($font-btn, $light-purple, $white, 10px, 10px, $short-btn);
+        @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
     }
 }
-
-/* Menos de 768px */
-@media (max-width: 768px) {}
-
-/* Menos de 500px */
-@media (max-width: 500px) {}

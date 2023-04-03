@@ -42,6 +42,7 @@
       "btn": "Send!",
       "goTo":"Already have an account?",
       "login":"Go to Login"
-    }
+    },
+    "desc2": "Enter with your Social Networks!"
   }
 }

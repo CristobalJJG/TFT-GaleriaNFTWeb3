@@ -104,6 +104,10 @@ h1 {
 
 /* Menos de 768px */
 @media (max-width: 768px) {
+
+    nav{
+        height: auto;
+    }
     $font1: 22px;
 
     .desc1 {
