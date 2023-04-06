@@ -42,8 +42,8 @@
       "btn": "Send!",
       "goTo":"Already have an account?",
       "login":"Go to Login"
-<<<<<<< HEAD
-    }
+    },
+    "desc2": "Enter with your Social Networks!"
   },
   "404":{
     "sorry": "Sorry, we can’t seem to find what you’re looking for.",
@@ -58,9 +58,5 @@
       "link2": "home page",
       "opt22": "."
     }
-=======
-    },
-    "desc2": "Enter with your Social Networks!"
->>>>>>> login-register
   }
 }

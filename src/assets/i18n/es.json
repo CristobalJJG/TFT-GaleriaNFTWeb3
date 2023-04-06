@@ -41,9 +41,9 @@
       "description": "Crea una cuenta para poder acceder a la Web 3.0",
       "btn": "¡Enviar!",
       "goTo": "¿Ya tienes cuenta?",
-<<<<<<< HEAD
       "login": "Resgístrate"
-    }
+    },
+    "desc2": "¡Entra con tus redes sociales!"
   },
   "404":{
     "sorry": "Lo sentimos, no hemos encontrado la página que está buscando.",
@@ -58,10 +58,5 @@
       "link2": "la pantalla principal",
       "opt22": "."
     }
-=======
-      "login": "Inicia Sesión"
-    },
-    "desc2": "¡Entra con tus redes sociales!"
->>>>>>> login-register
   }
 }
