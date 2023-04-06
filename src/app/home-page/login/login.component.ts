@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/services/auth-service.service';
+import { FirestoreService } from 'src/app/services/firestore-service.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent {
   mail: string | undefined;
   pass: string | undefined;
 
-  constructor(protected auth: AuthService){
+  constructor(protected auth: AuthService, protected db: FirestoreService){
 
   }
 

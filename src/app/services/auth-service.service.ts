@@ -11,6 +11,7 @@ import {
 
 import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
+import { FirestoreService } from './firestore-service.service';
 
 @Injectable({
   providedIn: 'root'
@@ -19,12 +20,12 @@ export class AuthService {
 
   user: User | null = null;
 
-  app = initializeApp(environment.firebaseConfig);
+  public static app = initializeApp(environment.firebaseConfig);
 
-  auth = getAuth(this.app);
-  constructor() {}
+  auth = getAuth(AuthService.app);
+  constructor(protected db: FirestoreService) { }
 
-  getCurrentUser(): User | null{
+  getCurrentUser(): User | null {
     console.log(this.auth.currentUser);
     return this.auth.currentUser;
   }
@@ -32,21 +33,23 @@ export class AuthService {
   async logInEmailPass(mail: string, pass: string) {
     await signInWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
-        if(data.user.email != null)
+        if (data.user.email != null)
           localStorage.setItem("userInfo", data.user.email);
         window.location.reload();
       })
       .catch((error) => { console.error(error.code); });
   }
 
-  async registerEmailPass(mail: string, pass: string) {
+  async registerEmailPass(mail: string, name: string, pass: string) {
     await createUserWithEmailAndPassword(this.auth, mail, pass)
-    .then((data) => {
-      if(data.user.email != null)
-        localStorage.setItem("userInfo", data.user.email);
-      window.location.reload();
-    })
-    .catch((error) => { console.log(error.code); });
+      .then((data) => {
+        if (data.user.email != null) {
+          this.db.addUser(mail, name.trim());
+          localStorage.setItem("userInfo", data.user.email);
+        }
+        window.location.reload();
+      })
+      .catch((error) => { console.log(error.code); });
   }
 
   async enterWithGoogle() {
@@ -56,7 +59,7 @@ export class AuthService {
     await signInWithPopup(this.auth, provider)
   }
 
-  async logOut(){
+  async logOut() {
     await signOut(this.auth);
     localStorage.removeItem('userInfo');
   }
