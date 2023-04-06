@@ -6,11 +6,6 @@
     @include btn($size, $bd-radius, $padding, $width, $bg-color);
     background: $bg-color;
     color: $txt-color;
-    
-    &:hover{
-        background-color: $purple;
-        border-color: $white;
-    }
 }
 
 @mixin outlined-button($size: 20px, $bg-color, $txt-color,
@@ -46,7 +41,7 @@
         transition: $transition3s;
         left: 0;
         right: 0;
-        opacity: 1;
+        opacity: .6;
     }
 
     &:active {
@@ -55,6 +50,7 @@
 }
 
 @mixin btn($size, $bd-radius, $padding, $width, $bg-color) {
+    cursor: pointer;
     font-size: $size;
     border-radius: $bd-radius;
     padding: $padding;
@@ -64,6 +60,7 @@
     align-items: center;
     overflow: hidden;
     border: 3px solid rgba($bg-color, 1);
-    transition: $transition4s;
+    transition: $transition3s;
     text-transform: uppercase;
+    font-weight: bolder;
 }
