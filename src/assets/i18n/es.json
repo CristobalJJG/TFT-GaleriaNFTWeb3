@@ -43,5 +43,19 @@
       "goTo": "¿Ya tienes cuenta?",
       "login": "Resgístrate"
     }
+  },
+  "404":{
+    "sorry": "Lo sentimos, no hemos encontrado la página que está buscando.",
+    "options": "Has llegado a una URL que no existe. Te dejamos algunas opciones: ",
+    "opt1": {
+      "opt11": "Si crees que es un error, por favor, ",
+      "link1": "envíanos un mensaje",
+      "opt12": " para poder arreglarlo lo antes posible."
+    },
+    "opt2": {
+      "opt21": "También puedes volver a ",
+      "link2": "la pantalla principal",
+      "opt22": "."
+    }
   }
 }
