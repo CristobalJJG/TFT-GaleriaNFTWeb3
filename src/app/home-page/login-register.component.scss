@@ -1,0 +1,249 @@
+@import "../../styles.scss";
+
+h2 {
+    margin-top: 25px;
+    font-size: 50px;
+    color: $black;
+    text-align: center;
+}
+
+.form {
+    margin-top: 75px;
+    display: grid;
+    justify-items: center;
+    width: 30%;
+    height: auto;
+    overflow-y: auto;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 10px rgba($black, .75);
+    transition: $transition4s;
+
+    &:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 20px 15px 15px $black;
+
+        input.input {
+            width: 22rem;
+        }
+    }
+}
+
+section {
+
+    .desc2 {
+        margin-top: 20px;
+        color: $black;
+    }
+
+    &>.f-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+.input-flex {
+    display: flex;
+    align-items: center;
+
+    &>.first-l {
+        border-radius: 10px 0 0 0;
+    }
+
+    &>.last-l {
+        border-radius: 0 0 0 10px;
+    }
+}
+
+
+input.input {
+    padding: 10px;
+    font-size: 20px;
+    margin: 2px 0;
+    background-color: $light-gray;
+    border: 0;
+    text-align: center;
+    width: 20rem;
+    transition: $transition4s;
+    color: $dark-gray;
+    border: 2px solid $light-gray;
+
+    &.first {
+        border-radius: 0 10px 0 0;
+    }
+
+    &.last {
+        border-radius: 0 0 10px 0;
+    }
+
+    &:focus,
+    &:hover {
+        outline: none;
+        border-color: $purple;
+        background-color: rgba($light-gray, .8);
+    }
+}
+
+button {
+    margin-top: 20px;
+    @include filled-button(15px, $purple, $white, 5px, 10px, 13rem);
+}
+
+.logo-lr {
+    padding: 11px;
+    background-color: rgba($gray, .7);
+    fill: $white;
+}
+
+
+.change {
+    width: 100%;
+    text-align: center;
+    padding: 9px 0;
+    background-color: $light-gray;
+
+    .black {
+        color: $black;
+    }
+
+    .link {
+        text-align: center;
+        color: $dark-gray;
+        transition: $transition4s;
+        font-weight: bolder;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-purple;
+        }
+    }
+}
+
+.lines {
+    display: flex;
+    align-items: center;
+
+    & .line {
+        width: 175px;
+        margin: 5px 15px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: rgba($black, .75);
+    }
+
+    svg {
+        fill: rgba($black, .9);
+    }
+}
+
+/* Menos de 1024px */
+@media (max-width: 1440px) {
+    .form {
+        width: 500px;
+
+        &:hover {
+            transform: scaleY(1.01) translateY(-20px);
+
+            input.input {
+                width: 20em;
+            }
+        }
+    }
+
+    input.input {
+        padding: 10px;
+        width: 18em;
+    }
+}
+
+/* Menos de 1024px */
+@media (max-width: 1024px) {
+    section .desc2 {
+        display: block;
+        width: 75%;
+    }
+}
+
+/* Menos de 768px */
+@media (max-width: 768px) {
+    $m-top: 25px;
+    $inp-width: 16rem;
+
+    .form {
+        &:hover {
+            transform: translateY(0);
+            box-shadow: 0 5px 10px 10px rgba($black, .75);
+
+            input.input {
+                width: $inp-width;
+            }
+        }
+    }
+
+    .form {
+        width: 500px;
+        margin-top: $m-top;
+
+        &:hover {
+            transform: scaleY(1) translateY(0);
+
+            input.input {
+                width: $inp-width;
+            }
+        }
+    }
+
+    input.input {
+        width: $inp-width;
+    }
+}
+
+/* Menos de 500px */
+@media (max-width: 500px) {
+    $inp-width: 70%;
+
+    input.input {
+        width: $inp-width;
+    }
+
+    .form {
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        overflow-y:visible;
+        &:hover input.input {
+            width: $inp-width;
+        }
+
+    }
+
+    .lines .line {
+        width: 100px;
+    }
+
+    .logo-lr {
+        margin-left: 3%;
+    }
+
+}
+
+/* Menos de 500px */
+@media (max-width: 350px) {
+    $inp-width: 60%;
+
+    input.input {
+        width: $inp-width;
+        font-size: medium;
+    }
+
+    .form:hover input.input {
+        width: $inp-width;
+    }
+
+    .logo-lr {
+        margin-left: 7%;
+    }
+}

@@ -4,7 +4,8 @@
     "wallet": "Carteras",
     "languages": "Idiomas",
     "login": "Entrar",
-    "register": "Registrarse"
+    "register": "Registrarse",
+    "logout": "Cerrar Sesión"
   },
   "landing-page": {
     "title": "Galería de NFT's",
@@ -18,9 +19,8 @@
       "end": "y todo lo que eso conlleva."
     },
     "description2": "Adéntrate en la Web 3.0, visualiza NFT's y guarda tus distintas carteras dentro de la página",
-    "btn1": "Regístrate",
-    "btn2": "Iniciar Sesión",
-    "btn3": "Entra con tu cuenta de Google"
+    "btn1": "¡Entra gratis!",
+    "btn2": "Inicia sesión"
   },
   "access": {
     "forms":{
@@ -42,6 +42,21 @@
       "btn": "¡Enviar!",
       "goTo": "¿Ya tienes cuenta?",
       "login": "Resgístrate"
+    },
+    "desc2": "¡Entra con tus redes sociales!"
+  },
+  "404":{
+    "sorry": "Lo sentimos, no hemos encontrado la página que está buscando.",
+    "options": "Has llegado a una URL que no existe. Te dejamos algunas opciones: ",
+    "opt1": {
+      "opt11": "Si crees que es un error, por favor, ",
+      "link1": "envíanos un mensaje",
+      "opt12": " para poder arreglarlo lo antes posible."
+    },
+    "opt2": {
+      "opt21": "También puedes volver a ",
+      "link2": "la pantalla principal",
+      "opt22": "."
     }
   }
 }

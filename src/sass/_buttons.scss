@@ -5,17 +5,36 @@
 $font-btn: 15px;
 
 $short-btn: 125px;
+$mid-btn: 300PX;
 $long-btn: 500px;
 
 .register-btn {
-    @include filled-button($font-btn, $pink, whitesmoke, 10px, 10px, $short-btn);
+    @include filled-button($font-btn, $purple, $dark-gray, 10px, 10px, $short-btn);
 }
 
 .login-btn {
-    @include outlined-button($font-btn, $turquoise, whitesmoke, 10px, 10px, $short-btn);
+    @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
 }
 
-.login-btn,
+.net-btn {
+    $color: $light-gray;
+    @include filled-button($font-btn, $gray, $color, 10px, 10px, $mid-btn);
+
+    &:hover {
+        background-color: $dark-gray;
+    }
+
+    span {
+        color: $color;
+        font-weight: bolder;
+    }
+
+    svg {
+        fill: $light-gray;
+    }
+}
+
+.fly,
 .register-btn {
     font-weight: bolder;
     margin: 10px;
@@ -23,36 +42,31 @@ $long-btn: 500px;
     & svg {
         transform-origin: center center;
         transition: transform 0.3s;
-        transform: translateY(5px);
+        transform: translateY(2.5px);
     }
 
     & span {
         margin-left: 15px;
-        transition: $transition3s;
+        transition: $transition4s;
     }
 
     &:hover {
         svg {
-            transform: translateY(2.5px) rotate(45deg) scale(1.2);
+            transform: translateY(2.5px) translateX(2.75rem) rotate(45deg) scale(1.4);
         }
 
         .wrapper {
-            animation: fly-1 .6s ease-in-out infinite alternate;
+            animation: fly-1 .4s ease-in-out infinite alternate;
         }
 
         span {
-            display: none;
+            transform: translateX(10rem);
         }
     }
 
     &:active {
-        transform: scale(0.95);
+        transform: scale(0.90);
     }
-}
-
-.action-btn {
-    @include filled-button(20px, $yellow, $black, 15px 25px, 10px, $long-btn);
-    font-weight: bolder;
 }
 
 /* Menos de 1024px */
@@ -61,16 +75,10 @@ $long-btn: 500px;
     $short-btn: 100px;
 
     .register-btn {
-        @include filled-button($font-btn, $pink, whitesmoke, 10px, 10px, $short-btn);
+        @include filled-button($font-btn, $purple, $dark-gray, 10px, 10px, $short-btn);
     }
 
     .login-btn {
-        @include outlined-button($font-btn, $turquoise, whitesmoke, 10px, 10px, $short-btn);
+        @include outlined-button($font-btn, $purple, $white, 10px, 10px, $short-btn);
     }
 }
-
-/* Menos de 768px */
-@media (max-width: 768px) {}
-
-/* Menos de 500px */
-@media (max-width: 500px) {}

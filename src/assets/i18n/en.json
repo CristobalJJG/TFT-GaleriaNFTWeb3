@@ -4,7 +4,8 @@
     "wallet": "Wallets",
     "languages": "Languages",
     "login": "Log In",
-    "register": "Register"
+    "register": "Register",
+    "logout": "Log Out"
   },
   "landing-page":{
     "title": "NFT's Gallery",
@@ -18,9 +19,8 @@
       "end": "and all that it enlails."
     },
     "description2": "Delve into Web 3.0, view NFT's and save your different portfolios within the page",
-    "btn1":"Sign In",
-    "btn2":"Log In",
-    "btn3":"Enter with your Google account"
+    "btn1":"Sign Up Free!",
+    "btn2":"Enter with your account"
   },
   "access":{
     "forms":{
@@ -42,6 +42,21 @@
       "btn": "Send!",
       "goTo":"Already have an account?",
       "login":"Go to Login"
+    },
+    "desc2": "Enter with your Social Networks!"
+  },
+  "404":{
+    "sorry": "Sorry, we can’t seem to find what you’re looking for.",
+    "options": "You've landed on a URL that doesn't seem to exist. Here's some options:",
+    "opt1": {
+      "opt11": "If you think this is an error on our part, please",
+      "link1": "send us a message",
+      "opt12": "."
+    },
+    "opt2": {
+      "opt21": "If you'd like to just browse, head over to the ",
+      "link2": "home page",
+      "opt22": "."
     }
   }
 }

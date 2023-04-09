@@ -1,0 +1,49 @@
+@import "../../styles.scss";
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 75px); //100vh - 75px de la cabecera
+    background: rgb(34, 33, 19);
+    background: radial-gradient(50% 100% at 50% 160%, $dark-gray, #14101A 100%);
+}
+
+.error-container {
+    display: grid;
+    align-items: stretch;
+    width: 50vw;
+    height: 75vh;
+    background: $dark-gray;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    
+    .text{
+        margin: 32px 64px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+h2 {
+    background: linear-gradient(94.85deg, #9560DB 1.81%, #FCFCFF 23.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bolder;
+
+    -moz-user-select: none;
+    user-select: none;
+
+    font-size: 64px;
+    margin-bottom: -25px;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
