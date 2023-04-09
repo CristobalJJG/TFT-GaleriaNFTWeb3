@@ -40,7 +40,7 @@ export class FirestoreService {
       }
     }
     
-    await setDoc(doc(this.db, "users", username + "@" + name), {
+    await setDoc(doc(this.db, "users", username + "@" + name.toLowerCase()), {
       name: name,
       surname: surname,
       wallets: [],
@@ -48,12 +48,12 @@ export class FirestoreService {
       isAdmin: false,
       phone: "",
       username: username + "@" + name,
-      create_date: Date.now,
-      last_login: Date.now
+      create_date: new Date(Date.now()),
+      last_login: new Date(Date.now())
     });
   }
 
   protected toPascal(str: string){
-    return str[0].charAt(0).toUpperCase() + str[0].substring(1).toLowerCase()
+    return str.charAt(0).toUpperCase()  + str.substring(1, str.length).toLowerCase()
   }
 }

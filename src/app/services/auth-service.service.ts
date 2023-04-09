@@ -37,6 +37,7 @@ export class AuthService {
           localStorage.setItem("userInfo", data.user.email);
         }
         window.location.reload();
+        return "";
       })
       .catch((error) => { return error.code; });
   }
@@ -48,7 +49,8 @@ export class AuthService {
           this.db.addUser(mail, name.trim());
           localStorage.setItem("userInfo", data.user.email);
         }
-        window.location.reload();
+        //window.location.reload();
+        return "";
       })
       .catch((error) => { return error.code; });
   }

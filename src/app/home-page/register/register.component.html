@@ -124,7 +124,8 @@
                     <!-- Fin errores contraseña -->
                 </div>
                 <!-- Fin contraseña -->
-                <button class="fly">
+                
+                <button class="fly" [disabled]="form.invalid">
                     <div class="wrapper">
                         <svg height="24" width="24" viewBox="0 0 24 24">
                             <path d="M0 0h24v24H0z" fill="none"></path>
@@ -132,7 +133,7 @@
                             19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
                         </svg>
                     </div>
-                    <span>{{'access.register.btn' | translate}}</span>
+                    <span>{{'access.login.btn' | translate}}</span>
                 </button>
             </form>
 
