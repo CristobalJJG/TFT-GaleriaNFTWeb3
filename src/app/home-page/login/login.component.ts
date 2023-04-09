@@ -25,11 +25,9 @@ export class LoginComponent {
     if(login.mail.valid && login.pass.valid){
       result = this.auth.logInEmailPass(login.mail.value, login.pass.value)
     }
-
-    if(result == null) window.location.reload();
-    else{
-      result?.then(msg => this.msgError = this.error.translateError(msg))
-
-    }
+    result?.then(msg => {
+      if(msg == "") this.msgError = "";
+      else this.msgError = this.error.translateError(msg)
+    })
   }
 }

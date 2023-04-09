@@ -56,8 +56,6 @@
                     </div>
                     <!-- Fin errores correo -->
                 </div>
-
-
                 <!-- Fin correo -->
 
                 <!-- Contraseña para logeo -->
@@ -72,12 +70,12 @@
                             #pass=ngModel ngModel name="pass" required pattern="^[A-Za-z0-9,._-]{6,}$" />
                     </div>
                     <!-- Errores de contraseña -->
-                    <div *ngIf="(pass.dirty && pass.touched) && pass.invalid" class="error-msg">
+                    <div *ngIf="(pass.dirty || pass.touched) && pass.invalid" class="error-msg">
                         <div *ngIf="pass.errors?.['required']">
                             La contraseña es obligatoria.
                         </div>
                         <div *ngIf="pass.errors?.['pattern']">
-                            Solo puede contener letras, números <br/>y los caracteres ",._-".
+                            Solo puede contener letras, números y los caracteres ",._-".
                         </div>
                     </div>
                     <!-- Fin errores contraseña -->

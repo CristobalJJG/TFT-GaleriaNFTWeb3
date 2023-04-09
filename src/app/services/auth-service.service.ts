@@ -36,13 +36,13 @@ export class AuthService {
         if (data.user.email != null) {
           localStorage.setItem("userInfo", data.user.email);
         }
-        return "";
+        window.location.reload();
       })
       .catch((error) => { return error.code; });
   }
 
-  async registerEmailPass(mail: string, name: string, pass: string) {
-    await createUserWithEmailAndPassword(this.auth, mail, pass)
+  async registerEmailPass(mail: string, name: string, pass: string):Promise<string> {
+    return await createUserWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
         if (data.user.email != null) {
           this.db.addUser(mail, name.trim());
@@ -50,7 +50,7 @@ export class AuthService {
         }
         window.location.reload();
       })
-      .catch((error) => { console.log(error.code); });
+      .catch((error) => { return error.code; });
   }
 
   async enterWithGoogle() {
