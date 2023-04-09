@@ -30,26 +30,31 @@ export class AuthService {
     return this.auth.currentUser;
   }
 
-  async logInEmailPass(mail: string, pass: string) {
-    await signInWithEmailAndPassword(this.auth, mail, pass)
+  async logInEmailPass(mail: string, pass: string):Promise<string> {
+    return await signInWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
-        if (data.user.email != null)
-          localStorage.setItem("userInfo", data.user.email);
-        window.location.reload();
+        if (data.user.email != null) {
+          this.db.getUserInfo(mail);
+        }
+        setTimeout(function(){window.location.reload();}, 550);
+        //window.location.reload();
+        return "";
       })
-      .catch((error) => { console.error(error.code); });
+      .catch((error) => { return error.code; });
   }
 
-  async registerEmailPass(mail: string, name: string, pass: string) {
-    await createUserWithEmailAndPassword(this.auth, mail, pass)
+  async registerEmailPass(mail: string, name: string, pass: string):Promise<string> {
+    return await createUserWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
         if (data.user.email != null) {
           this.db.addUser(mail, name.trim());
-          localStorage.setItem("userInfo", data.user.email);
+          this.db.getUserInfo(mail);
+          
         }
-        window.location.reload();
+        setTimeout(function(){window.location.reload();}, 550);
+        return "";
       })
-      .catch((error) => { console.log(error.code); });
+      .catch((error) => { return error.code; });
   }
 
   async enterWithGoogle() {
@@ -61,6 +66,6 @@ export class AuthService {
 
   async logOut() {
     await signOut(this.auth);
-    localStorage.removeItem('userInfo');
+    localStorage.clear();
   }
 }

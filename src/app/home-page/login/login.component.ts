@@ -1,27 +1,33 @@
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/services/auth-service.service';
+import { ErrorService } from 'src/app/services/error-service.service';
 import { FirestoreService } from 'src/app/services/firestore-service.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['../home-page.component.scss', '../login-register.component.scss']
+  styleUrls: ['../home-page.component.scss', 
+    '../login-register.component.scss', 
+    '../login-register-validations.scss']
 })
 export class LoginComponent {
 
-  mail: string | undefined;
-  pass: string | undefined;
+  msgError: string = "";
 
-  constructor(protected auth: AuthService, protected db: FirestoreService){
+  constructor(protected auth: AuthService, protected db: FirestoreService,
+    protected error: ErrorService){
 
   }
 
   /* Para evitar "inyecciones" */
-  async onLogin(){
-    if((this.mail && this.mail.trim() != " ".trim()) &&   // Si existe correo y no es vacío
-        (this.pass && this.pass?.length >= 6 &&           // Si existe contraseña y es mayor a 6 dígitos
-          this.pass.match('[A-Za-z0-9.]{6,}'))) {    // Si la contraseña tiene algún caracter no permitido
-            this.auth.logInEmailPass(this.mail, this.pass)
-          }
+  async onLogin(login: any){
+    var result;
+    if(login.mail.valid && login.pass.valid){
+      result = this.auth.logInEmailPass(login.mail.value, login.pass.value)
+    }
+    result?.then(msg => {
+      if(msg == "") this.msgError = "";
+      else this.msgError = this.error.translateError(msg)
+    })
   }
 }

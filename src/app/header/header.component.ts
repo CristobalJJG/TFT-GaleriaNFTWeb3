@@ -12,7 +12,8 @@ export class HeaderComponent {
   user: any;
   constructor(protected translate: TranslateService, 
     protected auth: AuthService) {
-      this.user = localStorage.getItem("userInfo");
+      var temp = localStorage.getItem("userData")
+      if(temp != null) this.user = JSON.parse(temp).email;
       this.language = (localStorage.getItem('language') || 'es');
   }
 
