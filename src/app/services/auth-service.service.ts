@@ -34,9 +34,10 @@ export class AuthService {
     return await signInWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
         if (data.user.email != null) {
-          localStorage.setItem("userInfo", data.user.email);
+          this.db.getUserInfo(mail);
         }
-        window.location.reload();
+        setTimeout(function(){window.location.reload();}, 550);
+        //window.location.reload();
         return "";
       })
       .catch((error) => { return error.code; });
@@ -47,9 +48,10 @@ export class AuthService {
       .then((data) => {
         if (data.user.email != null) {
           this.db.addUser(mail, name.trim());
-          localStorage.setItem("userInfo", data.user.email);
+          this.db.getUserInfo(mail);
+          
         }
-        //window.location.reload();
+        setTimeout(function(){window.location.reload();}, 550);
         return "";
       })
       .catch((error) => { return error.code; });
@@ -64,6 +66,6 @@ export class AuthService {
 
   async logOut() {
     await signOut(this.auth);
-    localStorage.removeItem('userInfo');
+    localStorage.clear();
   }
 }
