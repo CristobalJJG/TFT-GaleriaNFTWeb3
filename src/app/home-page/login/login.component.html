@@ -97,7 +97,8 @@
                 </button>
             </form>
 
-
+            <!-- Error fuera del formulario -->
+            <div *ngIf="msgError!=''" class="error-msg"> {{msgError}} </div>
 
             <!-- Línea divisoria para redes sociales -->
             <section class="lines">

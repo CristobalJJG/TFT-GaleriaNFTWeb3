@@ -15,7 +15,8 @@ input.ng-invalid:focus:not(.ng-untouched),
 input.ng-invalid:hover:not(.ng-untouched){
 background-color: rgba($gray, .25);
 }
-.error-msg div{
+.error-msg div,
+.error-msg{
     color: $red;
     text-align: center;
     background-color: rgba($red, .25);
