@@ -1,0 +1,35 @@
+@import "../../styles.scss";
+/* Apartado de errores */
+
+.error-msg{ //mensaje de error
+    width: 100%;
+}
+
+input.ng-invalid:focus:not(.ng-untouched),
+input.ng-invalid:hover:not(.ng-untouched),
+input.ng-invalid:not(.ng-untouched){
+    border-color: $red;
+}
+
+input.ng-invalid:focus:not(.ng-untouched),
+input.ng-invalid:hover:not(.ng-untouched){
+background-color: rgba($gray, .25);
+}
+.error-msg div{
+    color: $red;
+    text-align: center;
+    background-color: rgba($red, .25);
+}
+
+input.ng-valid:focus,
+input.ng-valid:hover,
+input.ng-valid{
+    background-color: rgba($light-gray, .5);
+    border-color: $green;
+    color: $green; 
+}
+
+button:disabled{
+    cursor: not-allowed;
+    filter: contrast(.5);
+}
