@@ -4,12 +4,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './home-page/login/login.component';
 import { RegisterComponent } from './home-page/register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},  
   {path: 'home', component: HomePageComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'gallery', component: GalleryComponent},
   {path: '**', component: NotFoundComponent}
 ];
 

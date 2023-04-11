@@ -3,15 +3,6 @@
 $font1: 30px;
 $font2: 20px;
 
-
-.flex {
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 75px); //100vh - 75px de la cabecera
-    background: rgb(34,33,19);
-    background: radial-gradient( $dark-gray 0%, $black 78%);
-}
-
 .container {
     display: grid;
     align-items: baseline;
@@ -81,6 +72,7 @@ h1 {
     }
 
     .btn2{
+        display: none;
         @include outlined-button(20px, $purple, $white, 10px, 5px, $mid-btn);
     }
 }
@@ -120,6 +112,10 @@ h1 {
     .desc2 {
         width: 80%;
         font-size: $font2;
+
+        .btn2{
+            display: block;
+        }
     }
 }
 

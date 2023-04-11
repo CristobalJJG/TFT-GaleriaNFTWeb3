@@ -12,3 +12,39 @@
     font-family: 'Poppins';
     color: $white;
 }
+
+.flex {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 75px); //100vh - 75px de la cabecera
+    background: rgb(34,33,19);
+    background: radial-gradient( $dark-gray 0%, $black 78%);
+}
+
+
+/* Menos de 1440px */
+/* @media (max-width: 1440px) {
+    
+} */
+
+/* Menos de 1024px */
+/* @media (max-width: 1024px) {
+} */
+
+/* Menos de 768px */
+@media (max-width: 768px) {
+    .flex{
+        height: calc(100vh - 75px);
+    }
+}
+
+/* Menos de 500px */
+/* @media (max-width: 500px) {
+    
+
+} */
+
+/* Menos de 500px */
+/* @media (max-width: 350px) {
+} */

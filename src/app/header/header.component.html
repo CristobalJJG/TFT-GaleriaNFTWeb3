@@ -1,17 +1,17 @@
-<nav class="flex">
+<nav class="structure">
     <div>
         <!-- <img src="" alt=""> --> Logo to guapo cuando haya
     </div>
 
     <!-- Botones de la cabecera -->
-    <div class="flex buttons">
+    <div class="structure buttons">
         <!-- Botón galería -->
-        <a href="" class="head h1">
+        <a href="" class="head h1"  routerLink="/gallery" routerLinkActive="activebutton">
             <img src="../../assets/images/header/image-gallery.png" alt="Logo Gallery" class="icon">
             <span>{{'header.gallery' | translate}}</span>
         </a>
         <!-- Botón cartera -->
-        <a href="" class="head h2">
+        <a href="" class="head h2"  routerLink="/register" routerLinkActive="activebutton">
             <img src="../../assets/images/header/wallet.png" alt="Logo Wallet" class="icon">
             <span>{{'header.wallet' | translate}}</span>
         </a>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div *ngIf="user==null" class="flex enter-btn">
+        <div *ngIf="user==null" class="structure enter-btn">
             <button class="login-btn" routerLink="/login" routerLinkActive="activebutton">
                 {{'header.login' | translate}}
             </button>
