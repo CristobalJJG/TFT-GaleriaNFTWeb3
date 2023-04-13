@@ -74,9 +74,12 @@ nav {
         color: $accent-color;
     }
 
-    .icon {
-        transform: translateY(5px);
-        margin-right: 5px;
+    .long {
+        display: block;
+    }
+
+    .short{
+        display: none;
     }
 }
 
@@ -140,17 +143,17 @@ nav {
         margin: 0 15px;
     }
 
-    .head span {
+    .head span, .opt .long {
         display: none;
+    }
+
+    .opt .short{
+        display: block;
     }
 
     .dropdown .dropdown-content {
         transform: translateX(-5px);
         width: 64px;
-    }
-
-    .opt .icon {
-        margin-right: 0;
     }
 }
 
@@ -167,7 +170,7 @@ nav {
         margin: 0;
     }
 
-    .opt:not(.lo) span,.enter-btn  {
+    .enter-btn {
         display: none;
     }
 }

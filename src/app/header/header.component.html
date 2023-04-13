@@ -1,12 +1,13 @@
 <nav class="flex">
     <div>
-        <!-- <img src="" alt=""> --> Logo to guapo cuando haya
+        <a routerLink="/home" routerLinkActive="activebutton">Logo to guapo cuando haya</a>
+        <!-- <img src="" alt=""> --> 
     </div>
 
     <!-- Botones de la cabecera -->
     <div class="flex buttons">
         <!-- Botón galería -->
-        <a href="" class="head h1">
+        <a class="head h1">
             <img src="../../assets/images/header/image-gallery.png" alt="Logo Gallery" class="icon">
             <span>{{'header.gallery' | translate}}</span>
         </a>
@@ -16,6 +17,7 @@
             <span>{{'header.wallet' | translate}}</span>
         </a>
         <!-- Botón idioma -->
+        <!-- https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes -->
         <div class="dropdown">
             <a class="head h3 dropdown">
                 <img src="../../assets/images/header/translation.png" alt="Logo tranlations" class="icon">
@@ -23,12 +25,12 @@
             </a>
             <div class="dropdown-content">
                 <div class="opt" (click)="changeLanguage('en')">
-                    <img src="../../assets/images/header/united-kingdom.png" alt="UK flag" class="icon">
-                    <span>English</span>
+                    <span class="long">English</span>
+                    <span class="short">Eng</span>
                 </div>
                 <div class="opt" (click)="changeLanguage('es')">
-                    <img src="../../assets/images/header/spain.png" alt="Spain flag" class="icon">
-                    <span>Español</span>
+                    <span class="long">Español</span>
+                    <span class="short">Spa</span>
                 </div>
             </div>
         </div>
