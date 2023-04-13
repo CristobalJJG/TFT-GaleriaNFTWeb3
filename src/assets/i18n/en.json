@@ -43,6 +43,6 @@
       "goTo":"Already have an account?",
       "login":"Go to Login"
     },
-    "desc2": "Enter with your Social Networks!"
+    "google": "Login with Google"
   }
 }
