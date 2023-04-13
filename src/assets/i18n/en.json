@@ -43,7 +43,7 @@
       "goTo":"Already have an account?",
       "login":"Go to Login"
     },
-    "desc2": "Enter with your Social Networks!"
+    "google": "Login with Google"
   },
   "404":{
     "sorry": "Sorry, we can’t seem to find what you’re looking for.",
@@ -56,7 +56,7 @@
     "opt2": {
       "opt21": "If you'd like to just browse, head over to the ",
       "link2": "home page",
-      "opt22": "."
     }
+      "opt22": "."
   }
 }
