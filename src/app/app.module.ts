@@ -16,6 +16,8 @@ import { LoginComponent } from './home-page/login/login.component';
 import { RegisterComponent } from './home-page/register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryFilterComponent } from './gallery/gallery-filter/gallery-filter.component';
+import { NftCardComponent } from './gallery/nft-card/nft-card.component';
 
 
 
@@ -31,7 +33,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     LoginComponent,
     RegisterComponent,
     NotFoundComponent,
-    GalleryComponent
+    GalleryComponent,
+    GalleryFilterComponent,
+    NftCardComponent
   ],
   imports: [
     BrowserModule,

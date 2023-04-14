@@ -5,7 +5,7 @@ $accent-color: $purple;
 
 nav {
     height: 75px;
-    z-index: 2;
+    z-index: 1;
     background-color: $black;
     color: $white;
 }
@@ -51,14 +51,14 @@ nav {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
         visibility: collapse;
         transition: $transition3s;
-        z-index: -1;
+        z-index: 1;
         left: 20px;
         text-align: center;
+        color: rgba($white, 0);
     }
 
     &:hover .dropdown-content {
         visibility: visible;
-        z-index: 0;
         height: auto;
         color: $white;
     }
@@ -107,7 +107,7 @@ nav {
         height: 3px;
         background: $accent-color;
         display: block;
-        transition: $transition4s;
+        transition: $transition3s;
     }
 
     &:hover::after,
