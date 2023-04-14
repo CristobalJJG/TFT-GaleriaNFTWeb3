@@ -1,0 +1,39 @@
+<section class="container">
+    <h2>{{'gallery.filter' | translate}}</h2>
+    <div class="filter-container">
+        <!--  Barra de búsqueda -->
+        <div id="search">
+            <input type="search" class="search" placeholder="Buscar..." />
+        </div>
+        <!--  Checkbox del rango de precio -->
+        <div class="filter">
+            <div>
+                <input type="checkbox" name="range-price" id="range-price" />
+                <label for="range-price">Precio entre</label>
+            </div>
+            <!-- https://www.w3schools.com/howto/howto_js_filter_dropdown.asp -->
+            <!--  Dropdown con las divisas -->
+
+            <span (click)="toogleShow()" class="dropbtn">Divisas</span>
+            <div *ngIf="show" id="dropdown" class="dropdown-content">
+                <!-- <input type="text" placeholder="Search..." id="myInput" (keyup)="filterFunction()"> -->
+                <div>
+                    <input type="checkbox" id="btc-ch" />
+                    <label for="btc-ch">Bitcoin</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="eth-ch" />
+                    <label for="th-ch">Ethereum</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ustd-ch" />
+                    <label for="ustd-ch">USTD</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="inu-ch" />
+                    <label for="inu-ch">Shiba Inu</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

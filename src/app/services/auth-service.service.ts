@@ -36,7 +36,7 @@ export class AuthService {
         if (data.user.email != null) {
           this.db.getUserInfo(mail);
         }
-        setTimeout(function(){window.location.reload();}, 550);
+        setTimeout(function(){window.location.reload();}, 1000);
         //window.location.reload();
         return "";
       })
@@ -51,7 +51,7 @@ export class AuthService {
           this.db.getUserInfo(mail);
           
         }
-        setTimeout(function(){window.location.reload();}, 550);
+        setTimeout(function(){window.location.reload();}, 1000);
         return "";
       })
       .catch((error) => { return error.code; });
