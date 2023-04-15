@@ -18,6 +18,7 @@ export class NftService {
     this.alchemy = new Alchemy(settings);
   }
 
+  /* https://docs.alchemy.com/docs/how-to-get-all-nfts-in-a-collection */
   async getNFTs() {
     const address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D";
     const { nfts } = await this.alchemy.nft.getNftsForContract(address);
