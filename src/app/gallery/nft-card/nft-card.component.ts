@@ -29,4 +29,6 @@ export class NftCardComponent implements OnInit{
     this.price = contract.openSea.floorPrice;
     this.picture = this.data.media[0].gateway;
   }
+
+  
 }

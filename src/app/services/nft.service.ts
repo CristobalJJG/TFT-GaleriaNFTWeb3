@@ -20,7 +20,9 @@ export class NftService {
 
   /* https://docs.alchemy.com/docs/how-to-get-all-nfts-in-a-collection */
   async getNFTs() {
-    const address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D";
+    const address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"; //monos
+    //const address = "0x23581767a106ae21c074b2276d25e5c3e136a68b";   //buhos
+    
     const { nfts } = await this.alchemy.nft.getNftsForContract(address);
     return nfts;
   };
