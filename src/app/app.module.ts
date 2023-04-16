@@ -20,7 +20,6 @@ import { GalleryFilterComponent } from './gallery/gallery-filter/gallery-filter.
 import { NftCardComponent } from './gallery/nft-card/nft-card.component';
 
 
-
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
 }

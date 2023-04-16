@@ -3,18 +3,9 @@
     <div class="container">
         <app-gallery-filter></app-gallery-filter>
         <div class="nft-container">
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
-            <app-nft-card></app-nft-card>
+            <div *ngFor="let item of NFTs">
+                <app-nft-card [data]="item"></app-nft-card>
+            </div>
         </div>
     </div>
 </main>
