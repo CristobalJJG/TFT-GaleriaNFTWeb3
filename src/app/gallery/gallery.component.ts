@@ -10,21 +10,36 @@ import { NFT } from '../class/nft';
 
 export class GalleryComponent implements OnInit {
 
-  protected NFTs: NFT[] = []; 
+  protected NFTs: NFT[] = [];
+  protected filters = new Map();
 
-  constructor(protected nft: NftService){ }
-  
+  constructor(protected nft: NftService) { }
+
   async ngOnInit() {
-    this.nft.getNFTs().then(data => { 
-      for(let item of data){
+    this.nft.getNFTs().then(data => {
+      console.log(data[0].rawMetadata?.attributes);
+
+      for (let item of data) {
         this.NFTs.push(new NFT(
           item.contract.symbol + " " + item.title,
           item.contract.openSea?.description + "",
           item.media[0].gateway,
           item.contract.openSea?.floorPrice + "",
           item.contract.contractDeployer + ""
-        )) 
-      } 
+        ))
+
+        if (item.rawMetadata!.attributes != undefined)
+          for (let att of item.rawMetadata!.attributes) {
+            if (this.filters.has(att['trait_type'])) {
+              var list = this.filters.get(att['trait_type'])
+              if (!list.includes(att['value'])) { list.push(att['value']) }
+            } else {
+              this.filters.set(att['trait_type'], [att['value']])
+            }
+          }
+      }
+      console.log(this.filters);
+      
     })
   }
 }
