@@ -1,11 +1,11 @@
-class NFT{
+export class NFT{
     name: string;
     description: string;
     image: string;
-    price: number;
+    price: string;
     owner: string;
 
-    constructor(name: string, description: string, image: string, price: number, owner: string){
+    constructor(name: string, description: string, image: string, price: string, owner: string){
         this.name = name;
         this.description = description;
         this.image = image;
@@ -18,5 +18,4 @@ class NFT{
     public getImage(){return this.image}
     public getPrice(){return this.price}
     public getOwner(){return this.owner}
-    
 }

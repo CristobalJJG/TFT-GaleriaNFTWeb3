@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NFT } from '../../class/nft';
 
 @Component({
   selector: 'app-nft-card',
@@ -8,26 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class NftCardComponent implements OnInit{
 
-  @Input() data: any;
-
-  protected id: string = "";
-  protected address: string = "";
-  protected name: string = "";
-  protected price: string = "";
-  protected picture: string = "";
+  @Input() data: NFT | undefined;
 
 
   constructor(){}
 
   ngOnInit(): void {
 
-    this.id = this.data.tokenId; 
-
-    var contract = this.data.contract;
-    this.address = contract.address;
-    this.name = contract.name;
-    this.price = contract.openSea.floorPrice;
-    this.picture = this.data.media[0].gateway;
   }
 
   
