@@ -10,6 +10,7 @@ class User{
     wallets: [] = [];
 
 
+
     constructor(create_date:any, last_login:any, email:string, 
         isAdmin: boolean, name:string, surname:string, phone:string, 
         username: string, wallets: []){
@@ -33,4 +34,16 @@ class User{
     public getPhone(){return this.phone}
     public getUsername(){return this.username}
     public getWallets(){return this.wallets}
+
+    //set user elements
+    public setCreateDate(create_date:any){this.create_date = create_date}
+    public setLastLogin(last_login:any){this.last_login = last_login}
+    public setEmail(email:string){this.email = email}
+    public setIsAdmin(isAdmin:boolean){this.isAdmin = isAdmin}
+    public setName(name:string){this.name = name}
+    public setSurname(surname:string){this.surname = surname}
+    public setPhone(phone:string){this.phone = phone}
+    public setUsername(username:string){this.username = username}
+    public setWallets(wallets:[]){this.wallets = wallets}
+
 }

@@ -1,32 +1,45 @@
-import { Component } from '@angular/core';
+import {
+  Component, EventEmitter,
+  Input, OnInit, Output
+} from '@angular/core';
 
 @Component({
   selector: 'app-gallery-filter',
   templateUrl: './gallery-filter.component.html',
   styleUrls: ['./gallery-filter.component.scss']
 })
-export class GalleryFilterComponent {
-  show: boolean = false;
-  
-  toogleShow() {
-    this.show = !this.show;
+export class GalleryFilterComponent implements OnInit {
+
+  @Input() data: Map<any, any> | undefined;
+  @Output() updateView = new EventEmitter<Map<string, string[]>>();
+  activeFilters: Map<string, string[]> = new Map();
+
+  ngOnInit(): void { }
+
+  updateFilters(key: string, value: string) {
+    if (this.activeFilters.has(key)) {
+      var list = this.activeFilters.get(key);
+      if (list) {
+        if (list?.includes(value)) {
+          list = list.filter((v) => v != value);
+          this.activeFilters.set(key, list);
+
+        } else {
+          list!.push(value);
+          this.activeFilters.set(key, list);
+        }
+      }
+
+    } else this.activeFilters.set(key, [value]);
+    this.updateView.emit(this.activeFilters)
   }
 
-  /* filterFunction() {
-    var input, filter, ul, li, a, i, div, txtValue;
-    input = document.getElementById("myInput") as HTMLInputElement;
-    filter = input.value.toUpperCase();
-    div = document.getElementById("dropdown");
-    console.log(div);
-    
-    a = div!.getElementsByTagName("label");
-    for (i = 0; i < a.length; i++) {
-      txtValue = a[i].textContent || a[i].innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        a[i].style.display = "";
-      } else {
-        a[i].style.display = "none";
-      }
+  toogleShow(x: string) {
+    var elemento = document.getElementsByClassName(x);
+    for (var i = 0; i < elemento.length; i++) {
+      if (elemento[i].className.includes(" show"))
+        elemento[i].className = elemento[i].className.replace(" show", "");
+      else elemento[i].className += " show";
     }
-  } */
+  }
 }

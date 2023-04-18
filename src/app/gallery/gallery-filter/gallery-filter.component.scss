@@ -32,14 +32,20 @@ h2 {
 }
 
 .dropdown-content {
-    width: 150px;
-    margin-left: 20px;
+    width: 175px;
+    margin-left: 10px;
+    display: none;
 
-    ul li {
+    & label{
+        margin-left: 10px;
         color: $white;
         padding: 5px 0;
         text-decoration: none;
-        display: block;
+        white-space: break-spaces;
+        text-overflow: ellipsis;
     }
     
+    &.show{
+        display: block;
+    }
 }

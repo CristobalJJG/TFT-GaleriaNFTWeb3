@@ -1,9 +1,9 @@
 <main class="flex">
 
     <div class="container">
-        <app-gallery-filter></app-gallery-filter>
+        <app-gallery-filter [data]="filters" (updateView)="updateView($event)"></app-gallery-filter>
         <div class="nft-container">
-            <div *ngFor="let item of NFTs">
+            <div *ngFor="let item of showNFTs">
                 <app-nft-card [data]="item"></app-nft-card>
             </div>
         </div>
