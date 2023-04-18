@@ -34,12 +34,15 @@ h2 {
 .dropdown-content {
     width: 150px;
     margin-left: 20px;
+    display: none;
 
-    ul li {
+    & label{
         color: $white;
         padding: 5px 0;
         text-decoration: none;
-        display: block;
     }
     
+    &.show{
+        display: block;
+    }
 }

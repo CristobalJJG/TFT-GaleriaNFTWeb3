@@ -17,15 +17,14 @@ export class GalleryComponent implements OnInit {
 
   async ngOnInit() {
     this.nft.getNFTs().then(data => {
-      console.log(data[0].rawMetadata?.attributes);
-
       for (let item of data) {
         this.NFTs.push(new NFT(
           item.contract.symbol + " " + item.title,
           item.contract.openSea?.description + "",
           item.media[0].gateway,
           item.contract.openSea?.floorPrice + "",
-          item.contract.contractDeployer + ""
+          item.contract.contractDeployer + "",
+          item.rawMetadata?.attributes || []
         ))
 
         if (item.rawMetadata!.attributes != undefined)
@@ -38,7 +37,7 @@ export class GalleryComponent implements OnInit {
             }
           }
       }
-      console.log(this.filters);
+      console.log(this.NFTs[0]);
       
     })
   }
