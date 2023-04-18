@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NftService } from '../services/nft.service';
 import { NFT } from '../class/nft';
-
+import { GalleryFilterComponent } from './gallery-filter/gallery-filter.component';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -10,8 +10,10 @@ import { NFT } from '../class/nft';
 
 export class GalleryComponent implements OnInit {
 
-  protected NFTs: NFT[] = [];
+  private NFTs: NFT[] = [];
+  protected showNFTs: NFT[] = [];
   protected filters = new Map();
+  @ViewChild(GalleryFilterComponent) filter: any;
 
   constructor(protected nft: NftService) { }
 
@@ -37,8 +39,39 @@ export class GalleryComponent implements OnInit {
             }
           }
       }
+      this.showNFTs = this.NFTs;
       console.log(this.NFTs[0]);
+    })
+  }
+
+  updateView(message:any) {
+    var seg1 = new Date().getSeconds();
+    var empty: boolean = false;
+    let m: Map<string, string[]> = message;
+    m.forEach( (value) => {
+      console.log("length = "+ value.length);
+      
+      if(value.length <= 0){
+        this.showNFTs = this.NFTs; 
+        empty = true;
+        return;
+      }else empty = false;
       
     })
+    if(empty) return;
+    
+    this.showNFTs = [];
+    console.log(m);
+    
+    for (let n of this.NFTs) {
+      m.forEach((value, key) => {
+        if (value.includes(n.getAttributes().get(key) + "")) {
+          if (!this.showNFTs.includes(n)) this.showNFTs.push(n);
+        } else {
+          if (this.showNFTs.includes(n)) this.showNFTs = this.showNFTs.filter((v) => v != n);
+        }
+      })
+    }
+    console.log("Time to filter: " + (seg1 - new Date().getSeconds()));
   }
 }

@@ -11,35 +11,13 @@
                 <input type="checkbox" name="range-price" id="range-price" />
                 <label for="range-price">Precio entre</label>
             </div>
-            <!-- https://www.w3schools.com/howto/howto_js_filter_dropdown.asp -->
-            <!--  Dropdown con las divisas -->
-
-            <!-- <span (click)="toogleShow('divisas')" class="dropbtn">Divisas</span>
-            <div id="dropdown" class="dropdown-content divisas" id="divisas">
-                <div>
-                    <input type="checkbox" id="btc-ch" />
-                    <label for="btc-ch">Bitcoin</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="eth-ch" />
-                    <label for="th-ch">Ethereum</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ustd-ch" />
-                    <label for="ustd-ch">USTD</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="inu-ch" />
-                    <label for="inu-ch">Shiba Inu</label>
-                </div>
-            </div> -->
 
             <div *ngFor="let item of data | keyvalue">
                 <span (click)="toogleShow(item.key)" class="dropbtn">{{item.key}}</span>
 
                 <div *ngFor="let i of item.value">
                     <div class="dropdown-content {{item.key}}" id="{{item.key}}">
-                        <input type="checkbox" id="{{i}}"/>
+                        <input type="checkbox" id="{{i}}" (change)="updateFilters(item.key, i)"/>
                         <label for="{{i}}">{{i}}</label>
                     </div>
                 </div>
