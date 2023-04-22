@@ -30,10 +30,10 @@ export class RegisterComponent {
 
   /* Para evitar "inyecciones" */
   async onRegister(register: any){
-    var result;    
-    if(register.mail.valid && register.pass.valid && register.name.valid){
+    let result;    
+    if(register.mail.valid && register.pass.valid && register.name.valid)
       result = this.auth.registerEmailPass(register.mail.value, register.name.value, register.pass.value)
-    }
+    
     result?.then(msg => {
       if(msg == "") this.msgError = "";
       else this.msgError = this.error.translateError(msg)

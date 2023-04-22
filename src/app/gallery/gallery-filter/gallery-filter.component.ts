@@ -1,6 +1,6 @@
 import {
   Component, EventEmitter,
-  Input, OnInit, Output
+  Input, Output
 } from '@angular/core';
 
 @Component({
@@ -8,24 +8,21 @@ import {
   templateUrl: './gallery-filter.component.html',
   styleUrls: ['./gallery-filter.component.scss']
 })
-export class GalleryFilterComponent implements OnInit {
+export class GalleryFilterComponent {
 
   @Input() data: Map<any, any> | undefined;
   @Output() updateView = new EventEmitter<Map<string, string[]>>();
   activeFilters: Map<string, string[]> = new Map();
 
-  ngOnInit(): void { }
-
   updateFilters(key: string, value: string) {
     if (this.activeFilters.has(key)) {
-      var list = this.activeFilters.get(key);
+      let list = this.activeFilters.get(key);
       if (list) {
         if (list?.includes(value)) {
           list = list.filter((v) => v != value);
           this.activeFilters.set(key, list);
-
         } else {
-          list!.push(value);
+          list.push(value);
           this.activeFilters.set(key, list);
         }
       }
@@ -35,11 +32,11 @@ export class GalleryFilterComponent implements OnInit {
   }
 
   toogleShow(x: string) {
-    var elemento = document.getElementsByClassName(x);
-    for (var i = 0; i < elemento.length; i++) {
-      if (elemento[i].className.includes(" show"))
-        elemento[i].className = elemento[i].className.replace(" show", "");
-      else elemento[i].className += " show";
+    let elementos = document.getElementsByClassName(x);
+    for (let i = 0; i < elementos.length; i++) {
+      if (elementos[i].className.includes(" show"))
+        elementos[i].className = elementos[i].className.replace(" show", "");
+      else elementos[i].className += " show";
     }
   }
 }

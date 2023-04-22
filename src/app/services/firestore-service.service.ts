@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { collection, doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
+import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
 import { AuthService } from './auth-service.service';
 
 @Injectable({
@@ -8,12 +8,9 @@ import { AuthService } from './auth-service.service';
 export class FirestoreService {
 
   db = getFirestore(AuthService.app);
-  constructor() {
-
-  }
 
   async getUserInfo(mail: string){
-    var snap = await getDoc(doc(this.db, "users", mail.split("@")[0]));
+    let snap = await getDoc(doc(this.db, "users", mail.split("@")[0]));
     if(snap.exists())
       localStorage.setItem("userData", JSON.stringify(snap.data()))
     else

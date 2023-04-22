@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Alchemy, Network, Nft } from "alchemy-sdk";
+import { Alchemy, Network } from "alchemy-sdk";
 import { environment } from 'src/environments/environment';
 
 @Injectable({

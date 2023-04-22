@@ -37,7 +37,6 @@ export class AuthService {
           this.db.getUserInfo(mail);
         }
         setTimeout(function(){window.location.reload();}, 1000);
-        //window.location.reload();
         return "";
       })
       .catch((error) => { return error.code; });

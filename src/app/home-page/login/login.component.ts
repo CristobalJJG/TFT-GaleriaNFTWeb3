@@ -21,10 +21,10 @@ export class LoginComponent {
 
   /* Para evitar "inyecciones" */
   async onLogin(login: any){
-    var result;
-    if(login.mail.valid && login.pass.valid){
+    let result;
+    if(login.mail.valid && login.pass.valid)
       result = this.auth.logInEmailPass(login.mail.value, login.pass.value)
-    }
+    
     result?.then(msg => {
       if(msg == "") this.msgError = "";
       else this.msgError = this.error.translateError(msg)

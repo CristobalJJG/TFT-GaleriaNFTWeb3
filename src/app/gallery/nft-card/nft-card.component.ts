@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NFT } from '../../class/nft';
 
 @Component({
@@ -7,16 +7,4 @@ import { NFT } from '../../class/nft';
   styleUrls: ['./nft-card.component.scss']
 })
 
-export class NftCardComponent implements OnInit{
-
-  @Input() data: NFT | undefined;
-
-
-  constructor(){}
-
-  ngOnInit(): void {
-
-  }
-
-  
-}
+export class NftCardComponent{ @Input() data: NFT | undefined; }

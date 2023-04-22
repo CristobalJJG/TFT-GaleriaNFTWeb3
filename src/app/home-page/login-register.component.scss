@@ -63,7 +63,6 @@ input.input {
     font-size: 20px;
     margin: 2px 0;
     background-color: $light-gray;
-    border: 0;
     text-align: center;
     width: 20rem;
     transition: $transition4s;
@@ -138,6 +137,17 @@ button {
     }
 }
 
+.form {
+    &:hover {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px 10px rgba($black, .75);
+
+        input.input {
+            width: 16rem;
+        }
+    }
+}
+
 /* Menos de 1440px */
 @media (max-width: 1440px) {
     .form {
@@ -172,17 +182,6 @@ button {
     $inp-width: 16rem;
 
     .form {
-        &:hover {
-            transform: translateY(0);
-            box-shadow: 0 5px 10px 10px rgba($black, .75);
-
-            input.input {
-                width: $inp-width;
-            }
-        }
-    }
-
-    .form {
         width: 500px;
         margin-top: $m-top;
 
@@ -213,7 +212,8 @@ button {
         height: 100%;
         width: 100%;
         border-radius: 20px 20px 0 0;
-        overflow-y:visible;
+        overflow-y: visible;
+
         &:hover input.input {
             width: $inp-width;
         }

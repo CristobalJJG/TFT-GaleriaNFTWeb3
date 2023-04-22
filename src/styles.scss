@@ -5,12 +5,12 @@
 @import "./sass/mixin";
 @import "./sass/variable";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito&family=Poppins:ital,wght@1,200&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Carlito', sans-serif;
     color: $white;
 }
 
