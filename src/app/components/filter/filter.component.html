@@ -3,17 +3,12 @@
     <div class="filter-container">
         <!--  Checkbox del rango de precio -->
         <div class="filter">
-            <div>
-                <input type="checkbox" name="range-price" id="range-price" />
-                <label for="range-price">Precio entre</label>
-            </div>
-
             <div *ngFor="let item of data | keyvalue">
                 <span (click)="toogleShow(item.key)" class="dropbtn">{{item.key}}</span>
 
                 <div *ngFor="let i of item.value">
                     <div class="dropdown-content {{item.key}}" id="{{item.key}}">
-                        <input type="checkbox" id="{{i}}" (change)="updateFilters(item.key, i)"/>
+                        <input type="checkbox" id="{{i}}" (change)="updateFilters(item.key, i)" />
                         <label for="{{i}}">{{i}}</label>
                     </div>
                 </div>

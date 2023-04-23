@@ -16,8 +16,10 @@ import { LoginComponent } from './home-page/login/login.component';
 import { RegisterComponent } from './home-page/register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { GalleryFilterComponent } from './gallery/gallery-filter/gallery-filter.component';
 import { NftCardComponent } from './gallery/nft-card/nft-card.component';
+import { WalletsComponent } from './wallets/wallets.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { WalletCardComponent } from './wallets/wallet-card/wallet-card.component';
 
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -33,8 +35,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     RegisterComponent,
     NotFoundComponent,
     GalleryComponent,
-    GalleryFilterComponent,
-    NftCardComponent
+    NftCardComponent,
+    WalletsComponent,
+    FilterComponent,
+    WalletCardComponent
   ],
   imports: [
     BrowserModule,
