@@ -1,0 +1,38 @@
+<div class="card">
+    <div [ngSwitch]="wallet.getCoin()" class="coin">
+        <span *ngSwitchCase="'ETH'">
+            <img src="../../../assets/images/cripto-icons/eth.svg" width="150" height="150" alt="ETH Icon Image" />
+        </span>
+        <span *ngSwitchCase="'BTC'">
+            <img src="../../../assets/images/cripto-icons/btc.svg" width="150" height="150" alt="BTC Icon Image" />
+        </span>
+        <span *ngSwitchCase="'USDT'">
+            <img src="../../../assets/images/cripto-icons/usdt.svg" width="150" height="150" alt="USDT Icon Image" />
+        </span>
+        <span *ngSwitchCase="'DOGE'">
+            <img src="../../../assets/images/cripto-icons/doge.svg" width="150" height="150" alt="DOGE Icon Image" />
+        </span>
+    </div>
+
+    <section class="data">
+        <label for="name-{{wallet.getName()}}">Nombre:</label>
+        <span id="name-{{wallet.getName()}}">
+            {{ wallet.getName() }}
+        </span>
+        <br />
+        <label for="address-{{wallet.getName()}}">Dirección:</label>
+        <span id="address-{{wallet.getName()}}">
+            {{ wallet.getAddress('hide') }}
+        </span>
+    </section>
+
+    <div class="money">
+        <h3>{{ wallet.getBalance() }} <br />{{wallet.getCoin() | uppercase}}</h3>
+    </div>
+
+    <div class="url">
+        <a href="{{wallet.getUrl()}}">
+            <p>{{wallet.getUrl()}}</p>
+        </a>
+    </div>
+</div>
