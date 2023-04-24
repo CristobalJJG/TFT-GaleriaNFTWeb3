@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Wallet } from '../class/wallet';
+import { WalletService } from '../services/wallet.service';
 
 @Component({
   selector: 'app-wallets',
@@ -9,9 +10,10 @@ import { Wallet } from '../class/wallet';
 export class WalletsComponent {
   wallets: Wallet[] = [];
 
-  constructor() {
+  constructor(wallet: WalletService) {
     let v = JSON.parse(localStorage.getItem('userData') || '')['wallets'];
     for (let w of v) {
+      /* wallet.getBalance(w['address']); */
       this.wallets.push(new Wallet(
         w['name'],
         w['address'],
