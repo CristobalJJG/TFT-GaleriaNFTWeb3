@@ -13,25 +13,23 @@
             <img src="../../../assets/images/cripto-icons/doge.svg" width="150" height="150" alt="DOGE Icon Image" />
         </span>
     </div>
-
-    <section class="data">
-        <label for="name-{{wallet?.getName()}}">Nombre:</label>
-        <span id="name-{{wallet?.getName()}}">
+    <div>
+        <h2 id="name-{{wallet?.getName()}}" class="name">
             {{ wallet?.getName() }}
-        </span>
-        <br />
+        </h2>
+        <div class="money">
+            <h3>{{ wallet?.getBalance() }} <br />{{wallet?.getCoin() | uppercase}}</h3>
+        </div>
+    </div>
+    <section class="data">
         <label for="address-{{wallet?.getName()}}">Dirección:</label>
         <span id="address-{{wallet?.getName()}}">
             {{ wallet?.getAddress('hide') }}
         </span>
     </section>
 
-    <div class="money">
-        <h3>{{ wallet?.getBalance() }} <br />{{wallet?.getCoin() | uppercase}}</h3>
-    </div>
-
     <div class="url">
-        <a href="{{wallet?.getUrl()}}">
+        <a href="{{wallet?.getUrl()}}" target="_blank">
             <p>{{wallet?.getUrl()}}</p>
         </a>
     </div>
