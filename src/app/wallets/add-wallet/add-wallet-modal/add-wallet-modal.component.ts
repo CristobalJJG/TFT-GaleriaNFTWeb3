@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NFT } from 'src/app/class/nft';
+import { Wallet } from 'src/app/class/wallet';
 
 @Component({
   selector: 'app-add-wallet-modal',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AddWalletModalComponent {
 
+  future_wallet: Wallet = new Wallet("Nombre", "", 0, "URL", "BTC");
+
+  changeCoin(coin: any) {
+    this.future_wallet.setCoin(coin.target.value);
+  }
 }

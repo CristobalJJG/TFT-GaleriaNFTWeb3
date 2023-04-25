@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "functions": {
-    "server/handler.js": {}
-  },
-  "buildCommand": "npm run build",
+
   "crons": [
     {
-      "path": "./server/handler",
+      "path": "/server/handler",
       "schedule": "0 0 * * *"
     }
   ]

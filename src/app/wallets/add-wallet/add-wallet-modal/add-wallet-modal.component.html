@@ -1,5 +1,19 @@
 <div class="modal">
     <div>
-        Hola
+        <app-wallet-card [wallet]="future_wallet"></app-wallet-card>
     </div>
+
+    <fieldset>
+        <legend>Añadir una cartera: </legend>
+        <form action="addWallet()">
+            <select (change)="changeCoin($event)">
+                <option value="BTC">Bitcoin</option>
+                <option value="ETH">Ethereum</option>
+                <option value="USDT">Dólares Tether</option>
+                <option value="DOGE">Doge Coin</option>
+            </select>
+        </form>
+    </fieldset>
+
+
 </div>

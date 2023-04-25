@@ -16,7 +16,7 @@ export class Wallet {
     }
 
     public getName() { return this.name }
-    public getBalance() { return this.balance }
+    public getBalance() { return (this.balance + "").slice(0, 9) }
     public getUrl() { return this.url }
     public getCoin() { return this.coin }
     public getAddress(val: string) {
@@ -26,4 +26,10 @@ export class Wallet {
             default: return this.address;
         }
     }
+
+    public setName(name: string) { this.name = name }
+    public setBalance(balance: number) { this.balance = balance }
+    public setUrl(url: string) { this.url = url }
+    public setCoin(coin: string) { this.coin = coin }
+    public setAddress(address: string) { this.address = address }
 }

@@ -12,12 +12,23 @@ $margin-right: 20px;
 $margin-left: 20px;
 
 
-.card {
+.card-ex {
     margin-top: 20px;
-    background-color: $black;
-    width: 490px;
+    width: 500px;
     height: 300px;
     border-radius: 20px;
+    background-color: $black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: $transition3s;
+}
+
+.card {
+    background-color: $black;
+    width: 475px;
+    height: 275px;
+    border-radius: 10px;
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
     display: grid;
     align-items: center;
@@ -96,17 +107,17 @@ $margin-left: 20px;
 }
 
 .BTC {
-    background: linear-gradient(25deg, $black, #703518, #A9591C, #845823);
+    background-image: linear-gradient(25deg, $black, #703518, #A9591C, #845823);
 }
 
 .ETH {
-    background: linear-gradient(25deg, $black, #18334a, #264FC1, #196E78)
+    background-image: linear-gradient(25deg, $black, #18334a, #264FC1, #196E78);
 }
 
 .USDT {
-    background: linear-gradient(25deg, $black, #1F2E40, #53897d, #80cbc1)
+    background-image: linear-gradient(25deg, $black, #1F2E40, #53897d, #80cbc1)
 }
 
 .DOGE {
-    background: linear-gradient(25deg, rgba($black, 0.99), #8f774a, #7c7143, #857840, #8f774a, rgba($black, 0.99))
+    background-image: linear-gradient(25deg, rgba($black, 0.99), #8f774a, #7c7143, #857840, #8f774a, rgba($black, 0.99))
 }

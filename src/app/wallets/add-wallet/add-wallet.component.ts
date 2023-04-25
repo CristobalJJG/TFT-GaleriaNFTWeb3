@@ -8,7 +8,9 @@ import { AddWalletModalComponent } from './add-wallet-modal/add-wallet-modal.com
 })
 export class AddWalletComponent {
 
-  constructor(protected modal: ModalService) { }
+  constructor(protected modal: ModalService) {
+    this.modal.openDialog(AddWalletModalComponent, "900px", "600px")
+  }
 
   openDialog() {
     this.modal.openDialog(AddWalletModalComponent, "750px", "500px")
