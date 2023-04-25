@@ -1,12 +1,12 @@
 <main class="flex">
     <div class="container">
-        <app-filter [data]="" (updateView)="updateView($event)"></app-filter>
-        <div class="nft-container">
-            <div *ngFor="let w of wallets">
-                <app-wallet-card [wallet]="w"></app-wallet-card>
+        <div *ngIf="this.auth.getCurrentUser">
+            <div class="nft-container">
+                <div *ngFor="let w of wallets">
+                    <app-wallet-card [wallet]="w"></app-wallet-card>
+                </div>
+                <app-add-wallet></app-add-wallet>
             </div>
-
-            <app-add-wallet></app-add-wallet>
         </div>
     </div>
 </main>

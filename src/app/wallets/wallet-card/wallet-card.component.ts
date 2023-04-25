@@ -8,5 +8,13 @@ import { Wallet } from 'src/app/class/wallet';
 })
 export class WalletCardComponent {
   @Input() wallet: Wallet | undefined;
+  showAdd: boolean = false;
 
+  goToURL() {
+    location.href = this.wallet!.getUrl();
+  }
+
+  showAddress() {
+    this.showAdd = !this.showAdd;
+  }
 }

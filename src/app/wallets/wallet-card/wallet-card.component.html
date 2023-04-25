@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card {{wallet?.getCoin()}}">
     <div [ngSwitch]="wallet?.getCoin()" class="coin">
         <span *ngSwitchCase="'ETH'">
             <img src="../../../assets/images/cripto-icons/eth.svg" width="150" height="150" alt="ETH Icon Image" />
@@ -13,23 +13,30 @@
             <img src="../../../assets/images/cripto-icons/doge.svg" width="150" height="150" alt="DOGE Icon Image" />
         </span>
     </div>
-    <div>
+    <div class="name money">
         <h2 id="name-{{wallet?.getName()}}" class="name">
             {{ wallet?.getName() }}
         </h2>
         <div class="money">
-            <h3>{{ wallet?.getBalance() }} <br />{{wallet?.getCoin() | uppercase}}</h3>
+            <h3>{{ wallet?.getBalance() }} {{wallet?.getCoin() | uppercase}}</h3>
         </div>
     </div>
-    <section class="data">
-        <label for="address-{{wallet?.getName()}}">Dirección:</label>
-        <span id="address-{{wallet?.getName()}}">
+    <div class="address">
+        <span id="address-{{wallet?.getName()}}" *ngIf="!showAdd" class="no-show">
             {{ wallet?.getAddress('hide') }}
         </span>
-    </section>
+        <span id="address-{{wallet?.getName()}}" *ngIf="showAdd" class="show">
+            {{ wallet?.getAddress('show') }}
+        </span>
+    </div>
+
+    <span (click)="showAddress()" class="eye">
+        <i class='bx bx-show' *ngIf="showAdd"></i>
+        <i class='bx bxs-show' *ngIf="!showAdd"></i>
+    </span>
 
     <div class="url">
-        <a href="{{wallet?.getUrl()}}" target="_blank">
+        <a (click)="goToURL()">
             <p>{{wallet?.getUrl()}}</p>
         </a>
     </div>
