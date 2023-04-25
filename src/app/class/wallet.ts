@@ -21,7 +21,7 @@ export class Wallet {
     public getCoin() { return this.coin }
     public getAddress(val: string) {
         switch (val) {
-            case 'hide': return this.address.slice(0, 6) + '...' + this.address.slice(-4);
+            case 'hide': return this.address.slice(0, 6) + '*'.repeat(10) + this.address.slice(-4);
             case 'show':
             default: return this.address;
         }

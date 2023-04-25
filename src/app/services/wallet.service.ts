@@ -1,49 +1,21 @@
-import { Injectable, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
-
-import Core from '@moralisweb3/common-core';
-import EvmApi from '@moralisweb3/evm-api';
-import Moralis from 'moralis';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import axios from "axios";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
-export class WalletService implements OnInit {
+export class WalletService {
+  core: any;
+  url: string = "";
 
-  constructor() { }
-
-  ngOnInit(): void {
-    this.startServer();
-  }
-
-  async startServer() {
-    const core = Core.create();
-    core.registerModules([EvmApi]);
-
-    core.start({
-      apiKey: environment.moralis
-    });
-
+  constructor(protected http: HttpClient) {
+    let s = document.location.href.split('/');
+    this.url = s[0] + "//" + s[2]
   }
 
   async getBalance(address: string) {
-    /* let nativeBalance, tokenBalances;
-    try {
-      [nativeBalance, tokenBalances] = await Promise.all([
-        Moralis.EvmApi.balance.getNativeBalance({
-          chain: EvmChain.ETHEREUM,
-          address: address
-        }),
-        Moralis.EvmApi.balance.getWalletTokenBalances({
-          chain: EvmChain.ETHEREUM,
-          address: address
-        })
-      ])
-    } catch (e) {
-      console.error(e);
-    }
-    console.log(nativeBalance);
-    console.log(tokenBalances);
- */
+    const { data } = await axios(`http://localhost:3000/api/balances`);
+    return data.nativeBalance;
   }
 }

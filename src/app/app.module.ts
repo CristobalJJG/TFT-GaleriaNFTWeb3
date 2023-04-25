@@ -24,7 +24,6 @@ import { AddWalletComponent } from './wallets/add-wallet/add-wallet.component';
 import { AddWalletModalComponent } from './wallets/add-wallet/add-wallet-modal/add-wallet-modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import Moralis from 'moralis/.';
 
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {

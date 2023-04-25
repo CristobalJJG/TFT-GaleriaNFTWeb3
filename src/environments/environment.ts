@@ -9,6 +9,5 @@ export const environment = {
         appId: "1:980694937057:web:9e4ce99c7314023934f6a0",
         measurementId: "G-0W49Y53751"
     },
-    alchemy: "0zvJqgY0_yEPKPrF18B0LrPsET8hCZMK",
-    moralis: "ieiEvMMnAQay3lMBQyE9fT05FHXyVcbcZr6H65SLXZaBc9H7iA5gg4US0I6iEiFd"
+    alchemy: "0zvJqgY0_yEPKPrF18B0LrPsET8hCZMK"
 };

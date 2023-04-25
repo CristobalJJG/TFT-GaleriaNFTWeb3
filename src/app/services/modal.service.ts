@@ -8,9 +8,10 @@ export class ModalService {
 
   constructor(protected dialog: MatDialog) { }
 
-  openDialog(component: any, data?: any) {
+  openDialog(component: any, heigh?: string, width?: string, data?: any) {
     this.dialog.open(component, {
-      data: data
+      height: heigh,
+      width: width
     });
   }
 }
