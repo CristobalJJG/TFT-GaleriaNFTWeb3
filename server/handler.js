@@ -8,15 +8,10 @@ const address = "0x63547a46CB3BbFD24adca2a13D1288F31645D0d6";
 const app = express();
 const port = 3000;
 
-const url_rama =
-  "https://tft-galeria-nft-web3-git-wallets-cristobaljjg.vercel.app";
-const url_local = "http://localhost:4200";
-const url_main = "https://tft-galeria-nft-web3.vercel.app";
-
 // allow access to Angular app domain
 app.use(
   cors({
-    origin: url_rama,
+    origin: "http://localhost:4200",
     credentials: true,
   })
 );
