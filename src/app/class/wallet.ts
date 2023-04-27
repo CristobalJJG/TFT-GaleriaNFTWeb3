@@ -5,8 +5,6 @@ export class Wallet {
     private coin: string;
     private url: string;
 
-
-
     constructor(name: string, address: string, balance: number, url: string, coin: string) {
         this.name = name;
         this.address = address;
@@ -32,4 +30,14 @@ export class Wallet {
     public setUrl(url: string) { this.url = url }
     public setCoin(coin: string) { this.coin = coin }
     public setAddress(address: string) { this.address = address }
+
+    public toMap() {
+        return {
+            name: this.name,
+            address: this.address,
+            balance: this.balance,
+            coin: this.coin,
+            url: this.url
+        }
+    }
 }

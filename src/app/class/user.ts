@@ -1,3 +1,5 @@
+import { Wallet } from "./wallet";
+
 export class User {
     create_date: any;
     last_login: any;
@@ -8,8 +10,6 @@ export class User {
     phone: string = "";
     username: string = "";
     wallets: [] = [];
-
-
 
     constructor(create_date: any, last_login: any, email: string,
         isAdmin: boolean, name: string, surname: string, phone: string,
@@ -35,6 +35,20 @@ export class User {
     public getUsername() { return this.username }
     public getWallets() { return this.wallets }
     public getNumberOfWallets() { return this.wallets.length }
+
+    public toJSON() {
+        return JSON.stringify({
+            create_date: this.create_date,
+            last_login: this.last_login,
+            email: this.email,
+            isAdmin: this.isAdmin,
+            name: this.name,
+            surname: this.surname,
+            phone: this.phone,
+            username: this.username,
+            wallets: this.wallets
+        })
+    }
 
     //set user elements
     public setCreateDate(create_date: any) { this.create_date = create_date }

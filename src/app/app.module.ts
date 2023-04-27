@@ -25,7 +25,6 @@ import { AddWalletModalComponent } from './wallets/add-wallet/add-wallet-modal/a
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 
-
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
 }
@@ -59,7 +58,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     }),
     FormsModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

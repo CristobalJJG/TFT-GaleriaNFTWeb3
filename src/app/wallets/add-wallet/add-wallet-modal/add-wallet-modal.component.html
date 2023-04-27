@@ -1,19 +1,66 @@
 <div class="modal">
-    <div>
+    <div class="card">
         <app-wallet-card [wallet]="future_wallet"></app-wallet-card>
     </div>
+    <section class="form">
+        <form (submit)="addWallet()" #form="ngForm">
+            <div class="content-select">
+                <select (change)="changeCoin($event)">
+                    <option value="" selected disabled>Criptomoneda</option>
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="USDT">Dólares Tether</option>
+                    <option value="DOGE">Doge Coin</option>
+                </select>
+            </div>
+            <!-- Nombre de la cartera -->
+            <div class="inputbox ib1">
+                <input type="text" placeholder=" " (keyup)="changeName($event)" id="inp-name" class="name" #name=ngModel
+                    ngModel name="name" required pattern="^[0-9a-zA-ZñÑáéíóúÁÉÍÓÚüÜ _'-.,]+$">
+                <label for="inp-name">Nombre de la cartera *</label>
+                <!-- Errores de nombre -->
+                <div *ngIf="(name.dirty || name.touched) && name.invalid" class="error-msg">
+                    <div *ngIf="name.errors?.['required']">
+                        Es obligatorio que pongas un nombre.
+                    </div>
+                    <div *ngIf="name.errors?.['pattern']">
+                        Solo puede contener letras, números y los caracteres _'-,.
+                    </div>
+                </div>
+                <!-- Fin errores nombre -->
+            </div>
+            <!-- Dirección de la cartera -->
+            <div class="inputbox ib2">
+                <input type="text" placeholder=" " (keyup)="changeAddress($event)" id="inp-name" class="name">
+                <label for="inp-name">Dirección de la cartera *</label>
+                <!-- Errores de dirección -->
+                <div *ngIf="(name.dirty || name.touched) && name.invalid" class="error-msg">
+                    <div *ngIf="name.errors?.['required']">
+                        Es obligatorio que pongas un nombre.
+                    </div>
+                    <div *ngIf="name.errors?.['pattern']">
+                        Solo puede contener letras, números y los caracteres _'-,.
+                    </div>
+                </div>
+                <!-- Fin errores dirección -->
+            </div>
+            <!-- URL de la cartera -->
+            <div class="inputbox ib3">
+                <input type="text" placeholder=" " (keyup)="changeUrl($event)" id="inp-name" class="name">
+                <label for="inp-name">Enlace a la visualización de la cartera</label>
+            </div>
 
-    <fieldset>
-        <legend>Añadir una cartera: </legend>
-        <form action="addWallet()">
-            <select (change)="changeCoin($event)">
-                <option value="BTC">Bitcoin</option>
-                <option value="ETH">Ethereum</option>
-                <option value="USDT">Dólares Tether</option>
-                <option value="DOGE">Doge Coin</option>
-            </select>
+            <!-- <button class="fly" [disabled]="form.invalid"> -->
+            <button class="fly">
+                <div class="wrapper">
+                    <svg height="24" width="24" viewBox="0 0 24 24" class="short">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 
+                        19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <span>Añadir</span>
+            </button>
         </form>
-    </fieldset>
-
-
+    </section>
 </div>

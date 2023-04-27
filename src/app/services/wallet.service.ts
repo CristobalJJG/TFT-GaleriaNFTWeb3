@@ -15,7 +15,12 @@ export class WalletService {
   }
 
   async getBalance(address: string) {
-    const { data } = await axios(`http://localhost:3000/api/balances`);
+    /* const { data } = await axios.get('http://localhost:3000/balances', {
+      params: { address: address }
+    }); */
+    const { data } = await axios.get('https://tft-galeria-web3-backend.vercel.app/balances', {
+      params: { address: address }
+    });
     return data.nativeBalance;
   }
 }

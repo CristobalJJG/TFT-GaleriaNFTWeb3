@@ -2,24 +2,27 @@
     <div class="card">
         <div [ngSwitch]="wallet?.getCoin()" class="coin">
             <span *ngSwitchCase="'ETH'">
-                <img src="../../../assets/images/cripto-icons/eth.svg" width="150" height="150" alt="ETH Icon Image" />
+                <img src="../../../assets/images/cripto-icons/eth.svg" width="125" height="125" alt="ETH Icon Image" />
             </span>
             <span *ngSwitchCase="'BTC'">
-                <img src="../../../assets/images/cripto-icons/btc.svg" width="150" height="150" alt="BTC Icon Image" />
+                <img src="../../../assets/images/cripto-icons/btc.svg" width="125" height="125" alt="BTC Icon Image" />
             </span>
             <span *ngSwitchCase="'USDT'">
-                <img src="../../../assets/images/cripto-icons/usdt.svg" width="150" height="150"
+                <img src="../../../assets/images/cripto-icons/usdt.svg" width="125" height="125"
                     alt="USDT Icon Image" />
             </span>
             <span *ngSwitchCase="'DOGE'">
-                <img src="../../../assets/images/cripto-icons/doge.svg" width="150" height="150"
+                <img src="../../../assets/images/cripto-icons/doge.svg" width="125" height="125"
                     alt="DOGE Icon Image" />
             </span>
         </div>
-        <div class="name money">
-            <h2 id="name-{{wallet?.getName()}}" class="name">
-                {{ wallet?.getName() }}
-            </h2>
+        <div class="name-money">
+            <div>
+                <h2 id="name-{{wallet?.getName()}}" class="name">
+                    {{ wallet?.getName() }}
+                </h2>
+            </div>
+
             <div class="money">
                 <h3>{{ wallet?.getBalance() }} {{wallet?.getCoin() | uppercase}}</h3>
             </div>

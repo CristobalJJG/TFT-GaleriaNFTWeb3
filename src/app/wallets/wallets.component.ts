@@ -19,6 +19,8 @@ export class WalletsComponent implements OnInit {
     for (let w of v) {
       this.wallet.getBalance(w['address'])
         .then((data: any) => {
+          console.log(data);
+
           this.wallets.push(new Wallet(
             w['name'],
             w['address'],
@@ -28,9 +30,5 @@ export class WalletsComponent implements OnInit {
           ));
         })
     }
-  }
-
-  updateView(e: any) {
-
   }
 }

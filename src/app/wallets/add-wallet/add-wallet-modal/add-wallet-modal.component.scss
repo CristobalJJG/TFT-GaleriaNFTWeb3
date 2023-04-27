@@ -5,13 +5,103 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
+
+    .card {
+        margin: 40px 0 50px;
+    }
 }
 
-fieldset {
-    width: 90%;
+.form {
+    width: 100%;
+}
 
+form {
+    width: 90%;
+    display: grid;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin: 5%;
+    justify-items: center;
+    grid-template:
+        "s n n n" // s - select / n- name
+        "a a a a" // a - address
+        "u u u u" // u - url 
+        "b b b b" // b - button
+}
+
+select,
+input {
+    border: solid 3px $white;
+    border-radius: 10px;
+    background: none;
+    padding: 10px;
+    font-size: 16px;
+    color: $white;
+    width: 100%;
+    transition: $transition3s;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: $light-purple;
+}
+
+.content-select {
+    grid-area: s;
+    width: 100%;
+
+    select option {
+        color: $white;
+        background-color: $black;
+    }
+}
+
+.inputbox {
+    display: grid;
+    position: relative;
+    width: 100%;
+
+    &.ib1 {
+        grid-area: n;
+    }
+
+    &.ib2 {
+        grid-area: a;
+    }
+
+    &.ib3 {
+        grid-area: u;
+    }
+
+    label {
+        position: absolute;
+        text-align: center;
+        pointer-events: none;
+        left: 20px;
+        top: 12.5px;
+        color: $white;
+        transition: $transition3s;
+    }
+
+    input:focus~label,
+    input:not(:placeholder-shown)~label {
+        transform: translate(-15%, -85%) scale(0.8);
+        background-color: $black;
+        padding: 1px;
+        color: $light-purple;
+    }
+
+    input:not(:focus)~label {
+        color: $white;
+    }
+}
+
+button {
+    grid-area: b;
+    @include filled-button(18px, $purple, $white, 5px, 10px, 13rem);
 }

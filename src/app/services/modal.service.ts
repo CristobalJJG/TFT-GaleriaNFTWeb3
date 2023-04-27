@@ -14,4 +14,8 @@ export class ModalService {
       width: width
     });
   }
+
+  closeDialog() {
+    this.dialog.closeAll();
+  }
 }
