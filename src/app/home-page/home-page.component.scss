@@ -7,9 +7,7 @@ $font2: 20px;
     display: grid;
     align-items: baseline;
     justify-items: center;
-    /* align-content: space-evenly; */
     width: 100%;
-    height: calc(100vh - 75px); //100vh - 75px de la cabecera
 }
 
 .logo {
@@ -101,8 +99,7 @@ h1 {
 @media (max-width: 768px) {
 
     .container {
-        height: calc(100% - 100px); //100vh - 100px de la cabecera
-
+        height: calc(100% - 200px); //100vh - 100px de la cabecera
     }
 
     h1 {
@@ -111,18 +108,19 @@ h1 {
     }
 
     .desc1 {
-        margin-top: -64px;
         width: 85%;
+        margin-top: 24px;
         font-size: 20px;
     }
 
     .desc2 {
         width: 80%;
         font-size: 16px;
+        margin-top: 24px;
 
         .btn1,
         .btn2 {
-            margin-top: 24px;
+            margin-top: 12px;
             display: block;
         }
     }
