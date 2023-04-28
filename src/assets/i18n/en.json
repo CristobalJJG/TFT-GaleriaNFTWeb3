@@ -1,5 +1,5 @@
 {
-  "header":{
+  "header": {
     "gallery": "Gallery",
     "wallet": "Wallets",
     "languages": "Languages",
@@ -7,7 +7,7 @@
     "register": "Register",
     "logout": "Log Out"
   },
-  "landing-page":{
+  "landing-page": {
     "title": "NFT's Gallery",
     "description1": {
       "first": "This web page is a",
@@ -19,33 +19,39 @@
       "end": "and all that it enlails."
     },
     "description2": "Delve into Web 3.0, view NFT's and save your different portfolios within the page",
-    "btn1":"Sign Up Free!",
-    "btn2":"Enter with your account"
+    "btn1": "Sign Up Free!",
+    "btn2": "Enter with your account"
   },
-  "access":{
-    "forms":{
-      "fullname":"Fullname",
-      "mail":"E-mail",
-      "password":"Password",
-      "rpassword":"Repeat Password"
+  "access": {
+    "forms": {
+      "fullname": "Fullname",
+      "mail": "E-mail",
+      "password": "Password",
+      "rpassword": "Repeat Password"
     },
-    "login":{
+    "login": {
       "title": "Log In",
       "description": "Access with your account to the web 3.0",
       "btn": "Log In!",
-      "goTo":"Don't have an account yet?",
-      "register":"Go to Register"
+      "goTo": "Don't have an account yet?",
+      "register": "Go to Register"
     },
-    "register":{
+    "register": {
       "title": "Register",
       "description": "Create an account in order to access with your account to the web 3.0",
       "btn": "Send!",
-      "goTo":"Already have an account?",
-      "login":"Go to Login"
+      "goTo": "Already have an account?",
+      "login": "Go to Login"
     },
-    "desc2": "Enter with your Social Networks!"
+    "google": "Login with Google"
   },
-  "404":{
+  "gallery": {
+    "filter": "Filter"
+  },
+  "wallets": {
+    "add-card": "Want to add a new wallet?"
+  },
+  "404": {
     "sorry": "Sorry, we can’t seem to find what you’re looking for.",
     "options": "You've landed on a URL that doesn't seem to exist. Here's some options:",
     "opt1": {

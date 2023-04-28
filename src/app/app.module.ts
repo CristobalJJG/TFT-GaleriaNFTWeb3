@@ -16,8 +16,14 @@ import { LoginComponent } from './home-page/login/login.component';
 import { RegisterComponent } from './home-page/register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GalleryComponent } from './gallery/gallery.component';
-
-
+import { NftCardComponent } from './gallery/nft-card/nft-card.component';
+import { WalletsComponent } from './wallets/wallets.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { WalletCardComponent } from './wallets/wallet-card/wallet-card.component';
+import { AddWalletComponent } from './wallets/add-wallet/add-wallet.component';
+import { AddWalletModalComponent } from './wallets/add-wallet/add-wallet-modal/add-wallet-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -31,7 +37,13 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     LoginComponent,
     RegisterComponent,
     NotFoundComponent,
-    GalleryComponent
+    GalleryComponent,
+    NftCardComponent,
+    WalletsComponent,
+    FilterComponent,
+    WalletCardComponent,
+    AddWalletComponent,
+    AddWalletModalComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +57,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       }
     }),
     FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

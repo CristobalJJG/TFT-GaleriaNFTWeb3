@@ -5,8 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class ErrorService {
 
-  constructor() { }
-
   translateError(e: string): string{
     switch(localStorage.getItem('language') || 'es'){
       case 'es': return this.searchEs(e);

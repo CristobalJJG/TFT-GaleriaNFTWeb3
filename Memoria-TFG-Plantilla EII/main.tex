@@ -1,0 +1,126 @@
+\documentclass[oneside,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{standalone}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage[figurename=Ilustración]{caption}
+\usepackage[numbers]{natbib}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{epigraph}
+\usepackage{lipsum} % Texto de relleno en plantilla
+
+\usepackage{comment} %Uso de comentarios multilínea
+
+%\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{color}\usepackage{graphicx,xcolor}
+
+\renewcommand{\lstlistingname}{Algoritmo}
+\renewcommand{\lstlistlistingname}{Índice de~\lstlistingname s}
+\lstset{
+        basicstyle=\fontsize{7}{11}\ttfamily,
+        language=Java,
+        captionpos=b,
+}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{3}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+\urlstyle{same}
+\title{Galería de NFT's en la Web3}
+\author{Cristóbal José Jiménez Gómez}
+\date{Curso 2022 - 2023}
+\renewcommand{\contentsname}{Contenido}
+\renewcommand{\figurename}{Ilustración}
+\usepackage{pifont}
+\renewcommand\labelitemi{\ding{52}}
+
+\begin{document}
+\input{Portada.tex}
+
+%\input{TFT04C.tex}
+
+\newpage
+\pagenumbering{arabic}
+{\Large{\textbf{Agradecimientos}}}
+\input{Agradecimientos.tex}
+
+\clearpage
+\input{Resumen.tex}
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+
+\clearpage
+\pagenumbering{arabic}
+
+\chapter{Introducción}
+\input{Introduccion.tex}
+
+%
+\chapter{Estado actual y objetivos iniciales}
+\input{EstadoDelArte.tex}
+CAPÍTULO OBLIGATORIO
+
+Descripción del estado actual en la temática concreta del trabajo y desglose de los objetivos inicialmente previstos en el TFT01.
+
+\chapter{Competencias específicas y aportaciones del trabajo}
+%\input{Competencias.tex}
+CAPÍTULO OBLIGATORIO
+
+Indicar, sólo para las competencias específicas relacionadas de forma más directa con el trabajo desarrollado, cómo se han cubierto con este TFT.
+
+Justificar qué es lo que este TFT aporta a nuestro entorno socio-económico, técnico o científico.
+
+\chapter{Desarrollo}
+%\input{Desarrollo.tex}
+CAPÍTULO OBLIGATORIO
+
+Metodología aplicada y desarrollo del trabajo en sus distintas fases, decisiones de diseño, herramientas empleadas.
+
+Si el trabajo incluye software desarrollado, deberán seleccionarse las secciones más relevantes del mismo y comentarlas en la memoria.
+
+Ajuste a la planificación inicialmente prevista.
+
+Modificación en los objetivos planteados.
+
+\chapter{Conclusiones y trabajo futuro}
+%\input{Conclusiones.tex}
+CAPÍTULO OBLIGATORIO
+
+Resultados,  grado  de  consecución  de  los  objetivos,  posibles extensiones
+
+\chapter{OTROS}
+
+El documento debe terminar con las referencias bibliográficas (SECCIÓN OBLIGATORIA). Después pueden incluirse anexos 
+
+CAPÍTULOS OPCIONALES
+
+Dependiendo del tipo de trabajo, se podrían incluir capítulos adicionales como los siguientes:
+
+\begin{description}
+\item{REQUISITOS}
+\item{DISEÑO}
+\item{MANUAL  DE  USUARIO  Y  SOFTWARE}  deberán  incluirse  obligatoriamente  en  la  memoria  los extractos más relevantes   del código desarrollado. Siempre que sea posible, deberá   proporcionarse acceso a un repositorio software.
+\item{NORMATIVA Y LEGISLACIÓN} incluir la legislación vigente que afecte al TFT (ley de protección de datos, leyes sobre seguridad, ...)
+\item{ASPECTOS ECONÓMICOS Y TEMPORALES}
+\end{description}
+
+
+
+\bibliography{ref}
+\bibliographystyle{apalike}
+
+\end{document}

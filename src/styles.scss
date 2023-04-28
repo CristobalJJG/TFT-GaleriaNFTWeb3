@@ -1,3 +1,12 @@
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+/* Include the common styles for Angular Material. We include this here so that you only
+have to load a single css file for Angular Material in your app.
+Be sure that you only ever include this mixin once! */
+@include mat.core();
+
+
 /* You can add global styles to this file, and also import other style files */
 @import "./sass/buttons";
 @import "./sass/colors";
@@ -5,11 +14,12 @@
 @import "./sass/mixin";
 @import "./sass/variable";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Carlito&family=Poppins:ital,wght@1,200&display=swap');
+
+* {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Carlito', sans-serif;
     color: $white;
 }
 
@@ -18,8 +28,33 @@
     overflow: hidden;
     width: 100%;
     height: calc(100vh - 75px); //100vh - 75px de la cabecera
-    background: rgb(34,33,19);
-    background: radial-gradient( $dark-gray 0%, $black 78%);
+    background: rgb(34, 33, 19);
+    background: radial-gradient($dark-gray 0%, $black 78%);
+}
+
+
+/* Scroll bar */
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+    background-color: rgba($gray, 0.5);
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: $black;
+    transition: $transition3s;
+}
+
+/* Handle on hover */
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba($black, .75);
 }
 
 
@@ -34,7 +69,7 @@
 
 /* Menos de 768px */
 @media (max-width: 768px) {
-    .flex{
+    .flex {
         height: calc(100vh - 75px);
     }
 }
@@ -48,3 +83,12 @@
 /* Menos de 500px */
 /* @media (max-width: 350px) {
 } */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

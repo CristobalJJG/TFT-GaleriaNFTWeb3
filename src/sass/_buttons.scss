@@ -51,8 +51,11 @@ $long-btn: 500px;
     }
 
     &:hover {
-        svg {
-            transform: translateY(2.5px) translateX(2.75rem) rotate(45deg) scale(1.4);
+        svg.long {
+            transform: translateY(0) translateX(5rem) scale(1.2);
+        }
+        svg.short {
+            transform: translateY(2.5px) translateX(2.75rem) rotate(45deg) scale(1.5);
         }
 
         .wrapper {
@@ -60,7 +63,7 @@ $long-btn: 500px;
         }
 
         span {
-            transform: translateX(10rem);
+            transform: translateX(15rem);
         }
     }
 

@@ -3,32 +3,44 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --open",
+    "start": "ng serve --open | node ./server/handler.js",
+    "server": "node ./server/handler.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "sonar": "sonar-scanner"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
+    "@angular/cdk": "^15.2.8",
     "@angular/common": "^15.2.0",
     "@angular/compiler": "^15.2.0",
     "@angular/core": "^15.2.0",
     "@angular/fire": "^7.5.0",
     "@angular/forms": "^15.2.0",
+    "@angular/material": "^15.2.8",
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@moralisweb3/common-core": "^2.18.4",
+    "@moralisweb3/common-evm-utils": "^2.18.4",
+    "@moralisweb3/evm-api": "^2.18.4",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "@vercel/node": "^2.10.1",
+    "alchemy-sdk": "^2.8.0",
+    "axios": "^1.3.6",
+    "boxicons": "^2.1.4",
     "firebase": "^9.19.1",
+    "moralis": "^2.18.4",
     "rxjs": "~7.8.0",
+    "sonar-scanner": "^3.1.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.2.4",
+    "@angular-devkit/build-angular": "^15.2.6",
     "@angular/cli": "~15.2.4",
     "@angular/compiler-cli": "^15.2.0",
     "@types/jasmine": "~4.3.0",
@@ -38,6 +50,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.9.4"
+    "typescript": "~4.9.4",
+    "url-loader": "^4.1.1"
   }
 }

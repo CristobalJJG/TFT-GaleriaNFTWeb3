@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Estado actual y objetivos iniciales}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Competencias específicas y aportaciones del trabajo}{3}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Desarrollo}{4}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones y trabajo futuro}{5}{chapter.5}%
+\contentsline {chapter}{\numberline {6}OTROS}{6}{chapter.6}%

@@ -23,11 +23,11 @@
     "btn2": "Inicia sesión"
   },
   "access": {
-    "forms":{
-      "fullname":"Nombre completo",
-      "mail":"Correo Electrónico",
-      "password":"Contraseña",
-      "rpassword":"Repite la contraseña"
+    "forms": {
+      "fullname": "Nombre completo",
+      "mail": "Correo Electrónico",
+      "password": "Contraseña",
+      "rpassword": "Repite la contraseña"
     },
     "login": {
       "title": "Iniciar Sesión",
@@ -43,9 +43,15 @@
       "goTo": "¿Ya tienes cuenta?",
       "login": "Resgístrate"
     },
-    "desc2": "¡Entra con tus redes sociales!"
+    "google": "Entra con Google"
   },
-  "404":{
+  "gallery": {
+    "filter": "Filtros"
+  },
+  "wallets": {
+    "add-card": "¿Quieres añadir una nueva cartera?"
+  },
+  "404": {
     "sorry": "Lo sentimos, no hemos encontrado la página que está buscando.",
     "options": "Has llegado a una URL que no existe. Te dejamos algunas opciones: ",
     "opt1": {
