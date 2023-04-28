@@ -126,3 +126,30 @@ $margin-left: 20px;
 .DOGE {
     background-image: linear-gradient(25deg, rgba($black, 0.99), #8f774a, #7c7143, #857840, #8f774a, rgba($black, 0.99))
 }
+
+/* Menos de 1024px */
+@media (max-width: 1024px) {}
+
+/* Menos de 768px */
+@media (max-width: 768px) {
+    .card-ex {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card {
+        width: 92%;
+        height: 230px;
+    }
+
+    .coin span img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* Menos de 500px */
+@media (max-width: 500px) {}
+
+/* Menos de 500px */
+@media (max-width: 350px) {}

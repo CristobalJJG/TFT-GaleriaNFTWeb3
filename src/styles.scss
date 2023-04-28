@@ -89,6 +89,7 @@ Be sure that you only ever include this mixin once! */
 html,
 body {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
