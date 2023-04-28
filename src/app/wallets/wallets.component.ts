@@ -6,7 +6,7 @@ import { AuthService } from '../services/auth-service.service';
 @Component({
   selector: 'app-wallets',
   templateUrl: './wallets.component.html',
-  styleUrls: ['./wallets.component.scss', '../gallery/gallery.component.scss']
+  styleUrls: ['../gallery/gallery.component.scss', './wallets.component.scss']
 })
 export class WalletsComponent implements OnInit {
   wallets: Wallet[] = [];
