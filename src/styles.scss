@@ -21,15 +21,18 @@ Be sure that you only ever include this mixin once! */
     margin: 0;
     font-family: 'Poppins', 'Carlito', sans-serif;
     color: $white;
+
 }
 
 .flex {
     display: flex;
-    overflow: hidden;
     width: 100%;
-    height: calc(100vh - 75px); //100vh - 75px de la cabecera
+    height: calc(100% - 75px); //100vh - 75px de la cabecera
     background: rgb(34, 33, 19);
     background: radial-gradient($dark-gray 0%, $black 78%);
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 

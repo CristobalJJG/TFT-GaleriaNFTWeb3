@@ -20,7 +20,7 @@ nav {
     display: none;
 }
 
-.register-btn:hover{
+.register-btn:hover {
     background-color: $light-purple;
 }
 
@@ -28,7 +28,7 @@ nav {
     position: relative;
     display: block;
 
-    &.profile {
+    &.p {
         cursor: pointer;
 
         width: 200px;
@@ -78,7 +78,7 @@ nav {
         display: block;
     }
 
-    .short{
+    .short {
         display: none;
     }
 }
@@ -143,11 +143,12 @@ nav {
         margin: 0 15px;
     }
 
-    .head span, .opt .long {
+    .head span,
+    .opt .long {
         display: none;
     }
 
-    .opt .short{
+    .opt .short {
         display: block;
     }
 
@@ -159,11 +160,28 @@ nav {
 
 /* Menos de 768px */
 @media (max-width: 768px) {
-    .buttons{
-        width: 250px;
+    .structure {
+        height: 100px;
+        display: grid;
+        grid-template:
+            "l l l l p p"
+            "b b b b b b";
+        justify-content: center;
+        justify-items: center;
     }
-    .head {
-        margin: 0 10px;
+
+    .logo {
+        margin-left: 20px;
+        grid-area: l;
+    }
+
+    .right {
+        grid-area: p;
+        margin-right: 20px;
+    }
+
+    .buttons {
+        grid-area: b;
     }
 
     .icon {
@@ -177,7 +195,7 @@ nav {
 
 /* Menos de 500px */
 @media (max-width: 500px) {
-    .buttons{
+    .buttons {
         width: 200px;
     }
 }
