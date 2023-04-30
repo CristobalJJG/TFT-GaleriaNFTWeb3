@@ -24,14 +24,6 @@
 \usepackage{geometry}
 \usepackage{color}\usepackage{graphicx,xcolor}
 
-\renewcommand{\lstlistingname}{Algoritmo}
-\renewcommand{\lstlistlistingname}{Índice de~\lstlistingname s}
-\lstset{
-        basicstyle=\fontsize{7}{11}\ttfamily,
-        language=Java,
-        captionpos=b,
-}
-
 \usepackage{titlesec}
 \setcounter{secnumdepth}{3}
 \titleformat{\chapter}[display]
@@ -46,6 +38,9 @@
 \usepackage{pifont}
 \renewcommand\labelitemi{\ding{52}}
 
+\usepackage{natbib}
+\bibliographystyle{unsrtnat}
+
 \begin{document}
 \input{Portada.tex}
 
@@ -59,24 +54,19 @@
 \clearpage
 \input{Resumen.tex}
 \tableofcontents
-\listoffigures
-\listoftables
-\lstlistoflistings
+%\listoffigures
+%\listoftables
 
 \clearpage
 \pagenumbering{arabic}
 
+%----Introducción----%
+%--Motivación/Objetivos/Estructura de memoria--%
 \chapter{Introducción}
-\input{Introduccion.tex}
+\input{./1.-Introduccion/Introduccion.tex}
 
-%
-\chapter{Estado actual y objetivos iniciales}
-\input{EstadoDelArte.tex}
-CAPÍTULO OBLIGATORIO
-
-Descripción del estado actual en la temática concreta del trabajo y desglose de los objetivos inicialmente previstos en el TFT01.
-
-\chapter{Competencias específicas y aportaciones del trabajo}
+%----Competencias----%
+\chapter{Competencias específicas}
 %\input{Competencias.tex}
 CAPÍTULO OBLIGATORIO
 
@@ -84,43 +74,43 @@ Indicar, sólo para las competencias específicas relacionadas de forma más dir
 
 Justificar qué es lo que este TFT aporta a nuestro entorno socio-económico, técnico o científico.
 
-\chapter{Desarrollo}
-%\input{Desarrollo.tex}
+
+%----Estado actual y Objetivos iniciales----%
+%--Objetivos iniciales/Estado actual--%
+\chapter{Objetivos iniciales y estado actual}
+\input{EstadoDelArte.tex}
 CAPÍTULO OBLIGATORIO
 
-Metodología aplicada y desarrollo del trabajo en sus distintas fases, decisiones de diseño, herramientas empleadas.
+Descripción del estado actual en la temática concreta del trabajo y desglose de los objetivos inicialmente previstos en el TFT01.
 
-Si el trabajo incluye software desarrollado, deberán seleccionarse las secciones más relevantes del mismo y comentarlas en la memoria.
+%----Desarrollo como concepto----%
+\begin{comment}
+        CAPÍTULO OBLIGATORIO
+        Metodología aplicada y desarrollo del trabajo en sus distintas fases, decisiones de diseño, herramientas empleadas.
+        Si el trabajo incluye software desarrollado, deberán seleccionarse las secciones más relevantes del mismo y comentarlas en la memoria.
+        Ajuste a la planificación inicialmente prevista.
+        Modificación en los objetivos planteados.
+\end{comment}
+\chapter{Marco teórico}
+\chapter{Estado del arte}
+\chapter{Recursos y tecnologías}
+\chapter{Metodologías}
+\chapter{Análisis y Diseño}
+\chapter{Desarrollo}
+%----Fin del Desarrollo----%
 
-Ajuste a la planificación inicialmente prevista.
+%----Evaluación y resultados----%
+\chapter{Evaluación y resultados}
 
-Modificación en los objetivos planteados.
+%----Conclusiones y trabajo futuro----%
 
 \chapter{Conclusiones y trabajo futuro}
 %\input{Conclusiones.tex}
 CAPÍTULO OBLIGATORIO
 
 Resultados,  grado  de  consecución  de  los  objetivos,  posibles extensiones
+\newpage
 
-\chapter{OTROS}
-
-El documento debe terminar con las referencias bibliográficas (SECCIÓN OBLIGATORIA). Después pueden incluirse anexos 
-
-CAPÍTULOS OPCIONALES
-
-Dependiendo del tipo de trabajo, se podrían incluir capítulos adicionales como los siguientes:
-
-\begin{description}
-\item{REQUISITOS}
-\item{DISEÑO}
-\item{MANUAL  DE  USUARIO  Y  SOFTWARE}  deberán  incluirse  obligatoriamente  en  la  memoria  los extractos más relevantes   del código desarrollado. Siempre que sea posible, deberá   proporcionarse acceso a un repositorio software.
-\item{NORMATIVA Y LEGISLACIÓN} incluir la legislación vigente que afecte al TFT (ley de protección de datos, leyes sobre seguridad, ...)
-\item{ASPECTOS ECONÓMICOS Y TEMPORALES}
-\end{description}
-
-
-
-\bibliography{ref}
-\bibliographystyle{apalike}
+\bibliography{bib.bib}
 
 \end{document}

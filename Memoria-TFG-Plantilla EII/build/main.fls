@@ -1,7 +1,7 @@
-PWD d:\Repositorios\tft\Memoria-TFG-Plantilla EII
+PWD d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII
 INPUT C:\Users\crist\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\main.tex
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.log
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\main.tex
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.log
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
@@ -918,10 +918,6 @@ INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titlesec.sty
@@ -954,15 +950,16 @@ INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\natbib\natbib.sty
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.aux
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.aux
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.aux
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -982,18 +979,18 @@ INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.pdf
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.pdf
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
 INPUT .\Portada.tex
 INPUT Portada.tex
 INPUT .\Portada.tex
@@ -1021,38 +1018,51 @@ INPUT .\Resumen.tex
 INPUT Resumen.tex
 INPUT .\Resumen.tex
 INPUT Resumen.tex
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.toc
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.toc
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.toc
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.toc
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lof
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lof
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lof
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lof
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lot
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lot
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lot
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lot
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lol
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lol
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lol
-OUTPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.lol
-INPUT .\Introduccion.tex
-INPUT Introduccion.tex
-INPUT .\Introduccion.tex
-INPUT Introduccion.tex
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmex10.tfm
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
+INPUT .\1.-Introduccion\Introduccion.tex
+INPUT 1.-Introduccion\Introduccion.tex
+INPUT .\1.-Introduccion\Introduccion.tex
+INPUT 1.-Introduccion\Introduccion.tex
+INPUT .\1.-Introduccion\Motivacion.tex
+INPUT 1.-Introduccion\Motivacion.tex
+INPUT .\1.-Introduccion\Motivacion.tex
+INPUT 1.-Introduccion\Motivacion.tex
 INPUT .\EstadoDelArte.tex
 INPUT EstadoDelArte.tex
 INPUT .\EstadoDelArte.tex
 INPUT EstadoDelArte.tex
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.aux
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\tft\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
