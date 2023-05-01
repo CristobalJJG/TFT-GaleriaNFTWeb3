@@ -1,14 +1,35 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Blasco()]{whatIsWeb3}
-Lucía Blasco.
-\newblock Qué es la web3 y cómo podría transformar internet.
-\newblock \url{https://www.bbc.com/mundo/noticias-59746140}.
-\newblock [Online; accessed 30/04/2023].
+\bibitem[IBM()]{ibmWeb3}
+IBM.
+\newblock ¿tecnología blockchain?
+\newblock \url{https://www.ibm.com/es-es/topics/blockchain}.
+\newblock [Online; accedido a 30/04/2023].
+
+\bibitem[Mundo(2021)]{bbcNFTs}
+BBC~News Mundo.
+\newblock Qué son los nft y por qué están valorados en millones de dólares.
+\newblock \url{https://www.bbc.com/mundo/noticias-56502251}, 03 2021.
+\newblock [Online; accedido a 1/04/2023].
+
+\bibitem[Moralis(2022)]{moralisWallets}
+Moralis.
+\newblock What is a web3 wallet? – web3 wallets explained.
+\newblock
+  \url{https://moralis.io/what-is-a-web3-wallet-web3-wallets-explained/?ref=morioh.com&utm_source=morioh.com},
+  1 2022.
+\newblock [Online; accedido a 1/04/2023].
+
+\bibitem[Bootcamp()]{bootcampFramework}
+Open Bootcamp.
+\newblock ¿qué es un framework y qué tipos hay?
+\newblock
+  \url{https://open-bootcamp.com/aprender-programar/que-es-un-framework}.
+\newblock [Online; accedido a 1/04/2023].
 
 \end{thebibliography}
