@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  1 MAY 2023 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  2 MAY 2023 19:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -476,12 +476,21 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-))
+)) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen190
+\TX@old@table=\dimen191
+\TX@old@col=\dimen192
+\TX@target=\dimen193
+\TX@delta=\dimen194
+\TX@cols=\count305
+\TX@ftn=\toks28
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 46.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 55.
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
@@ -490,37 +499,37 @@ LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen190
+\scratchcounter=\count306
+\scratchdimen=\dimen195
 \scratchbox=\box62
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen191
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks29
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen196
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks30
 ) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -561,13 +570,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 55.
 (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -576,9 +585,9 @@ Package newfloat Info: `float' package detected.
 
 Couldn't patch \ttl@straight@ii
 Couldn't patch \ttl@straight@ii
-\c@lstlisting=\count311
+\c@lstlisting=\count312
 (Portada.tex
-<Ilustraciones/LogoEII.jpg, id=55, 288.3573pt x 45.771pt>
+<Ilustraciones/LogoEII.jpg, id=71, 288.3573pt x 45.771pt>
 File: Ilustraciones/LogoEII.jpg Graphic file (type jpg)
 <use Ilustraciones/LogoEII.jpg>
 Package pdftex.def Info: Ilustraciones/LogoEII.jpg  used on input line 6.
@@ -590,7 +599,7 @@ Package pdftex.def Info: Ilustraciones/LogoEII.jpg  used on input line 6.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \clearpage
+l.65 \clearpage
                 [1] (Resumen.tex) [2
 
 ] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
@@ -620,9 +629,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [3
 
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [4
+
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+ [5
+
 ]
 Cap\'{\i }tulo 1.
-Package newfloat Info: Setting Plan B file extension to `lof'... on input line 67.
+Package newfloat Info: Setting Plan B file extension to `lof'... on input line 78.
 (1.-Introduccion/Introduccion.tex (1.-Introduccion/1.1-Motivacion.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -646,75 +673,149 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
                    \relax 
 l.41 \-
        \hspace{1cm} El décimo capítulo se incluye las conclusiones que se ... [2]))
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 \newpage
+l.80 \newpage
               [3]
 Cap\'{\i }tulo 2.
-[4
+(2.-Competencias/2.1-Competencias.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--19
+
+ []
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84 \newpage
+              [4
 
 ]
-Cap\'{\i }tulo 3.
-(EstadoDelArte.tex) [5
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
 
-] Excluding 'comment' comment.
-Cap\'{\i }tulo 4.
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84 \newpage
+              [5]
+Cap\'{\i }tulo 3.
+(3.-Marco-Teorico/marco-teorico.tex (3.-Marco-Teorico/3.1-web3.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
 [6
 
-]
-Cap\'{\i }tulo 5.
-[7
+] (3.-Marco-Teorico/3.2-criptomonedas.tex) (3.-Marco-Teorico/3.3-nft.tex
+<./Ilustraciones/opensea-nft.png, id=169, 1043.39813pt x 520.94624pt>
+File: ./Ilustraciones/opensea-nft.png Graphic file (type png)
+<use ./Ilustraciones/opensea-nft.png>
+Package pdftex.def Info: ./Ilustraciones/opensea-nft.png  used on input line 24.
+(pdftex.def)             Requested size: 260.84889pt x 130.23624pt.
 
-]
-Cap\'{\i }tulo 6.
-[8
 
-]
-Cap\'{\i }tulo 7.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (3.-Marco-Teorico/3.4-criptowallet.tex))
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [7]
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [8 <./Ilustraciones/opensea-nft.png>] Excluding 'comment' comment.
+Cap\'{\i }tulo 4.
 [9
 
 ]
-Cap\'{\i }tulo 8.
+Cap\'{\i }tulo 5.
 [10
 
 ]
-Cap\'{\i }tulo 9.
+Cap\'{\i }tulo 6.
 [11
 
 ]
-Cap\'{\i }tulo 10.
+Cap\'{\i }tulo 7.
 [12
+
+]
+Cap\'{\i }tulo 8.
+[13
+
+]
+Cap\'{\i }tulo 9.
+[14
+
+]
+Cap\'{\i }tulo 10.
+[15
 
 ] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 21--27
 \OT1/lmr/m/n/12 what-[]is-[]a-[]web3-[]wallet-[]web3-[]wallets-[]explained / ?ref = morioh . com & utm[]source = morioh .
  []
 
-) [13
+
+Underfull \hbox (badness 2197) in paragraph at lines 43--47
+[]\OT1/lmr/m/n/12 Heather Hall.  Web 2.0 ex-plai-ned: Everything you need to know.  []$https : / /
+ []
+
+) [16
 
 ] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A3FCAACB925B23BD74922B7A791B0253;1878.
+(rerunfilecheck)             Checksum: D947AF026E0256B3681C7409661B153C;2632.
  ) 
 Here is how much of TeX's memory you used:
- 17797 strings out of 475381
- 299786 string characters out of 2776863
- 754135 words of memory out of 3000000
- 38792 multiletter control sequences out of 15000+600000
- 516969 words of font info for 58 fonts, out of 8000000 for 9000
+ 17948 strings out of 475381
+ 303433 string characters out of 2776863
+ 755452 words of memory out of 3000000
+ 38897 multiletter control sequences out of 15000+600000
+ 525413 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,8n,120p,1191b,507s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb>
-Output written on "d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.pdf" (17 pages, 254393 bytes).
+ 125i,12n,120p,1191b,507s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb>
+Output written on "d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.pdf" (22 pages, 432696 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,21 +15,40 @@ IBM.
 BBC~News Mundo.
 \newblock Qué son los nft y por qué están valorados en millones de dólares.
 \newblock \url{https://www.bbc.com/mundo/noticias-56502251}, 03 2021.
-\newblock [Online; accedido a 1/04/2023].
+\newblock [Online; accedido a 1/05/2023].
 
 \bibitem[Moralis(2022)]{moralisWallets}
 Moralis.
 \newblock What is a web3 wallet? – web3 wallets explained.
 \newblock
   \url{https://moralis.io/what-is-a-web3-wallet-web3-wallets-explained/?ref=morioh.com&utm_source=morioh.com},
-  1 2022.
-\newblock [Online; accedido a 1/04/2023].
+  January 2022.
+\newblock [Online; accedido a 1/05/2023].
 
 \bibitem[Bootcamp()]{bootcampFramework}
 Open Bootcamp.
 \newblock ¿qué es un framework y qué tipos hay?
 \newblock
   \url{https://open-bootcamp.com/aprender-programar/que-es-un-framework}.
-\newblock [Online; accedido a 1/04/2023].
+\newblock [Online; accedido a 1/05/2023].
+
+\bibitem[CERN()]{cernWeb1}
+CERN.
+\newblock A short history of the web.
+\newblock
+  \url{https://home.cern/science/computing/birth-web/short-history-web}.
+\newblock [Online; accedido a 2/05/2023].
+
+\bibitem[Hall(2022)]{web2Explained}
+Heather Hall.
+\newblock Web 2.0 explained: Everything you need to know.
+\newblock \url{https://history-computer.com/web-2-0/}, November 2022.
+\newblock [Online; accedido a 2/05/2023].
+
+\bibitem[Yang and Li(2023)]{IEEEweb3Explained}
+Sean Yang and Max Li.
+\newblock Web3.0 data infrastructure: Challenges and opportunities.
+\newblock \url{https://ieeexplore.ieee.org/document/10110018}, April 2023.
+\newblock [Online; accedido a 2/05/2023].
 
 \end{thebibliography}

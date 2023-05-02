@@ -43,6 +43,15 @@
 \usepackage{natbib}
 \bibliographystyle{unsrtnat}
 
+%Para las tablas
+\usepackage{tabularx}
+
+%Para las imágenes
+\usepackage{graphicx}
+
+%Colores 
+\usepackage{xcolor}
+
 \begin{document}
 \input{Portada.tex}
 
@@ -56,8 +65,10 @@
 \clearpage
 \input{Resumen.tex}
 \tableofcontents
-%\listoffigures
-%\listoftables
+\newpage
+\listoffigures
+\newpage
+\listoftables
 
 \clearpage
 \pagenumbering{arabic}
@@ -69,21 +80,12 @@
 \newpage
 %----Competencias----%
 \chapter{Competencias específicas}
-%\input{Competencias.tex}
-CAPÍTULO OBLIGATORIO
-
-Indicar, sólo para las competencias específicas relacionadas de forma más directa con el trabajo desarrollado, cómo se han cubierto con este TFT.
-
-Justificar qué es lo que este TFT aporta a nuestro entorno socio-económico, técnico o científico.
-
+\input{./2.-Competencias/2.1-Competencias.tex}
 \newpage
 %----Estado actual y Objetivos iniciales----%
 %--Objetivos iniciales/Estado actual--%
 \chapter{Objetivos iniciales y estado actual}
-\input{EstadoDelArte.tex}
-CAPÍTULO OBLIGATORIO
-
-Descripción del estado actual en la temática concreta del trabajo y desglose de los objetivos inicialmente previstos en el TFT01.
+\input{./3.-Marco-Teorico/marco-teorico.tex}
 \newpage
 %----Desarrollo como concepto----%
 \begin{comment}
