@@ -1,21 +1,21 @@
 # Fdb version 4
-["bibtex build/main"] 1683052250 "build/main.aux" "build/main.bbl" "build/main" 1683052344 0
-  "./bib.bib" 1683034089 2510 c4184abb5dfb383ce17530f323138fc7 ""
+["bibtex build/main"] 1683054338 "build/main.aux" "build/main.bbl" "build/main" 1683054342 0
+  "./bib.bib" 1683054337 2890 13fbda435049d14b6795ff05146ca2e2 ""
   "C:/Program Files/MiKTeX/bibtex/bst/natbib/unsrtnat.bst" 1284455456 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "build/main.aux" 1683052342 4772 a9761e0811f9ad88274a08d7ce9fb8f0 "pdflatex"
+  "build/main.aux" 1683054341 5109 d602cf61edde007431c89aa17c24775c "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1683052339 "d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex" "build/main.pdf" "main" 1683052344 0
+["pdflatex"] 1683054338 "d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex" "build/main.pdf" "main" 1683054342 0
   "1.-Introduccion/1.1-Motivacion.tex" 1683017842 1385 d3826d82c58c4654b6d0450a94770ee4 ""
   "1.-Introduccion/1.2-Objetivos.tex" 1683017842 759 5ca8ae59a49d56c30a1b02ae105c271d ""
-  "1.-Introduccion/1.3-Estructura.tex" 1683017842 2492 e8a9099df51fc5d8ea01d3c18a562b6c ""
+  "1.-Introduccion/1.3-Estructura.tex" 1683053216 2492 a784eb6489d6b1d158707c3b711a8824 ""
   "1.-Introduccion/Introduccion.tex" 1683017842 231 a85e78b0d3da4dfd9d73f99b029579e1 ""
   "2.-Competencias/2.1-Competencias.tex" 1683052338 3075 05de8a16292450ff1b5695942ffe13a4 ""
   "3.-Marco-Teorico/3.1-web3.tex" 1683034215 2832 25273b94b609d2996427d699f6cfc3de ""
   "3.-Marco-Teorico/3.2-criptomonedas.tex" 1683051258 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "3.-Marco-Teorico/3.3-nft.tex" 1683052312 2151 bf5400c3fbbc577611397ce40c669406 ""
+  "3.-Marco-Teorico/3.3-nft.tex" 1683054082 2582 92dc8b687eced5fcc029665ae4e60daa ""
   "3.-Marco-Teorico/3.4-criptowallet.tex" 1683030588 0 d41d8cd98f00b204e9800998ecf8427e ""
   "3.-Marco-Teorico/marco-teorico.tex" 1683051366 331 6c3833709f8d31fb1d86e3c01fea2d7d ""
   "Agradecimientos.tex" 1682849610 158 2a7f9a6199b1d71a25094f0c0043838c ""
@@ -166,16 +166,17 @@
   "C:/Users/crist/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "Ilustraciones/LogoEII.jpg" 1682849610 48735 88956c6c06aab2edf5f659f8510d0e9c ""
   "Ilustraciones/opensea-nft.png" 1683051799 155569 8b78e88c1ed66daf43cf072f7400d8ed ""
+  "Ilustraciones/sorare-nft.png" 1683052765 799975 176e4dde1bd0eaa44fb147cc4f7baa65 ""
   "Portada.tex" 1683017842 1000 2d96171ea7944470cb9e1abe65902807 ""
   "Resumen.tex" 1683017842 1743 5589d0e8077c2d0c0c86d530d8127bee ""
-  "build/main.aux" 1683052342 4772 a9761e0811f9ad88274a08d7ce9fb8f0 "pdflatex"
-  "build/main.bbl" 1683052251 1936 1614765f77bd11ef60ba4c089df7115f "bibtex build/main"
-  "build/main.lof" 1683052342 372 259b61868136f0e1f189ee1237d08aa1 "pdflatex"
-  "build/main.lot" 1683052342 383 047d592e183ee2af02e6e9be10e5b807 "pdflatex"
-  "build/main.out" 1683052342 2632 d947af026e0256b3681c7409661b153c "pdflatex"
-  "build/main.toc" 1683052342 1366 171be7fac493c13120a60c272ee64a71 "pdflatex"
-  "d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex" 1683051736 3154 6907048439afb78292f36206bbc18941 ""
-  "main.tex" 1683051736 3154 6907048439afb78292f36206bbc18941 ""
+  "build/main.aux" 1683054341 5109 d602cf61edde007431c89aa17c24775c "pdflatex"
+  "build/main.bbl" 1683054338 2191 f397c377f669507b221852dc4c302112 "bibtex build/main"
+  "build/main.lof" 1683054341 496 e52f2c4131a5bd9336f39196e4fa7eb2 "pdflatex"
+  "build/main.lot" 1683054341 383 047d592e183ee2af02e6e9be10e5b807 "pdflatex"
+  "build/main.out" 1683054341 2632 d947af026e0256b3681c7409661b153c "pdflatex"
+  "build/main.toc" 1683054341 1366 171be7fac493c13120a60c272ee64a71 "pdflatex"
+  "d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex" 1683052633 3189 784004625649cc25836162a68232bebc ""
+  "main.tex" 1683052633 3189 784004625649cc25836162a68232bebc ""
   (generated)
   "build/main.aux"
   "build/main.lof"

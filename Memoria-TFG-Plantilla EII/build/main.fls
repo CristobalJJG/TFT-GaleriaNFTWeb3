@@ -631,31 +631,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
-INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-es.ini
 INPUT C:\Program Files\MiKTeX\tex\latex\csquotes\csquotes.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\csquotes\csquotes.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\csquotes\csquotes.sty
@@ -950,6 +925,31 @@ INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Program Files\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-spanish.tex
+INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\es\babel-es.ini
 INPUT C:\Program Files\MiKTeX\tex\latex\natbib\natbib.sty
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
@@ -1120,6 +1120,13 @@ INPUT .\Ilustraciones\opensea-nft.png
 INPUT .\Ilustraciones\opensea-nft.png
 INPUT .\Ilustraciones\opensea-nft.png
 INPUT .\Ilustraciones\opensea-nft.png
+INPUT .\Ilustraciones\sorare-nft.png
+INPUT .\Ilustraciones\sorare-nft.png
+INPUT Ilustraciones\sorare-nft.png
+INPUT .\Ilustraciones\sorare-nft.png
+INPUT .\Ilustraciones\sorare-nft.png
+INPUT .\Ilustraciones\sorare-nft.png
+INPUT .\Ilustraciones\sorare-nft.png
 INPUT .\3.-Marco-Teorico\3.4-criptowallet.tex
 INPUT 3.-Marco-Teorico\3.4-criptowallet.tex
 INPUT .\3.-Marco-Teorico\3.4-criptowallet.tex
