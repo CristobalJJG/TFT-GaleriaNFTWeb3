@@ -1,7 +1,7 @@
-PWD d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII
+PWD d:\Repositorios\TFT\TFT-Front\Memoria-TFG
 INPUT C:\Users\crist\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\main.tex
-OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.log
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\main.tex
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.log
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
@@ -970,10 +970,10 @@ INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
-OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -993,18 +993,18 @@ INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.pdf
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.pdf
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
 INPUT .\Portada.tex
 INPUT Portada.tex
 INPUT .\Portada.tex
@@ -1033,9 +1033,9 @@ INPUT Resumen.tex
 INPUT .\Resumen.tex
 INPUT Resumen.tex
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.toc
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.toc
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.toc
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omllmm.fd
@@ -1057,15 +1057,15 @@ INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmex10.tfm
-OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lof
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lof
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lof
-OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lof
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lot
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lot
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lot
-OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lot
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.toc
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lof
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lof
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lof
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lof
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lot
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lot
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lot
+OUTPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lot
 INPUT .\1.-Introduccion\Introduccion.tex
 INPUT 1.-Introduccion\Introduccion.tex
 INPUT .\1.-Introduccion\Introduccion.tex
@@ -1104,11 +1104,25 @@ INPUT .\3.-Marco-Teorico\3.1-web3.tex
 INPUT 3.-Marco-Teorico\3.1-web3.tex
 INPUT .\3.-Marco-Teorico\3.1-web3.tex
 INPUT 3.-Marco-Teorico\3.1-web3.tex
+INPUT .\Ilustraciones\cern-server.jpg
+INPUT .\Ilustraciones\cern-server.jpg
+INPUT Ilustraciones\cern-server.jpg
+INPUT .\Ilustraciones\cern-server.jpg
+INPUT .\Ilustraciones\cern-server.jpg
+INPUT .\Ilustraciones\cern-server.jpg
+INPUT .\Ilustraciones\cern-server.jpg
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbxi10.tfm
 INPUT .\3.-Marco-Teorico\3.2-criptomonedas.tex
 INPUT 3.-Marco-Teorico\3.2-criptomonedas.tex
 INPUT .\3.-Marco-Teorico\3.2-criptomonedas.tex
 INPUT 3.-Marco-Teorico\3.2-criptomonedas.tex
+INPUT .\Ilustraciones\redes.png
+INPUT .\Ilustraciones\redes.png
+INPUT Ilustraciones\redes.png
+INPUT .\Ilustraciones\redes.png
+INPUT .\Ilustraciones\redes.png
+INPUT .\Ilustraciones\redes.png
+INPUT .\Ilustraciones\redes.png
 INPUT .\3.-Marco-Teorico\3.3-nft.tex
 INPUT 3.-Marco-Teorico\3.3-nft.tex
 INPUT .\3.-Marco-Teorico\3.3-nft.tex
@@ -1131,13 +1145,27 @@ INPUT .\3.-Marco-Teorico\3.4-criptowallet.tex
 INPUT 3.-Marco-Teorico\3.4-criptowallet.tex
 INPUT .\3.-Marco-Teorico\3.4-criptowallet.tex
 INPUT 3.-Marco-Teorico\3.4-criptowallet.tex
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
-INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out
+INPUT .\Ilustraciones\ledger-hardware.png
+INPUT .\Ilustraciones\ledger-hardware.png
+INPUT Ilustraciones\ledger-hardware.png
+INPUT .\Ilustraciones\ledger-hardware.png
+INPUT .\Ilustraciones\ledger-hardware.png
+INPUT .\Ilustraciones\ledger-hardware.png
+INPUT .\Ilustraciones\ledger-hardware.png
+INPUT .\Ilustraciones\coinbase-logo.png
+INPUT .\Ilustraciones\coinbase-logo.png
+INPUT Ilustraciones\coinbase-logo.png
+INPUT .\Ilustraciones\coinbase-logo.png
+INPUT .\Ilustraciones\coinbase-logo.png
+INPUT .\Ilustraciones\coinbase-logo.png
+INPUT .\Ilustraciones\coinbase-logo.png
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.bbl
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
+INPUT d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\crist\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb

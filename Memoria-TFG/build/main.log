@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  2 MAY 2023 20:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  4 MAY 2023 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex"
-(d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex
+**d:/Repositorios/TFT/TFT-Front/Memoria-TFG/main.tex
+(d:/Repositorios/TFT/TFT-Front/Memoria-TFG/main.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28> (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
@@ -493,7 +493,7 @@ Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 57.
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
@@ -571,7 +571,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 57.
-(d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out)
+(d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -599,7 +599,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.67 \clearpage
                 [1] (Resumen.tex) [2
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
@@ -626,7 +626,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [3
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lof
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -635,7 +635,7 @@ LaTeX Info: Redefining \% on input line 1.
 
  [4
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.lot
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -701,88 +701,188 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has b
 l.86 \newpage
               [5]
 Cap\'{\i }tulo 3.
-(3.-Marco-Teorico/marco-teorico.tex (3.-Marco-Teorico/3.1-web3.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
+(3.-Marco-Teorico/marco-teorico.tex (3.-Marco-Teorico/3.1-web3.tex
+<./Ilustraciones/cern-server.jpg, id=170, 693.34032pt x 453.19313pt>
+File: ./Ilustraciones/cern-server.jpg Graphic file (type jpg)
+<use ./Ilustraciones/cern-server.jpg>
+Package pdftex.def Info: ./Ilustraciones/cern-server.jpg  used on input line 11.
+(pdftex.def)             Requested size: 173.33466pt x 113.298pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 16--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
+Underfull \hbox (badness 10000) in paragraph at lines 16--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
+Underfull \hbox (badness 10000) in paragraph at lines 16--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
+Underfull \hbox (badness 10000) in paragraph at lines 16--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
+Underfull \hbox (badness 10000) in paragraph at lines 16--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
+Underfull \hbox (badness 10000) in paragraph at lines 16--3
 
  []
 
 [6
 
-] (3.-Marco-Teorico/3.2-criptomonedas.tex) (3.-Marco-Teorico/3.3-nft.tex
-<./Ilustraciones/opensea-nft.png, id=171, 1043.39813pt x 520.94624pt>
+ <./Ilustraciones/cern-server.jpg>] (3.-Marco-Teorico/3.2-criptomonedas.tex
+<./Ilustraciones/redes.png, id=180, 402.75468pt x 475.7775pt>
+File: ./Ilustraciones/redes.png Graphic file (type png)
+<use ./Ilustraciones/redes.png>
+Package pdftex.def Info: ./Ilustraciones/redes.png  used on input line 19.
+(pdftex.def)             Requested size: 302.06526pt x 356.83223pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
+
+ []
+
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+[7] (3.-Marco-Teorico/3.3-nft.tex
+<./Ilustraciones/opensea-nft.png, id=189, 1043.39813pt x 520.94624pt>
 File: ./Ilustraciones/opensea-nft.png Graphic file (type png)
 <use ./Ilustraciones/opensea-nft.png>
 Package pdftex.def Info: ./Ilustraciones/opensea-nft.png  used on input line 25.
 (pdftex.def)             Requested size: 260.84889pt x 130.23624pt.
-<./Ilustraciones/sorare-nft.png, id=174, 614.295pt x 626.34pt>
+<./Ilustraciones/sorare-nft.png, id=191, 614.295pt x 626.34pt>
 File: ./Ilustraciones/sorare-nft.png Graphic file (type png)
 <use ./Ilustraciones/sorare-nft.png>
 Package pdftex.def Info: ./Ilustraciones/sorare-nft.png  used on input line 33.
 (pdftex.def)             Requested size: 307.14674pt x 313.16922pt.
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
- [7 <./Ilustraciones/opensea-nft.png>]) (3.-Marco-Teorico/3.4-criptowallet.tex))
+)
+Underfull \hbox (badness 10000) in paragraph at lines 1--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--7
+
+ []
+
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+[8 <./Ilustraciones/redes.png>]
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+ [9 <./Ilustraciones/opensea-nft.png>] (3.-Marco-Teorico/3.4-criptowallet.tex
+<./Ilustraciones/ledger-hardware.png, id=205, 706.64pt x 943.525pt>
+File: ./Ilustraciones/ledger-hardware.png Graphic file (type png)
+<use ./Ilustraciones/ledger-hardware.png>
+Package pdftex.def Info: ./Ilustraciones/ledger-hardware.png  used on input line 18.
+(pdftex.def)             Requested size: 105.99142pt x 141.52264pt.
+<./Ilustraciones/coinbase-logo.png, id=207, 172.9662pt x 30.8352pt>
+File: ./Ilustraciones/coinbase-logo.png Graphic file (type png)
+<use ./Ilustraciones/coinbase-logo.png>
+Package pdftex.def Info: ./Ilustraciones/coinbase-logo.png  used on input line 26.
+(pdftex.def)             Requested size: 172.96577pt x 30.83511pt.
+))
+Underfull \hbox (badness 10000) in paragraph at lines 1--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--91
+
+ []
+
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
- [8 <./Ilustraciones/sorare-nft.png>] Excluding 'comment' comment.
+[10 <./Ilustraciones/sorare-nft.png>]
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+ [11 <./Ilustraciones/ledger-hardware.png> <./Ilustraciones/coinbase-logo.png>] Excluding 'comment' comment.
 Cap\'{\i }tulo 4.
-[9
-
-]
-Cap\'{\i }tulo 5.
-[10
-
-]
-Cap\'{\i }tulo 6.
-[11
-
-]
-Cap\'{\i }tulo 7.
 [12
 
 ]
-Cap\'{\i }tulo 8.
+Cap\'{\i }tulo 5.
 [13
 
 ]
-Cap\'{\i }tulo 9.
+Cap\'{\i }tulo 6.
 [14
 
 ]
-Cap\'{\i }tulo 10.
+Cap\'{\i }tulo 7.
 [15
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl
+]
+Cap\'{\i }tulo 8.
+[16
+
+]
+Cap\'{\i }tulo 9.
+[17
+
+]
+Cap\'{\i }tulo 10.
+[18
+
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 21--27
 \OT1/lmr/m/n/12 what-[]is-[]a-[]web3-[]wallet-[]web3-[]wallets-[]explained / ?ref = morioh . com & utm[]source = morioh .
  []
@@ -792,9 +892,9 @@ Underfull \hbox (badness 2197) in paragraph at lines 43--47
 []\OT1/lmr/m/n/12 Heather Hall.  Web 2.0 ex-plai-ned: Everything you need to know.  []$https : / /
  []
 
-) [16
+) [19
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
@@ -802,17 +902,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D947AF026E0256B3681C7409661B153C;2632.
  ) 
 Here is how much of TeX's memory you used:
- 17958 strings out of 475381
- 303728 string characters out of 2776863
- 757427 words of memory out of 3000000
- 38904 multiletter control sequences out of 15000+600000
+ 17997 strings out of 475381
+ 304224 string characters out of 2776863
+ 759687 words of memory out of 3000000
+ 38932 multiletter control sequences out of 15000+600000
  525413 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,12n,120p,1251b,507s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 125i,12n,120p,1235b,507s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb>
-Output written on "d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.pdf" (22 pages, 1219656 bytes).
+Output written on d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.pdf (25 pages, 1709480 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
