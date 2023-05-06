@@ -6,7 +6,6 @@
 \usepackage{hyperref}
 \usepackage{lmodern}
 \usepackage{float}
-\usepackage[spanish]{babel}
 \usepackage{csquotes}
 \usepackage[figurename=Ilustración]{caption}
 \usepackage[numbers]{natbib}
@@ -38,8 +37,22 @@
 \usepackage{pifont}
 \renewcommand\labelitemi{\ding{52}}
 
+%Corrección de idioma
+\usepackage[spanish,es-tabla]{babel}
+
+%Agregados por mi%
+%para la bibliografía%
 \usepackage{natbib}
 \bibliographystyle{unsrtnat}
+
+%Para las tablas
+\usepackage{tabularx}
+
+%Para las imágenes
+\usepackage{graphicx}
+
+%Colores 
+\usepackage{xcolor}
 
 \begin{document}
 \input{Portada.tex}
@@ -54,8 +67,10 @@
 \clearpage
 \input{Resumen.tex}
 \tableofcontents
-%\listoffigures
-%\listoftables
+\newpage
+\listoffigures
+\newpage
+\listoftables
 
 \clearpage
 \pagenumbering{arabic}
@@ -64,39 +79,33 @@
 %--Motivación/Objetivos/Estructura de memoria--%
 \chapter{Introducción}
 \input{./1.-Introduccion/Introduccion.tex}
-
+\newpage
 %----Competencias----%
 \chapter{Competencias específicas}
-%\input{Competencias.tex}
-CAPÍTULO OBLIGATORIO
-
-Indicar, sólo para las competencias específicas relacionadas de forma más directa con el trabajo desarrollado, cómo se han cubierto con este TFT.
-
-Justificar qué es lo que este TFT aporta a nuestro entorno socio-económico, técnico o científico.
-
-
+\input{./2.-Competencias/2.1-Competencias.tex}
+\newpage
 %----Estado actual y Objetivos iniciales----%
 %--Objetivos iniciales/Estado actual--%
 \chapter{Objetivos iniciales y estado actual}
-\input{EstadoDelArte.tex}
-CAPÍTULO OBLIGATORIO
-
-Descripción del estado actual en la temática concreta del trabajo y desglose de los objetivos inicialmente previstos en el TFT01.
-
+\input{./3.-Objetivos_estado/3.-Objetivos.tex}
+\newpage
+%----Fin de introducción----%
 %----Desarrollo como concepto----%
-\begin{comment}
-        CAPÍTULO OBLIGATORIO
-        Metodología aplicada y desarrollo del trabajo en sus distintas fases, decisiones de diseño, herramientas empleadas.
-        Si el trabajo incluye software desarrollado, deberán seleccionarse las secciones más relevantes del mismo y comentarlas en la memoria.
-        Ajuste a la planificación inicialmente prevista.
-        Modificación en los objetivos planteados.
-\end{comment}
 \chapter{Marco teórico}
-\chapter{Estado del arte}
+\input{./4.-Marco-Teorico/marco-teorico.tex}
+\newpage
+
+\chapter{Estado del Arte}
+\input{./5.-Estado-arte/5.-Estado-arte.tex}
+\newpage
 \chapter{Recursos y tecnologías}
+\newpage
 \chapter{Metodologías}
+\newpage
 \chapter{Análisis y Diseño}
+\newpage
 \chapter{Desarrollo}
+\newpage
 %----Fin del Desarrollo----%
 
 %----Evaluación y resultados----%

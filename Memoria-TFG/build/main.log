@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  30 APR 2023 13:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  5 MAY 2023 10:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex"
-(d:/Repositorios/TFT/TFT-Front/Memoria-TFG-Plantilla EII/main.tex
+**d:/Repositorios/TFT/TFT-Front/Memoria-TFG/main.tex
+(d:/Repositorios/TFT/TFT-Front/Memoria-TFG/main.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28> (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
@@ -277,44 +277,19 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box54
 \@float@everytoks=\toks22
 \@floatcapt=\box55
-) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2022/10/04 3.81 The Babel package
-\babel@savecnt=\count279
-\U@D=\dimen169
-\l@unhyphenated=\language79
- (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count280
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Program Files\MiKTeX\tex/latex/babel-spanish\spanish.ldf
-Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks23
-\es@quotdepth=\count281
-Package babel Info: Making " an active character on input line 570.
-Package babel Info: Making . an active character on input line 675.
-Package babel Info: Making < an active character on input line 722.
-Package babel Info: Making > an active character on input line 722.
-)) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
-Package babel Info: Importing font and identification data for spanish
-(babel)             from babel-es.ini. Reported on input line 11.
 ) (C:\Program Files\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count282
+\etb@tempcnta=\count279
 )
-\csq@reset=\count283
-\csq@gtype=\count284
-\csq@glevel=\count285
-\csq@qlevel=\count286
-\csq@maxlvl=\count287
-\csq@tshold=\count288
-\csq@ltx@everypar=\toks24
+\csq@reset=\count280
+\csq@gtype=\count281
+\csq@glevel=\count282
+\csq@qlevel=\count283
+\csq@maxlvl=\count284
+\csq@tshold=\count285
+\csq@ltx@everypar=\toks23
  (C:\Program Files\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
@@ -326,14 +301,14 @@ File: csquotes.cfg
 Package: caption 2023/03/12 v3.6j Customizing captions (AR)
  (C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen170
-\captionmargin=\dimen171
-\caption@leftmargin=\dimen172
-\caption@rightmargin=\dimen173
-\caption@width=\dimen174
-\caption@indent=\dimen175
-\caption@parindent=\dimen176
-\caption@hangindent=\dimen177
+\caption@tempdima=\dimen169
+\captionmargin=\dimen170
+\caption@leftmargin=\dimen171
+\caption@rightmargin=\dimen172
+\caption@width=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
 Package caption Info: Standard document class detected.
 )
 Package caption Info: Option `figurename' requires the `newfloat' package on input line 171.
@@ -344,8 +319,8 @@ Package newfloat Info: Unsupported document class, or \@chapter
 Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAuto {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anchorend }}\ifnum \c@secnumdepth >\m@ne \ltx@IfUndefined {if@mainmatter}\iftrue {\csname if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@chapter .
 Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@chapter [{#1}]{#2}.
 )
-\c@caption@flags=\count289
-\c@continuedfloat=\count290
+\c@caption@flags=\count286
+\c@continuedfloat=\count287
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 ) (C:\Program Files\MiKTeX\tex/latex/natbib\natbib.sty
@@ -353,7 +328,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip50
 \bibsep=\skip51
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count291
+\c@NAT@ctr=\count288
 ) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \CenteringLeftskip=\skip52
@@ -372,38 +347,38 @@ Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \JustifyingParindent=\skip65
 ) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen178
+\col@sep=\dimen177
 \ar@mcellbox=\box56
-\extrarowheight=\dimen179
-\NC@list=\toks25
+\extrarowheight=\dimen178
+\NC@list=\toks24
 \extratabsurround=\skip66
 \backup@length=\skip67
 \ar@cellbox=\box57
 ) (C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip68
-\multirow@cntb=\count292
+\multirow@cntb=\count289
 \multirow@dima=\skip69
-\bigstrutjot=\dimen180
+\bigstrutjot=\dimen179
 ) (C:\Program Files\MiKTeX\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 ) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count293
+\lst@mode=\count290
 \lst@gtempboxa=\box58
-\lst@token=\toks26
-\lst@length=\count294
-\lst@currlwidth=\dimen181
-\lst@column=\count295
-\lst@pos=\count296
-\lst@lostspace=\dimen182
-\lst@width=\dimen183
-\lst@newlines=\count297
-\lst@lineno=\count298
-\lst@maxwidth=\dimen184
+\lst@token=\toks25
+\lst@length=\count291
+\lst@currlwidth=\dimen180
+\lst@column=\count292
+\lst@pos=\count293
+\lst@lostspace=\dimen181
+\lst@width=\dimen182
+\lst@newlines=\count294
+\lst@lineno=\count295
+\lst@maxwidth=\dimen183
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count299
-\lst@skipnumbers=\count300
+\c@lstnumber=\count296
+\lst@skipnumbers=\count297
 \lst@framebox=\box59
 ) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -422,15 +397,15 @@ Package: nextpage 2009/09/03 v1.1a additional page commands
 Package: expl3 2022-09-28 L3 programming layer (loader) 
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count301
+\l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box60
 ))
 Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count302
-\l__lipsum_a_int=\count303
-\l__lipsum_b_int=\count304
+\g__lipsum_par_int=\count299
+\l__lipsum_a_int=\count300
+\l__lipsum_b_int=\count301
  (C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)) (C:\Program Files\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write3
  Excluding comment 'comment') (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
@@ -461,12 +436,12 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box61
 \beforetitleunit=\skip74
 \aftertitleunit=\skip75
-\ttl@plus=\dimen185
-\ttl@minus=\dimen186
-\ttl@toksa=\toks27
-\titlewidth=\dimen187
-\titlewidthlast=\dimen188
-\titlewidthfirst=\dimen189
+\ttl@plus=\dimen184
+\ttl@minus=\dimen185
+\ttl@toksa=\toks26
+\titlewidth=\dimen186
+\titlewidthlast=\dimen187
+\titlewidthfirst=\dimen188
 ) (C:\Program Files\MiKTeX\tex/latex/psnfss\pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
@@ -476,51 +451,85 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-))
+)) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/10/04 3.81 The Babel package
+\babel@savecnt=\count302
+\U@D=\dimen189
+\l@unhyphenated=\language79
+ (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count303
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Program Files\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks27
+\es@quotdepth=\count304
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+)) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen190
+\TX@old@table=\dimen191
+\TX@old@col=\dimen192
+\TX@target=\dimen193
+\TX@delta=\dimen194
+\TX@cols=\count305
+\TX@ftn=\toks28
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 44.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 57.
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
  (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen190
+\scratchcounter=\count306
+\scratchdimen=\dimen195
 \scratchbox=\box62
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen191
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks29
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen196
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks30
 ) (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -561,24 +570,21 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 44.
-(d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.out)
+Package hyperref Info: Link coloring OFF on input line 57.
+(d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out) (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
-
-Couldn't patch \ttl@straight@ii
-Couldn't patch \ttl@straight@ii
-\c@lstlisting=\count311
-(Portada.tex
-<Ilustraciones/LogoEII.jpg, id=59, 288.3573pt x 45.771pt>
+\c@lstlisting=\count312
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+ (Portada.tex
+<Ilustraciones/LogoEII.jpg, id=83, 288.3573pt x 45.771pt>
 File: Ilustraciones/LogoEII.jpg Graphic file (type jpg)
 <use Ilustraciones/LogoEII.jpg>
 Package pdftex.def Info: Ilustraciones/LogoEII.jpg  used on input line 6.
@@ -590,10 +596,10 @@ Package pdftex.def Info: Ilustraciones/LogoEII.jpg  used on input line 6.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \clearpage
+l.67 \clearpage
                 [1] (Resumen.tex) [2
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.toc
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
@@ -620,88 +626,307 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [3
 
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [4
+
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+ [5
+
 ]
 Cap\'{\i }tulo 1.
-Package newfloat Info: Setting Plan B file extension to `lof'... on input line 65.
-(1.-Introduccion/Introduccion.tex (1.-Introduccion/Motivacion.tex))
+Package newfloat Info: Setting Plan B file extension to `lof'... on input line 80.
+(1.-Introduccion/Introduccion.tex (1.-Introduccion/1.1-Motivacion.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 \chapter
-             {Competencias específicas} [1
+l.4 \newpage
+             [1
 
 
-]
-Cap\'{\i }tulo 2.
+] (1.-Introduccion/1.2-Objetivos.tex) (1.-Introduccion/1.3-Estructura.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 23.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \chapter
-             {Objetivos iniciales y estado actual} [2
+l.44 
+      [2]))
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
 
-]
-Cap\'{\i }tulo 3.
-(EstadoDelArte.tex) Excluding 'comment' comment.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 \chapter
-             {Marco teórico} [3
+l.82 \newpage
+              [3]
+Cap\'{\i }tulo 2.
+(2.-Competencias/2.1-Competencias.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--19
+
+ []
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \newpage
+              [4
 
 ]
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 \newpage
+              [5]
+Cap\'{\i }tulo 3.
+(3.-Objetivos_estado/3.-Objetivos.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 23.
+ (C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [6
+
+])
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+ [7]
 Cap\'{\i }tulo 4.
-[4
+(4.-Marco-Teorico/marco-teorico.tex (4.-Marco-Teorico/4.1-web3.tex
+<./Ilustraciones/cern-server.jpg, id=206, 693.34032pt x 453.19313pt>
+File: ./Ilustraciones/cern-server.jpg Graphic file (type jpg)
+<use ./Ilustraciones/cern-server.jpg>
+Package pdftex.def Info: ./Ilustraciones/cern-server.jpg  used on input line 12.
+(pdftex.def)             Requested size: 173.33466pt x 113.298pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 17--7
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--7
+
+ []
+
+[8
+
+ <./Ilustraciones/cern-server.jpg>] (4.-Marco-Teorico/4.2-criptomonedas.tex
+<./Ilustraciones/redes.png, id=216, 402.75468pt x 475.7775pt>
+File: ./Ilustraciones/redes.png Graphic file (type png)
+<use ./Ilustraciones/redes.png>
+Package pdftex.def Info: ./Ilustraciones/redes.png  used on input line 20.
+(pdftex.def)             Requested size: 302.06526pt x 356.83223pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--9
+
+ []
+
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+[9]
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+ [10 <./Ilustraciones/redes.png>] (4.-Marco-Teorico/4.3-nft.tex
+<./Ilustraciones/opensea-nft.png, id=229, 1043.39813pt x 520.94624pt>
+File: ./Ilustraciones/opensea-nft.png Graphic file (type png)
+<use ./Ilustraciones/opensea-nft.png>
+Package pdftex.def Info: ./Ilustraciones/opensea-nft.png  used on input line 26.
+(pdftex.def)             Requested size: 260.84889pt x 130.23624pt.
+<./Ilustraciones/sorare-nft.png, id=231, 614.295pt x 626.34pt>
+File: ./Ilustraciones/sorare-nft.png Graphic file (type png)
+<use ./Ilustraciones/sorare-nft.png>
+Package pdftex.def Info: ./Ilustraciones/sorare-nft.png  used on input line 34.
+(pdftex.def)             Requested size: 307.14674pt x 313.16922pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+[11 <./Ilustraciones/opensea-nft.png>]
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+ [12 <./Ilustraciones/sorare-nft.png>] (4.-Marco-Teorico/4.4-criptowallet.tex
+<./Ilustraciones/ledger-hardware.png, id=245, 706.64pt x 943.525pt>
+File: ./Ilustraciones/ledger-hardware.png Graphic file (type png)
+<use ./Ilustraciones/ledger-hardware.png>
+Package pdftex.def Info: ./Ilustraciones/ledger-hardware.png  used on input line 19.
+(pdftex.def)             Requested size: 105.99142pt x 141.52264pt.
+<./Ilustraciones/coinbase-logo.png, id=247, 172.9662pt x 30.8352pt>
+File: ./Ilustraciones/coinbase-logo.png Graphic file (type png)
+<use ./Ilustraciones/coinbase-logo.png>
+Package pdftex.def Info: ./Ilustraciones/coinbase-logo.png  used on input line 27.
+(pdftex.def)             Requested size: 172.96577pt x 30.83511pt.
+))
+Underfull \hbox (badness 10000) in paragraph at lines 2--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--96
+
+ []
+
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+[13 <./Ilustraciones/ledger-hardware.png> <./Ilustraciones/coinbase-logo.png>]
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [14]
 Cap\'{\i }tulo 5.
-[5
+(5.-Estado-arte/5.-Estado-arte.tex (5.-Estado-arte/5.1-Industria.tex) (5.-Estado-arte/5.2-webs-top.tex)) [15
 
 ]
 Cap\'{\i }tulo 6.
-[6
+[16
 
 ]
 Cap\'{\i }tulo 7.
-[7
+[17
 
 ]
 Cap\'{\i }tulo 8.
-[8
+[18
 
 ]
 Cap\'{\i }tulo 9.
-[9
+[19
 
 ]
 Cap\'{\i }tulo 10.
-[10
+[20
 
 ]
 Cap\'{\i }tulo 11.
-[11
+[21
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.bbl) [12
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
+\OT1/lmr/m/n/12 what-[]is-[]a-[]web3-[]wallet-[]web3-[]wallets-[]explained / ?ref = morioh . com & utm[]source = morioh .
+ []
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.aux
+
+Underfull \hbox (badness 2197) in paragraph at lines 43--47
+[]\OT1/lmr/m/n/12 Heather Hall.  Web 2.0 ex-plai-ned: Everything you need to know.  []$https : / /
+ []
+
+) [22
+
+] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 796252DE4C63D1E96FABC78E514B824E;2004.
+(rerunfilecheck)             Checksum: 1A3B26BA523A6CFE8E2D1E124FDD238B;3308.
  ) 
 Here is how much of TeX's memory you used:
- 17737 strings out of 475381
- 298666 string characters out of 2776863
- 750065 words of memory out of 3000000
- 38755 multiletter control sequences out of 15000+600000
- 506183 words of font info for 49 fonts, out of 8000000 for 9000
+ 18074 strings out of 475381
+ 306290 string characters out of 2776863
+ 759901 words of memory out of 3000000
+ 38979 multiletter control sequences out of 15000+600000
+ 525788 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,6n,120p,1191b,507s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on "d:\Repositorios\TFT\TFT-Front\Memoria-TFG-Plantilla EII\build\main.pdf" (16 pages, 154725 bytes).
+ 125i,12n,120p,1235b,673s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb>
+Output written on d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.pdf (28 pages, 1720316 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 
