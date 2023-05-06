@@ -18,6 +18,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryFilterComponent } from './gallery/gallery-filter/gallery-filter.component';
 import { NftCardComponent } from './gallery/nft-card/nft-card.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { UsersAdminPanelComponent } from './users-admin-panel/users-admin-panel.component';
+import { CollectionsAdminPanelComponent } from './collections-admin-panel/collections-admin-panel.component';
 
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -34,7 +37,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     NotFoundComponent,
     GalleryComponent,
     GalleryFilterComponent,
-    NftCardComponent
+    NftCardComponent,
+    AdminPanelComponent,
+    UsersAdminPanelComponent,
+    CollectionsAdminPanelComponent
   ],
   imports: [
     BrowserModule,
