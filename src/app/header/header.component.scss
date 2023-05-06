@@ -20,7 +20,7 @@ nav {
     display: none;
 }
 
-.register-btn:hover{
+.register-btn:hover {
     background-color: $light-purple;
 }
 
@@ -43,13 +43,12 @@ nav {
 
     .dropdown-content {
         width: 175px;
-        height: 0;
+        visibility: collapse;
         position: absolute;
         display: grid;
         background-color: $dark-gray;
         border-radius: 0 0 10px 10px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-        visibility: collapse;
         transition: $transition3s;
         z-index: 1;
         left: 20px;
@@ -78,7 +77,7 @@ nav {
         display: block;
     }
 
-    .short{
+    .short {
         display: none;
     }
 }
@@ -143,11 +142,12 @@ nav {
         margin: 0 15px;
     }
 
-    .head span, .opt .long {
+    .head span,
+    .opt .long {
         display: none;
     }
 
-    .opt .short{
+    .opt .short {
         display: block;
     }
 
@@ -159,9 +159,10 @@ nav {
 
 /* Menos de 768px */
 @media (max-width: 768px) {
-    .buttons{
+    .buttons {
         width: 250px;
     }
+
     .head {
         margin: 0 10px;
     }
@@ -177,7 +178,7 @@ nav {
 
 /* Menos de 500px */
 @media (max-width: 500px) {
-    .buttons{
+    .buttons {
         width: 200px;
     }
 }

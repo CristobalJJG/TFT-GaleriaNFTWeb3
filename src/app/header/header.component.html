@@ -1,18 +1,18 @@
 <nav class="structure">
     <div>
         <a routerLink="/home" routerLinkActive="activebutton">Logo to guapo cuando haya</a>
-        <!-- <img src="" alt=""> --> 
+        <!-- <img src="" alt=""> -->
     </div>
 
     <!-- Botones de la cabecera -->
     <div class="structure buttons">
         <!-- Botón galería -->
-        <a href="" class="head h1"  routerLink="/gallery" routerLinkActive="activebutton">
+        <a href="" class="head h1" routerLink="/gallery" routerLinkActive="activebutton">
             <img src="../../assets/images/header/image-gallery.png" alt="Logo Gallery" class="icon">
             <span>{{'header.gallery' | translate}}</span>
         </a>
         <!-- Botón cartera -->
-        <a href="" class="head h2"  routerLink="/register" routerLinkActive="activebutton">
+        <a href="" class="head h2" routerLink="/register" routerLinkActive="activebutton">
             <img src="../../assets/images/header/wallet.png" alt="Logo Wallet" class="icon">
             <span>{{'header.wallet' | translate}}</span>
         </a>
@@ -38,20 +38,23 @@
     <!-- parte de la derecha - botones o usuario -->
     <div class="right">
         <div *ngIf="user!=null" class="dropdown profile">
-            <span>{{user}}</span>
+            <span>{{user.getName()}}</span>
             <div class="dropdown-content">
+                <div class="opt lo" routerLink="/admin/users" *ngIf="user.getIsAdmin()">
+                    <span>Admin</span>
+                </div>
                 <div class="opt lo" (click)="onLogout()">
                     <span>{{'header.logout' | translate}}</span>
                 </div>
             </div>
         </div>
-        <div *ngIf="user==null" class="structure enter-btn">
-            <button class="login-btn" routerLink="/login" routerLinkActive="activebutton">
-                {{'header.login' | translate}}
-            </button>
-            <button class="register-btn" routerLink="/register" routerLinkActive="activebutton">
-                {{'header.register' | translate}}
-            </button>
-        </div>
+    </div>
+    <div *ngIf="user==null" class="structure enter-btn">
+        <button class="login-btn" routerLink="/login" routerLinkActive="activebutton">
+            {{'header.login' | translate}}
+        </button>
+        <button class="register-btn" routerLink="/register" routerLinkActive="activebutton">
+            {{'header.register' | translate}}
+        </button>
     </div>
 </nav>

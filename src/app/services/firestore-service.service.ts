@@ -9,27 +9,26 @@ export class FirestoreService {
 
   db = getFirestore(AuthService.app);
 
-  async getUserInfo(mail: string){
+  async getUserInfo(mail: string) {
     let snap = await getDoc(doc(this.db, "users", mail.split("@")[0]));
-    if(snap.exists())
+    if (snap.exists())
       localStorage.setItem("userData", JSON.stringify(snap.data()))
     else
       console.log("No hay datos, señor");
-    
   }
 
-  async addUser(mail: string, fullname: string){
+  async addUser(mail: string, fullname: string) {
     let username = mail.split("@")[0]
-    
+
     let name = "";
     let surname = "";
-    switch(fullname.split(" ").length){
-      case 1: name = this.toPascal(fullname); 
-              break;
+    switch (fullname.split(" ").length) {
+      case 1: name = this.toPascal(fullname);
+        break;
       case 2: {
         let spl = fullname.split(" ");
-        name = this.toPascal(spl[0]); 
-        surname = this.toPascal(spl[1]); ;
+        name = this.toPascal(spl[0]);
+        surname = this.toPascal(spl[1]);;
         break;
       }
       case 3: {
@@ -45,7 +44,7 @@ export class FirestoreService {
         break;
       }
     }
-    
+
     await setDoc(doc(this.db, "users", username.toLowerCase()), {
       name: name,
       surname: surname,
@@ -59,7 +58,7 @@ export class FirestoreService {
     });
   }
 
-  protected toPascal(str: string){
-    return str.charAt(0).toUpperCase()  + str.substring(1, str.length).toLowerCase()
+  protected toPascal(str: string) {
+    return str.charAt(0).toUpperCase() + str.substring(1, str.length).toLowerCase()
   }
 }
