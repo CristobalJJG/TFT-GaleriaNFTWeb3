@@ -1,1 +1,56 @@
 @import '../../styles.scss';
+
+.flex {
+    align-items: center;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    row-gap: 20px;
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px 0;
+    background-color: $gray;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.obj {
+    border: solid 2px $light-purple;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+    transition: $transition3s;
+
+    .icon {
+        width: 64px;
+        height: 64px;
+        fill: $white;
+        transition: $transition3s;
+        margin-right: 0;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: $dark-gray;
+        cursor: pointer;
+
+        .icon {
+            fill: $light-purple;
+        }
+    }
+}

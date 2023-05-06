@@ -33,7 +33,7 @@ export class AdminPanelComponent {
     }
   }
 
-  private navigate(route: string) {
+  protected navigate(route: string) {
     switch (route) {
       case "users": this.router.navigate(['users'], { relativeTo: this.route }); break;
       case "collections": this.router.navigate(['collections'], { relativeTo: this.route }); break;
