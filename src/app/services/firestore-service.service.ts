@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
 import { AuthService } from './auth-service.service';
+import { User } from '../class/user';
 
 @Injectable({
   providedIn: 'root'
@@ -53,9 +54,28 @@ export class FirestoreService {
       isAdmin: false,
       phone: "",
       username: username + "@" + name,
-      create_date: new Date(Date.now()),
-      last_login: new Date(Date.now())
+      create_date: new Date(Date.now()).toDateString(),
+      last_login: new Date(Date.now()).toDateString()
     });
+  }
+
+  async updateUser(user: User) {
+    try {
+      await setDoc(doc(this.db, "users", user.getEmail().split('@')[0].toLowerCase()), {
+        name: user.getName(),
+        surname: user.getSurname(),
+        wallets: user.getWallets(),
+        email: user.getEmail(),
+        isAdmin: user.getIsAdmin(),
+        phone: user.getPhone(),
+        username: user.getUsername(),
+        create_date: user.getCreateDate(),
+        last_login: user.getLastLogin()
+      });
+      window.location.reload();
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   protected toPascal(str: string) {

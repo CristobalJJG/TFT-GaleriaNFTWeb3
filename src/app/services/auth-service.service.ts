@@ -26,7 +26,7 @@ export class AuthService {
   constructor(protected db: FirestoreService) { }
 
   getCurrentUser(): User | null {
-    console.log(this.auth.currentUser);
+    //console.log(this.auth.currentUser);
     return this.auth.currentUser;
   }
 

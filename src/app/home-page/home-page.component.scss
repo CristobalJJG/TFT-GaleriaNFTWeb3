@@ -7,21 +7,19 @@ $font2: 20px;
     display: grid;
     align-items: baseline;
     justify-items: center;
-    /* align-content: space-evenly; */
     width: 100%;
-    height: calc(100vh - 75px); //100vh - 75px de la cabecera
 }
 
-.logo{
+.logo {
     fill: $white;
 }
 
-.logo-2{
+.logo-2 {
     fill: $purple;
     transform: $transition4s;
 }
 
-.btn2:hover .logo-2{
+.btn2:hover .logo-2 {
     fill: $white;
 }
 
@@ -36,14 +34,15 @@ h1 {
     padding: 0 40px;
     margin: 0 0;
     width: 75%;
-    .a-c{
+
+    .a-c {
         color: $purple;
     }
 
     span {
         font-weight: bolder;
     }
-    
+
 }
 
 .desc2 {
@@ -53,15 +52,17 @@ h1 {
     font-size: $font2;
     text-align: center;
 
-    .flex{
+    .flex {
         margin-top: 30px;
         align-items: center;
         justify-content: space-around;
         background: rgba($black, 0)
     }
+
     .btn1 {
         @include filled-button(20px, $purple, $white, 10px, 5px, $mid-btn);
-        &:hover{
+
+        &:hover {
             background-color: $white;
             color: $purple;
 
@@ -71,7 +72,7 @@ h1 {
         }
     }
 
-    .btn2{
+    .btn2 {
         display: none;
         @include outlined-button(20px, $purple, $white, 10px, 5px, $mid-btn);
     }
@@ -97,23 +98,29 @@ h1 {
 /* Menos de 768px */
 @media (max-width: 768px) {
 
-    nav{
-        height: auto;
+    .container {
+        height: calc(100% - 200px); //100vh - 100px de la cabecera
     }
-    $font1: 22px;
+
+    h1 {
+        text-align: center;
+        font-size: 64px;
+    }
 
     .desc1 {
         width: 85%;
-        font-size: $font1;
+        margin-top: 24px;
+        font-size: 20px;
     }
-
-    $font2: 18px;
 
     .desc2 {
         width: 80%;
-        font-size: $font2;
+        font-size: 16px;
+        margin-top: 24px;
 
-        .btn2{
+        .btn1,
+        .btn2 {
+            margin-top: 12px;
             display: block;
         }
     }
