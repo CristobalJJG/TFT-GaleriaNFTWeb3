@@ -35,11 +35,21 @@ export class AdminPanelComponent {
 
   protected navigate(route: string) {
     switch (route) {
-      case "users": this.router.navigate(['users'], { relativeTo: this.route }); break;
-      case "collections": this.router.navigate(['collections'], { relativeTo: this.route }); break;
+      case "users": this.router.navigate(['users'], { relativeTo: this.route }); changeStyle("users"); break;
+      case "collections": this.router.navigate(['collections'], { relativeTo: this.route }); changeStyle("collections"); break;
+      //case "collections": this.router.navigate(['collections'], { relativeTo: this.route }); changeStyle("feedback"); break;
       case "login":
       default: this.router.navigate(['login']); break;
     }
   }
 
+}
+
+function changeStyle(id: string) {
+  let elements = document.getElementsByClassName("active");
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].classList.remove("active");
+  }
+  let element = document.getElementById(id);
+  element?.classList.toggle("active");
 }

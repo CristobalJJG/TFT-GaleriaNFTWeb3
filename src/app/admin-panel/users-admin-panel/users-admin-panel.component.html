@@ -1,14 +1,8 @@
 <!-- https://v7.material.angular.io/components/table/overview -->
-<div>
+<div class="table">
     <div>
-        <form class="form-field">
-            <input (keyup)="applyFilter($event.target)" placeholder="Filter">
-        </form>
+        <input (keyup)="applyFilter($event.target)" placeholder="Filter" class="form-field">
         <table mat-table [dataSource]="dataSource" matSort>
-            <!-- <ng-container matColumnDef="Username">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Username </th>
-                <td mat-cell *matCellDef="let user"> {{user.username}} </td>
-            </ng-container> -->
 
             <ng-container matColumnDef="Fullname">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Fullname </th>

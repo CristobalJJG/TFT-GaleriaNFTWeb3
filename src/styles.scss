@@ -26,13 +26,10 @@ Be sure that you only ever include this mixin once! */
 
 .flex {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: calc(100% - 75px); //100vh - 75px de la cabecera
     background: rgb(34, 33, 19);
     background: radial-gradient($dark-gray 0%, $black 78%);
-
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 
@@ -60,16 +57,6 @@ Be sure that you only ever include this mixin once! */
     background: rgba($black, .75);
 }
 
-
-/* Menos de 1440px */
-/* @media (max-width: 1440px) {
-    
-} */
-
-/* Menos de 1024px */
-/* @media (max-width: 1024px) {
-} */
-
 /* Menos de 768px */
 @media (max-width: 768px) {
     .flex {
@@ -77,19 +64,13 @@ Be sure that you only ever include this mixin once! */
     }
 }
 
-/* Menos de 500px */
-/* @media (max-width: 500px) {
-    
-
-} */
-
-/* Menos de 500px */
-/* @media (max-width: 350px) {
-} */
 html,
 body {
     height: 100%;
     scroll-behavior: smooth;
+
+    overflow: hidden;
+
 }
 
 body {
