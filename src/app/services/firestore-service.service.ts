@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, getFirestore, query, setDoc } from "firebase/firestore";
 import { AuthService } from './auth-service.service';
 import { User } from '../class/user';
 
@@ -80,5 +80,14 @@ export class FirestoreService {
 
   protected toPascal(str: string) {
     return str.charAt(0).toUpperCase() + str.substring(1, str.length).toLowerCase()
+  }
+
+  async getAllCollections() {
+    let users: any[] = [];
+
+    let q = query(collection(this.db, 'collections'))
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => { users.push(doc.data()) });
+    return users;
   }
 }

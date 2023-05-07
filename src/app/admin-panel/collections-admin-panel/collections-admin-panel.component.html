@@ -1,1 +1,37 @@
-<p>collections-admin-panel works!</p>
+<!-- https://v7.material.angular.io/components/table/overview -->
+<div class="table">
+    <div>
+        <input (keyup)="applyFilter($event.target)" placeholder="Filter" class="form-field">
+        <table mat-table [dataSource]="dataSource" matSort>
+
+            <ng-container matColumnDef="Address" matSort>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Dirección </th>
+                <td mat-cell *matCellDef="let col"> {{col.address}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="External-URL">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> URL </th>
+                <td mat-cell *matCellDef="let col">
+                    <a href="{{col.externalURL}}" target="_blank">{{col.externalURL}}</a>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="name" matSort>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
+                <td mat-cell *matCellDef="let col"> {{col.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="pict">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Imagen </th>
+                <td mat-cell *matCellDef="let col">
+                    <img src="{{col.pict}}" width=128 height=128 alt="{{col.name}} logo">
+                </td>
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

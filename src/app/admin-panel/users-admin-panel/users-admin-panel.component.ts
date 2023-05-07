@@ -8,7 +8,7 @@ import { AdminService } from 'src/app/services/admin.service';
 @Component({
   selector: 'app-users-admin-panel',
   templateUrl: './users-admin-panel.component.html',
-  styleUrls: ['./users-admin-panel.component.scss']
+  styleUrls: ['../panel.scss']
 })
 export class UsersAdminPanelComponent implements OnInit {
   users: User[] = [];
