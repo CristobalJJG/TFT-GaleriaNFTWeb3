@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import {
   createUserWithEmailAndPassword, getAuth,
-  GoogleAuthProvider,
   signInWithEmailAndPassword,
-  signInWithPopup,
   signOut,
   User
 } from 'firebase/auth';
@@ -26,7 +24,6 @@ export class AuthService {
   constructor(protected db: FirestoreService) { }
 
   getCurrentUser(): User | null {
-    //console.log(this.auth.currentUser);
     return this.auth.currentUser;
   }
 

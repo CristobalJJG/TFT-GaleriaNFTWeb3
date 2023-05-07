@@ -20,7 +20,6 @@ export class UsersAdminPanelComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllUsers();
-    console.log(this.users);
   }
 
   constructor(private admin: AdminService) {

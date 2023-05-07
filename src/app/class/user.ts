@@ -53,7 +53,6 @@ export class User {
         let temp = localStorage.getItem("userData")
 
         if (temp != null) {
-            console.log(JSON.parse(temp));
             let userdata = JSON.parse(temp);
             let user = new User(userdata['create_date'],
                 userdata['last_login'], userdata['email'], userdata['isAdmin'],

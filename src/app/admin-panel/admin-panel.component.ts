@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from '../class/user';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../services/auth-service.service';
 
 @Component({
   selector: 'app-admin-panel',
@@ -10,17 +11,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AdminPanelComponent {
   user: User | undefined;
 
-  constructor(private router: Router, private route: ActivatedRoute) {
-    let temp = localStorage.getItem("userData")
-
-    if (temp != null) {
-      console.log(JSON.parse(temp));
-      let userdata = JSON.parse(temp);
-      this.user = new User(userdata['create_date'],
-        userdata['last_login'], userdata['email'], userdata['isAdmin'],
-        userdata['name'], userdata['surname'], userdata['phone'],
-        userdata['username'], userdata['wallets']);
-    }
+  constructor(private router: Router, private route: ActivatedRoute, private auth: AuthService) {
+    //console.log(this.auth.getCurrentUser());
+    this.user = User.getUserFromData()
     this.isUserAdmin();
   }
 
@@ -34,10 +27,11 @@ export class AdminPanelComponent {
   }
 
   protected navigate(route: string) {
+    changeStyle(route);
     switch (route) {
-      case "users": this.router.navigate(['users'], { relativeTo: this.route }); changeStyle("users"); break;
-      case "collections": this.router.navigate(['collections'], { relativeTo: this.route }); changeStyle("collections"); break;
-      //case "collections": this.router.navigate(['collections'], { relativeTo: this.route }); changeStyle("feedback"); break;
+      case "users": this.router.navigate(['users'], { relativeTo: this.route }); break;
+      case "collections": this.router.navigate(['collections'], { relativeTo: this.route }); break;
+      //case "feedback": this.router.navigate(['feedback'], { relativeTo: this.route }); break;
       case "login":
       default: this.router.navigate(['login']); break;
     }
@@ -51,5 +45,5 @@ function changeStyle(id: string) {
     elements[i].classList.remove("active");
   }
   let element = document.getElementById(id);
-  element?.classList.toggle("active");
+  element?.classList.add("active");
 }
