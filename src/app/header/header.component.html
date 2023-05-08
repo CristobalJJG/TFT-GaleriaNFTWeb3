@@ -19,11 +19,11 @@
         <!-- Botón idioma -->
         <!-- https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes -->
         <div class="dropdown">
-            <a class="head h3 dropdown">
+            <a class="head h3">
                 <img src="../../assets/images/header/translation.png" alt="Logo tranlations" class="icon">
                 <span>{{'header.languages' | translate}}</span>
             </a>
-            <div class="dropdown-content">
+            <div class="dropdown-content upper">
                 <div class="opt" (click)="changeLanguage('en')">
                     <span class="long">English</span>
                     <span class="short">Eng</span>
@@ -38,7 +38,7 @@
     <!-- parte de la derecha - botones o usuario -->
     <div class="right">
         <div *ngIf="user!=null" class="dropdown profile">
-            <span>{{user.getName()}}</span>
+            <p class="name">{{user.getName()}}</p>
             <div class="dropdown-content">
                 <div class="opt lo" routerLink="/admin/users" *ngIf="user.getIsAdmin()">
                     <span>Admin</span>

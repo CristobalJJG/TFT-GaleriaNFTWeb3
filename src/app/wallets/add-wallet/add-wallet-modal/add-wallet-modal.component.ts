@@ -12,7 +12,7 @@ import { ModalService } from 'src/app/services/modal.service';
 })
 export class AddWalletModalComponent {
 
-  future_wallet: Wallet = new Wallet("Nombre", "", 0, "URL", "BTC");
+  future_wallet: Wallet = new Wallet("Nombre", "", 0, "URL", "ETH");
   constructor(private modal: ModalService, private db: FirestoreService) { }
 
   changeCoin(coin: any) {

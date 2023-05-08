@@ -30,4 +30,14 @@ export class Wallet {
     public setUrl(url: string) { this.url = url }
     public setCoin(coin: string) { this.coin = coin }
     public setAddress(address: string) { this.address = address }
+
+    public toJSON() {
+        return {
+            name: this.name,
+            address: this.address,
+            balance: this.balance,
+            coin: this.coin,
+            url: this.url
+        }
+    }
 }
