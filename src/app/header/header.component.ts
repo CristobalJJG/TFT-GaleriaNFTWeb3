@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from '../services/auth-service.service';
+import { User } from '../class/user';
 
 @Component({
   selector: 'app-header',
@@ -9,20 +10,19 @@ import { AuthService } from '../services/auth-service.service';
 })
 export class HeaderComponent {
   language: string;
-  user: any;
-  constructor(protected translate: TranslateService, 
+  user: User | undefined;
+  constructor(protected translate: TranslateService,
     protected auth: AuthService) {
-      let temp = localStorage.getItem("userData")
-      if(temp != null) this.user = JSON.parse(temp).email;
-      this.language = (localStorage.getItem('language') || 'es');
+    this.user = User.getUserFromData();
+    this.language = (localStorage.getItem('language') || 'es');
   }
 
-  changeLanguage(lang: string){
+  changeLanguage(lang: string) {
     localStorage.setItem('language', lang)
     window.location.reload();
   }
 
-  onLogout(){
+  onLogout() {
     this.auth.logOut();
     window.location.reload();
   }

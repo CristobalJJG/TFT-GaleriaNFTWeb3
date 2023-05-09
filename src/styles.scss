@@ -1,3 +1,12 @@
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+/* Include the common styles for Angular Material. We include this here so that you only
+have to load a single css file for Angular Material in your app.
+Be sure that you only ever include this mixin once! */
+@include mat.core();
+
+
 /* You can add global styles to this file, and also import other style files */
 @import "./sass/buttons";
 @import "./sass/colors";
@@ -12,13 +21,13 @@
     margin: 0;
     font-family: 'Poppins', 'Carlito', sans-serif;
     color: $white;
+
 }
 
 .flex {
     display: flex;
-    overflow: hidden;
-    width: 100%;
-    height: calc(100vh - 75px); //100vh - 75px de la cabecera
+    width: 100vw;
+    height: calc(100% - 75px); //100vh - 75px de la cabecera
     background: rgb(34, 33, 19);
     background: radial-gradient($dark-gray 0%, $black 78%);
 }
@@ -48,16 +57,6 @@
     background: rgba($black, .75);
 }
 
-
-/* Menos de 1440px */
-/* @media (max-width: 1440px) {
-    
-} */
-
-/* Menos de 1024px */
-/* @media (max-width: 1024px) {
-} */
-
 /* Menos de 768px */
 @media (max-width: 768px) {
     .flex {
@@ -65,12 +64,16 @@
     }
 }
 
-/* Menos de 500px */
-/* @media (max-width: 500px) {
-    
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
 
-} */
+    overflow: hidden;
 
-/* Menos de 500px */
-/* @media (max-width: 350px) {
-} */
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

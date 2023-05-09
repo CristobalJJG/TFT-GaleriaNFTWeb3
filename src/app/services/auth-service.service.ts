@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import {
   createUserWithEmailAndPassword, getAuth,
-  GoogleAuthProvider,
   signInWithEmailAndPassword,
-  signInWithPopup,
   signOut,
   User
 } from 'firebase/auth';
@@ -26,41 +24,33 @@ export class AuthService {
   constructor(protected db: FirestoreService) { }
 
   getCurrentUser(): User | null {
-    console.log(this.auth.currentUser);
     return this.auth.currentUser;
   }
 
-  async logInEmailPass(mail: string, pass: string):Promise<string> {
+  async logInEmailPass(mail: string, pass: string): Promise<string> {
     return await signInWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
         if (data.user.email != null) {
           this.db.getUserInfo(mail);
         }
-        setTimeout(function(){window.location.reload();}, 1000);
+        setTimeout(function () { window.location.reload(); }, 1000);
         return "";
       })
       .catch((error) => { return error.code; });
   }
 
-  async registerEmailPass(mail: string, name: string, pass: string):Promise<string> {
+  async registerEmailPass(mail: string, name: string, pass: string): Promise<string> {
     return await createUserWithEmailAndPassword(this.auth, mail, pass)
       .then((data) => {
         if (data.user.email != null) {
           this.db.addUser(mail, name.trim());
           this.db.getUserInfo(mail);
-          
+
         }
-        setTimeout(function(){window.location.reload();}, 1000);
+        setTimeout(function () { window.location.reload(); }, 1000);
         return "";
       })
       .catch((error) => { return error.code; });
-  }
-
-  async enterWithGoogle() {
-    let provider = new GoogleAuthProvider();
-    provider.addScope("profile");
-    provider.addScope("email");
-    await signInWithPopup(this.auth, provider)
   }
 
   async logOut() {

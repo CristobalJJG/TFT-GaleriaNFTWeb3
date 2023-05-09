@@ -23,7 +23,8 @@ export class NftService {
     //const address = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"; //monos
     //const address = "0x23581767a106ae21c074b2276d25e5c3e136a68b"; //buhos
     //const address = "0x0bcc509282a5fb44c32c59e2fa1ce613f51c86a2"; //candyss
-    const address = "0x306b1ea3ecdf94ab739f1910bbda052ed4a9f949";   //Bichitos rechonchos   
+    const address = "0xa49a0e5eF83cF89Ac8aae182f22E6464B229eFC8";
+    //const address = "0x306b1ea3ecdf94ab739f1910bbda052ed4a9f949";   //Bichitos rechonchos   
     const { nfts } = await this.alchemy.nft.getNftsForContract(address);
     return nfts;
   };

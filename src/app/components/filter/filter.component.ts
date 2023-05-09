@@ -1,15 +1,11 @@
-import {
-  Component, EventEmitter,
-  Input, Output
-} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-gallery-filter',
-  templateUrl: './gallery-filter.component.html',
-  styleUrls: ['./gallery-filter.component.scss']
+  selector: 'app-filter',
+  templateUrl: './filter.component.html',
+  styleUrls: ['./filter.component.scss']
 })
-export class GalleryFilterComponent {
-
+export class FilterComponent {
   @Input() data: Map<any, any> | undefined;
   @Output() updateView = new EventEmitter<Map<string, string[]>>();
   activeFilters: Map<string, string[]> = new Map();

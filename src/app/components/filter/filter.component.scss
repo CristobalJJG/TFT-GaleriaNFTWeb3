@@ -22,7 +22,9 @@ h2 {
     margin-top: 20px;
 }
 
-#search, .search, .filter{
+#search,
+.search,
+.filter {
     width: 90%;
 }
 
@@ -36,7 +38,7 @@ h2 {
     margin-left: 10px;
     display: none;
 
-    & label{
+    & label {
         margin-left: 10px;
         color: $white;
         padding: 5px 0;
@@ -44,8 +46,8 @@ h2 {
         white-space: break-spaces;
         text-overflow: ellipsis;
     }
-    
-    &.show{
+
+    &.show {
         display: block;
     }
 }
