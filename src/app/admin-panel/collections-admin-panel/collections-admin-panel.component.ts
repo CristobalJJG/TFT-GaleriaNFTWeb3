@@ -3,6 +3,9 @@ import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { Collection } from 'src/app/class/collection';
 import { AdminService } from 'src/app/services/admin.service';
+import { FirestoreService } from 'src/app/services/firestore-service.service';
+import { ModalService } from 'src/app/services/modal.service';
+import { AddCollectionModalComponent } from './add-collection-modal/add-collection-modal.component';
 
 @Component({
   selector: 'app-collections-admin-panel',
@@ -21,7 +24,9 @@ export class CollectionsAdminPanelComponent {
     this.getAllCollections();
   }
 
-  constructor(private admin: AdminService) { }
+  constructor(private admin: AdminService, private modal: ModalService) {
+    this.modal.openDialog(AddCollectionModalComponent, "750px", "500px");
+  }
 
   async getAllCollections() {
     await this.admin.getCollections().then((data) => {
@@ -34,10 +39,11 @@ export class CollectionsAdminPanelComponent {
     this.dataSource.filter = filterValue.value.trim().toLowerCase();
   }
 
-  addCollection() {
-
+  openAddCollectionModal() {
+    this.modal.openDialog(AddCollectionModalComponent, "750px", "500px");
   }
 
+  /* APARTADO PARA SELECCIONAR MAS DE 1 COLECCION A LA VEZ */
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {
     const numSelected = this.selection.selected.length;
@@ -57,4 +63,8 @@ export class CollectionsAdminPanelComponent {
     if (!row) { return `${this.isAllSelected() ? 'select' : 'deselect'} all`; }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.getName() + 1}`;
   }
+  /* FIN APARTADO PARA LA SELECCION DE COLECCIONES*/
+
+
+
 }

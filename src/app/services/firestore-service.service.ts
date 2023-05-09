@@ -3,6 +3,7 @@ import { collection, doc, getDoc, getDocs, getFirestore, query, setDoc } from "f
 import { AuthService } from './auth-service.service';
 import { User } from '../class/user';
 import { Wallet } from 'alchemy-sdk';
+import { Collection } from '../class/collection';
 
 @Injectable({
   providedIn: 'root'
@@ -95,5 +96,16 @@ export class FirestoreService {
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => { users.push(doc.data()) });
     return users;
+  }
+
+  async addCollections(commonName: string, collection: Collection) {
+    try {
+      await setDoc(doc(this.db, "collections", commonName), {
+        address: collection.getaddress(),
+        externalURL: collection.getExternalURL(),
+        name: collection.getName(),
+        pict: collection.getPict(),
+      }).then(() => window.location.reload());
+    } catch (e) { console.error(e); }
   }
 }

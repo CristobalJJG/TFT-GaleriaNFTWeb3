@@ -31,7 +31,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table'
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { AddCollectionModalComponent } from './add-collection-modal/add-collection-modal.component';
+import { AddCollectionModalComponent } from './admin-panel/collections-admin-panel/add-collection-modal/add-collection-modal.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);

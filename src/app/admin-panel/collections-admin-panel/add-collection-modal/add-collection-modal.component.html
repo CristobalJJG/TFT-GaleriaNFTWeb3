@@ -1,0 +1,41 @@
+<section class="modal">
+    <h2>Añadir nueva colección: </h2>
+    <form #form="ngForm" (ngSubmit)="addCollection(form.controls)" class="modal-content">
+        <div class="inputbox">
+            <input type="text" id="inp-address" class="name" #address=ngModel ngModel name="address" />
+            <label for="inp-address">Dirección: </label>
+        </div>
+        <div class="inputbox">
+            <input type="url" id="inp-url" class="name" #url=ngModel ngModel name="url"
+                pattern="^[0-9a-zA-ZñÑáéíóúÁÉÍÓÚüÜ _'-.,]+$" />
+            <label for="inp-url">URL de la página: </label>
+        </div>
+        <div class="inputbox">
+            <input type="text" id="inp-name" class="name" #name=ngModel ngModel name="name"
+                pattern="^[0-9a-zA-ZñÑáéíóúÁÉÍÓÚüÜ _'-.,]+$" />
+            <label for="">Nombre real: </label>
+        </div>
+        <div class="inputbox">
+
+            <input type="url" id="inp-commonName" class="name" #commonName=ngModel ngModel name="commonName" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+            " />
+            <label for="inp-commonName">Nombre interno:</label>
+        </div>
+        <div class="inputbox">
+            <input type="text" id="inp-img" class="name" #img=ngModel ngModel name="img" />
+            <label for="inp-img">Imagen: </label>
+            <img src="{{img.value}}" width="150" height="150" style="object-fit: contain;" alt="{{name}}">
+        </div>
+
+        <button class="fly">
+            <div class="wrapper">
+                <svg height="24" width="24" viewBox="0 0 24 24" class="short">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 
+                        19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <span>Añadir</span>
+        </button>
+    </form>
+</section>
