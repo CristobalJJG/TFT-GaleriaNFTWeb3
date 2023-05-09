@@ -56,7 +56,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AddWalletComponent,
     AddWalletModalComponent,
     NftCardComponent,
-    AddCollectionModalComponent,
+    AddCollectionModalComponent
   ],
   imports: [
     BrowserModule,

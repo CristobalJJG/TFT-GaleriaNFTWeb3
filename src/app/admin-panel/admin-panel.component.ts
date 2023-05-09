@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from '../class/user';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from '../services/auth-service.service';
+import { AdminService } from '../services/admin.service';
 
 @Component({
   selector: 'app-admin-panel',
@@ -11,19 +12,23 @@ import { AuthService } from '../services/auth-service.service';
 export class AdminPanelComponent {
   user: User | undefined;
 
-  constructor(private router: Router, private route: ActivatedRoute, private auth: AuthService) {
-    //console.log(this.auth.getCurrentUser());
+  constructor(private router: Router, private route: ActivatedRoute, private admin: AdminService) {
     this.user = User.getUserFromData()
     this.isUserAdmin();
   }
 
   private isUserAdmin() {
-    if (this.user == undefined || !this.user.getIsAdmin()) {
-      this.navigate('login');
-    } else {
-      let url = window.location.href;
-      this.navigate(url.split('/').pop() || 'users')
-    }
+    let username = this.user!.getEmail().split("@")[0] + "@" + this.user!.getName();
+
+    !this.admin.verifyAdmin(username)
+      .then((res) => {
+        if (this.user == undefined || !res) {
+          this.navigate('login');
+        } else {
+          let url = window.location.href;
+          this.navigate(url.split('/').pop() || 'users')
+        }
+      })
   }
 
   protected navigate(route: string) {
