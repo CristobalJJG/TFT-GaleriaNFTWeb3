@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -57,5 +57,18 @@ Yúbal Fernández.
 \newblock \url{https://www.xataka.com/basics/que-nft-como-funcionan}, July
   2022.
 \newblock [Online; accedido a 02/May/2023].
+
+\bibitem[Rodriguez(2018)]{aplicaciones-descentralizadas}
+Nelson Rodriguez.
+\newblock 35+ ejemplos de web 3.0 y como blockchain está cambiando la web.
+\newblock \url{https://101blockchains.com/es/web-3-0/}, 12 2018.
+\newblock [Online; accedido a 12/05/2023].
+
+\bibitem[Truust()]{p2p}
+Truust.
+\newblock Peer to peer (p2p): Qué es y qué ventajas tiene.
+\newblock
+  \url{https://truust.io/es/blog/peer-peer-p2p-que-es-y-que-ventajas-tiene/}.
+\newblock [Online; accedido a 12/05/2023].
 
 \end{thebibliography}
