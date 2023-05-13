@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -75,6 +75,33 @@ Truust.
 Blogdecentralab.
 \newblock Qué es alchemy.
 \newblock \url{https://decentralab.tech/blog/que-es-alchemy/}, 03 2023.
+\newblock [Online; accedido a 13/05/2023].
+
+\bibitem[developers.google.com/web()]{lighthouse-resume}
+developers.google.com/web.
+\newblock Lighthouse.
+\newblock
+  \url{https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es}.
+\newblock [Online; accedido a 13/05/2023].
+
+\bibitem[SonarQube()]{sonarqube-resume}
+SonarQube.
+\newblock Sonarqube documentation.
+\newblock \url{https://docs.sonarqube.org/latest/}.
+\newblock [Online; accedido a 13/05/2023].
+
+\bibitem[web(2022)]{code-smell}
+Desarrollo web.
+\newblock Code smell.
+\newblock
+  \url{https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/code-smell/},
+  11 2022.
+\newblock [Online; accedido a 13/05/2023].
+
+\bibitem[Asana(2022)]{deuda-tecnica}
+Team Asana.
+\newblock Qué es la deuda técnica y cómo saldarla (con ejemplos).
+\newblock \url{https://asana.com/es/resources/technical-debt}, 07 2022.
 \newblock [Online; accedido a 13/05/2023].
 
 \end{thebibliography}

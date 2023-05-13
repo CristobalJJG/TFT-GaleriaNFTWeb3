@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  13 MAY 2023 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.4.30)  13 MAY 2023 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -584,7 +584,7 @@ Package newfloat Info: `float' package detected.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
  (Portada.tex
-<Ilustraciones/LogoEII.jpg, id=123, 288.3573pt x 45.771pt>
+<Ilustraciones/LogoEII.jpg, id=151, 288.3573pt x 45.771pt>
 File: Ilustraciones/LogoEII.jpg Graphic file (type jpg)
 <use Ilustraciones/LogoEII.jpg>
 Package pdftex.def Info: Ilustraciones/LogoEII.jpg  used on input line 6.
@@ -720,7 +720,7 @@ LaTeX Info: Redefining \% on input line 91.
  [7]
 Cap\'{\i }tulo 4.
 (4.-Marco-Teorico/marco-teorico.tex (4.-Marco-Teorico/4.1-web3.tex
-<./Ilustraciones/cern-server.jpg, id=301, 693.34032pt x 453.19313pt>
+<./Ilustraciones/cern-server.jpg, id=346, 693.34032pt x 453.19313pt>
 File: ./Ilustraciones/cern-server.jpg Graphic file (type jpg)
 <use ./Ilustraciones/cern-server.jpg>
 Package pdftex.def Info: ./Ilustraciones/cern-server.jpg  used on input line 12.
@@ -758,7 +758,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--7
 [8
 
  <./Ilustraciones/cern-server.jpg>] (4.-Marco-Teorico/4.2-criptomonedas.tex
-<./Ilustraciones/redes.png, id=311, 402.75468pt x 475.7775pt>
+<./Ilustraciones/redes.png, id=356, 402.75468pt x 475.7775pt>
 File: ./Ilustraciones/redes.png Graphic file (type png)
 <use ./Ilustraciones/redes.png>
 Package pdftex.def Info: ./Ilustraciones/redes.png  used on input line 20.
@@ -799,12 +799,12 @@ LaTeX Info: Redefining \% on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  [10 <./Ilustraciones/redes.png>] (4.-Marco-Teorico/4.3-nft.tex
-<./Ilustraciones/opensea-nft.png, id=324, 1043.39813pt x 520.94624pt>
+<./Ilustraciones/opensea-nft.png, id=369, 1043.39813pt x 520.94624pt>
 File: ./Ilustraciones/opensea-nft.png Graphic file (type png)
 <use ./Ilustraciones/opensea-nft.png>
 Package pdftex.def Info: ./Ilustraciones/opensea-nft.png  used on input line 26.
 (pdftex.def)             Requested size: 260.84889pt x 130.23624pt.
-<./Ilustraciones/sorare-nft.png, id=326, 614.295pt x 626.34pt>
+<./Ilustraciones/sorare-nft.png, id=371, 614.295pt x 626.34pt>
 File: ./Ilustraciones/sorare-nft.png Graphic file (type png)
 <use ./Ilustraciones/sorare-nft.png>
 Package pdftex.def Info: ./Ilustraciones/sorare-nft.png  used on input line 34.
@@ -845,12 +845,12 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
  [12 <./Ilustraciones/sorare-nft.png>] (4.-Marco-Teorico/4.4-criptowallet.tex
-<./Ilustraciones/ledger-hardware.png, id=341, 706.64pt x 943.525pt>
+<./Ilustraciones/ledger-hardware.png, id=386, 706.64pt x 943.525pt>
 File: ./Ilustraciones/ledger-hardware.png Graphic file (type png)
 <use ./Ilustraciones/ledger-hardware.png>
 Package pdftex.def Info: ./Ilustraciones/ledger-hardware.png  used on input line 19.
 (pdftex.def)             Requested size: 105.99142pt x 141.52264pt.
-<./Ilustraciones/coinbase-logo.png, id=343, 172.9662pt x 30.8352pt>
+<./Ilustraciones/coinbase-logo.png, id=388, 172.9662pt x 30.8352pt>
 File: ./Ilustraciones/coinbase-logo.png Graphic file (type png)
 <use ./Ilustraciones/coinbase-logo.png>
 Package pdftex.def Info: ./Ilustraciones/coinbase-logo.png  used on input line 27.
@@ -880,7 +880,7 @@ Cap\'{\i }tulo 5.
 (5.-Estado-arte/5.-Estado-arte.tex (5.-Estado-arte/5.1-Industria.tex [15
 
 ]) (5.-Estado-arte/5.2-webs-top.tex
-<./Ilustraciones/logos/steemit-logo.png, id=362, 451.6875pt x 253.94875pt>
+<./Ilustraciones/logos/steemit-logo.png, id=407, 451.6875pt x 253.94875pt>
 File: ./Ilustraciones/logos/steemit-logo.png Graphic file (type png)
 <use ./Ilustraciones/logos/steemit-logo.png>
 Package pdftex.def Info: ./Ilustraciones/logos/steemit-logo.png  used on input line 17.
@@ -899,12 +899,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-<./Ilustraciones/logos/sia-logo.jpg, id=377, 475.7775pt x 287.0725pt>
+<./Ilustraciones/logos/sia-logo.jpg, id=422, 475.7775pt x 287.0725pt>
 File: ./Ilustraciones/logos/sia-logo.jpg Graphic file (type jpg)
 <use ./Ilustraciones/logos/sia-logo.jpg>
 Package pdftex.def Info: ./Ilustraciones/logos/sia-logo.jpg  used on input line 104.
 (pdftex.def)             Requested size: 118.94408pt x 71.76794pt.
-<./Ilustraciones/logos/ipfs-logo.jpg, id=379, 475.7775pt x 475.7775pt>
+<./Ilustraciones/logos/ipfs-logo.jpg, id=424, 475.7775pt x 475.7775pt>
 File: ./Ilustraciones/logos/ipfs-logo.jpg Graphic file (type jpg)
 <use ./Ilustraciones/logos/ipfs-logo.jpg>
 Package pdftex.def Info: ./Ilustraciones/logos/ipfs-logo.jpg  used on input line 116.
@@ -926,7 +926,7 @@ Overfull \hbox (1.01515pt too wide) in paragraph at lines 134--138
 \OT1/lmr/bx/n/12 LivePeer\OT1/lmr/m/n/12 [[]$https : / / livepeer . org / es$[]]: Pro-por-cio-na un ser-vi-cio de trans-mi-si^^Son, es de c^^Sodi-go abier-
  []
 
-<./Ilustraciones/logos/Audius.jpg, id=396, 475.7775pt x 527.9725pt>
+<./Ilustraciones/logos/Audius.jpg, id=441, 475.7775pt x 527.9725pt>
 File: ./Ilustraciones/logos/Audius.jpg Graphic file (type jpg)
 <use ./Ilustraciones/logos/Audius.jpg>
 Package pdftex.def Info: ./Ilustraciones/logos/Audius.jpg  used on input line 160.
@@ -934,12 +934,12 @@ Package pdftex.def Info: ./Ilustraciones/logos/Audius.jpg  used on input line 16
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
 [19 <./Ilustraciones/logos/ipfs-logo.jpg>]
-<./Ilustraciones/logos/brave-logo.png, id=406, 1772.87344pt x 558.58687pt>
+<./Ilustraciones/logos/brave-logo.png, id=451, 1772.87344pt x 558.58687pt>
 File: ./Ilustraciones/logos/brave-logo.png Graphic file (type png)
 <use ./Ilustraciones/logos/brave-logo.png>
 Package pdftex.def Info: ./Ilustraciones/logos/brave-logo.png  used on input line 191.
 (pdftex.def)             Requested size: 177.29773pt x 55.86195pt.
-<./Ilustraciones/StatCounter-browser-ww-monthly-201801-202304-bar.png, id=410, 963.6pt x 542.025pt>
+<./Ilustraciones/StatCounter-browser-ww-monthly-201801-202304-bar.png, id=455, 963.6pt x 542.025pt>
 File: ./Ilustraciones/StatCounter-browser-ww-monthly-201801-202304-bar.png Graphic file (type png)
 <use ./Ilustraciones/StatCounter-browser-ww-monthly-201801-202304-bar.png>
 Package pdftex.def Info: ./Ilustraciones/StatCounter-browser-ww-monthly-201801-202304-bar.png  used on input line 213.
@@ -953,7 +953,7 @@ Overfull \hbox (9.7676pt too wide) in paragraph at lines 213--213
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  [20 <./Ilustraciones/logos/Audius.jpg> <./Ilustraciones/logos/brave-logo.png>] (5.-Estado-arte/5.3-Resumen.tex
-<./Ilustraciones/CoinMarketCap chart.png, id=420, 803.0pt x 552.0625pt>
+<./Ilustraciones/CoinMarketCap chart.png, id=465, 803.0pt x 552.0625pt>
 File: ./Ilustraciones/CoinMarketCap chart.png Graphic file (type png)
 <use ./Ilustraciones/CoinMarketCap chart.png>
 Package pdftex.def Info: ./Ilustraciones/CoinMarketCap chart.png  used on input line 20.
@@ -967,7 +967,7 @@ LaTeX Info: Redefining \% on input line 100.
  [22 <./Ilustraciones/CoinMarketCap chart.png>]
 Cap\'{\i }tulo 6.
 (6.-Recursos-tecs/6.-Recursos.tex (6.-Recursos-tecs/6.1-Angular.tex
-<./Ilustraciones/logos/Angular Logo.png, id=433, 272.51813pt x 271.0125pt>
+<./Ilustraciones/logos/Angular Logo.png, id=478, 272.51813pt x 271.0125pt>
 File: ./Ilustraciones/logos/Angular Logo.png Graphic file (type png)
 <use ./Ilustraciones/logos/Angular Logo.png>
 Package pdftex.def Info: ./Ilustraciones/logos/Angular Logo.png  used on input line 9.
@@ -975,12 +975,12 @@ Package pdftex.def Info: ./Ilustraciones/logos/Angular Logo.png  used on input l
  [23
 
  <./Ilustraciones/logos/Angular Logo.png>]
-<./Ilustraciones/logos/Angular-Mat Logo.png, id=440, 142.28156pt x 44.41594pt>
+<./Ilustraciones/logos/Angular-Mat Logo.png, id=485, 142.28156pt x 44.41594pt>
 File: ./Ilustraciones/logos/Angular-Mat Logo.png Graphic file (type png)
 <use ./Ilustraciones/logos/Angular-Mat Logo.png>
 Package pdftex.def Info: ./Ilustraciones/logos/Angular-Mat Logo.png  used on input line 38.
 (pdftex.def)             Requested size: 142.2812pt x 44.41582pt.
-<./Ilustraciones/table-paginator.png, id=443, 954.56625pt x 240.9pt>
+<./Ilustraciones/table-paginator.png, id=488, 954.56625pt x 240.9pt>
 File: ./Ilustraciones/table-paginator.png Graphic file (type png)
 <use ./Ilustraciones/table-paginator.png>
 Package pdftex.def Info: ./Ilustraciones/table-paginator.png  used on input line 55.
@@ -991,12 +991,12 @@ Overfull \hbox (5.25073pt too wide) in paragraph at lines 55--55
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 44--8
+Underfull \hbox (badness 10000) in paragraph at lines 44--7
 
  []
 
 (6.-Recursos-tecs/6.2-Expressjs.tex
-<./Ilustraciones/logos/ExpressJS.png, id=445, 186.6975pt x 51.19125pt>
+<./Ilustraciones/logos/ExpressJS.png, id=490, 186.6975pt x 51.19125pt>
 File: ./Ilustraciones/logos/ExpressJS.png Graphic file (type png)
 <use ./Ilustraciones/logos/ExpressJS.png>
 Package pdftex.def Info: ./Ilustraciones/logos/ExpressJS.png  used on input line 12.
@@ -1009,7 +1009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--16
 LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
 [24 <./Ilustraciones/logos/Angular-Mat Logo.png> <./Ilustraciones/table-paginator.png>]) (6.-Recursos-tecs/6.3-API's.tex (6.-Recursos-tecs/APIS/firebase.tex
-<./Ilustraciones/logos/Firebase.png, id=455, 149.8097pt x 204.765pt>
+<./Ilustraciones/logos/Firebase.png, id=500, 149.8097pt x 204.765pt>
 File: ./Ilustraciones/logos/Firebase.png Graphic file (type png)
 <use ./Ilustraciones/logos/Firebase.png>
 Package pdftex.def Info: ./Ilustraciones/logos/Firebase.png  used on input line 9.
@@ -1020,7 +1020,7 @@ LaTeX Info: Redefining \% on input line 24.
 
 LaTeX Warning: Reference `trabajo-futuro' on page 26 undefined on input line 38.
 
-<./Ilustraciones/autenticación.png, id=467, 716.6775pt x 292.84406pt>
+<./Ilustraciones/autenticación.png, id=512, 716.6775pt x 292.84406pt>
 File: ./Ilustraciones/autenticación.png Graphic file (type png)
 <use ./Ilustraciones/autenticación.png>
 Package pdftex.def Info: ./Ilustraciones/autenticación.png  used on input line 46.
@@ -1033,13 +1033,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--50
 LaTeX Info: Redefining \. on input line 62.
 LaTeX Info: Redefining \% on input line 62.
 [26 <./Ilustraciones/autenticación.png>]
-<./Ilustraciones/almacenamiento.png, id=473, 512.66531pt x 204.765pt>
+<./Ilustraciones/almacenamiento.png, id=518, 512.66531pt x 204.765pt>
 File: ./Ilustraciones/almacenamiento.png Graphic file (type png)
 <use ./Ilustraciones/almacenamiento.png>
 Package pdftex.def Info: ./Ilustraciones/almacenamiento.png  used on input line 75.
 (pdftex.def)             Requested size: 384.49803pt x 153.57335pt.
 ) (6.-Recursos-tecs/APIS/alchemy.tex
-<./Ilustraciones/logos/alchemy-logo.png, id=475, 256.70906pt x 72.27pt>
+<./Ilustraciones/logos/alchemy-logo.png, id=520, 256.70906pt x 72.27pt>
 File: ./Ilustraciones/logos/alchemy-logo.png Graphic file (type png)
 <use ./Ilustraciones/logos/alchemy-logo.png>
 Package pdftex.def Info: ./Ilustraciones/logos/alchemy-logo.png  used on input line 10.
@@ -1058,7 +1058,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--20
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  [27 <./Ilustraciones/almacenamiento.png> <./Ilustraciones/logos/alchemy-logo.png>] (6.-Recursos-tecs/APIS/moralis.tex
-<./Ilustraciones/logos/Moralis-logo.png, id=485, 275.52937pt x 79.79813pt>
+<./Ilustraciones/logos/Moralis-logo.png, id=530, 275.52937pt x 79.79813pt>
 File: ./Ilustraciones/logos/Moralis-logo.png Graphic file (type png)
 <use ./Ilustraciones/logos/Moralis-logo.png>
 Package pdftex.def Info: ./Ilustraciones/logos/Moralis-logo.png  used on input line 12.
@@ -1069,12 +1069,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--16
  []
 
 ))
-Overfull \hbox (5.04602pt too wide) in paragraph at lines 24--16
+Overfull \hbox (5.04602pt too wide) in paragraph at lines 24--13
 []\OT1/lmr/m/n/12 Entre es-tas em-pre-sas, po-de-mos en-con-trar al-gu-nas an-tes nom-bra-das, co-mo son Me-ta-mask[[]$https :
  []
 
 (6.-Recursos-tecs/6.4-VScode.tex
-<./Ilustraciones/logos/vscode-logo.png, id=490, 513.92pt x 509.905pt>
+<./Ilustraciones/logos/vscode-logo.png, id=535, 513.92pt x 509.905pt>
 File: ./Ilustraciones/logos/vscode-logo.png Graphic file (type png)
 <use ./Ilustraciones/logos/vscode-logo.png>
 Package pdftex.def Info: ./Ilustraciones/logos/vscode-logo.png  used on input line 12.
@@ -1127,7 +1127,7 @@ Overfull \hbox (2.00789pt too wide) in paragraph at lines 43--45
  []
 
 ) (6.-Recursos-tecs/6.5-Trello.tex
-<./Ilustraciones/logos/trello.1024x1024.png, id=507, 1027.84pt x 1027.84pt>
+<./Ilustraciones/logos/trello.1024x1024.png, id=552, 1027.84pt x 1027.84pt>
 File: ./Ilustraciones/logos/trello.1024x1024.png Graphic file (type png)
 <use ./Ilustraciones/logos/trello.1024x1024.png>
 Package pdftex.def Info: ./Ilustraciones/logos/trello.1024x1024.png  used on input line 10.
@@ -1135,33 +1135,82 @@ Package pdftex.def Info: ./Ilustraciones/logos/trello.1024x1024.png  used on inp
 LaTeX Info: Redefining \. on input line 19.
 LaTeX Info: Redefining \% on input line 19.
  [29 <./Ilustraciones/logos/vscode-logo.png> <./Ilustraciones/logos/trello.1024x1024.png>]) (6.-Recursos-tecs/6.6-Figma.tex
-<./Ilustraciones/logos/figma.684x1024.png, id=520, 686.565pt x 1027.84pt>
+<./Ilustraciones/logos/figma.684x1024.png, id=565, 686.565pt x 1027.84pt>
 File: ./Ilustraciones/logos/figma.684x1024.png Graphic file (type png)
 <use ./Ilustraciones/logos/figma.684x1024.png>
 Package pdftex.def Info: ./Ilustraciones/logos/figma.684x1024.png  used on input line 11.
 (pdftex.def)             Requested size: 34.33026pt x 51.395pt.
+) (6.-Recursos-tecs/6.7-Validacion.tex
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+ [30 <./Ilustraciones/logos/figma.684x1024.png>]
+<./Ilustraciones/logos/lighthouse-logo.png, id=574, 548.80031pt x 97.11281pt>
+File: ./Ilustraciones/logos/lighthouse-logo.png Graphic file (type png)
+<use ./Ilustraciones/logos/lighthouse-logo.png>
+Package pdftex.def Info: ./Ilustraciones/logos/lighthouse-logo.png  used on input line 19.
+(pdftex.def)             Requested size: 192.08298pt x 33.98997pt.
+<./Ilustraciones/sonarqube.png, id=577, 1105.12875pt x 605.26125pt>
+File: ./Ilustraciones/sonarqube.png Graphic file (type png)
+<use ./Ilustraciones/sonarqube.png>
+Package pdftex.def Info: ./Ilustraciones/sonarqube.png  used on input line 41.
+(pdftex.def)             Requested size: 331.54118pt x 181.57976pt.
+)
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ [31 <./Ilustraciones/logos/lighthouse-logo.png> <./Ilustraciones/sonarqube.png>] (6.-Recursos-tecs/6.8-Git.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+<./Ilustraciones/logos/git-logo.png, id=593, 256.96pt x 256.96pt>
+File: ./Ilustraciones/logos/git-logo.png Graphic file (type png)
+<use ./Ilustraciones/logos/git-logo.png>
+Package pdftex.def Info: ./Ilustraciones/logos/git-logo.png  used on input line 15.
+(pdftex.def)             Requested size: 64.23984pt x 64.23984pt.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+[32 <./Ilustraciones/logos/git-logo.png>]
+<./Ilustraciones/logos/gitkraken-logo.png, id=606, 513.92pt x 447.6725pt>
+File: ./Ilustraciones/logos/gitkraken-logo.png Graphic file (type png)
+<use ./Ilustraciones/logos/gitkraken-logo.png>
+Package pdftex.def Info: ./Ilustraciones/logos/gitkraken-logo.png  used on input line 68.
+(pdftex.def)             Requested size: 77.08467pt x 67.14796pt.
 ))
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
- [30 <./Ilustraciones/logos/figma.684x1024.png>]
+ [33 <./Ilustraciones/logos/gitkraken-logo.png>]
 Cap\'{\i }tulo 7.
-[31
+(7.-Metodologia/7.-Metodologia.tex
+<./Ilustraciones/scrum.png, id=613, 1113.15875pt x 527.9725pt>
+File: ./Ilustraciones/scrum.png Graphic file (type png)
+<use ./Ilustraciones/scrum.png>
+Package pdftex.def Info: ./Ilustraciones/scrum.png  used on input line 17.
+(pdftex.def)             Requested size: 445.25562pt x 211.18526pt.
+ [34
 
-]
+ <./Ilustraciones/scrum.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+)
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+ [35]
 Cap\'{\i }tulo 8.
-[32
+[36
 
 ]
 Cap\'{\i }tulo 9.
-[33
+[37
 
 ]
 Cap\'{\i }tulo 10.
-[34
+[38
 
 ]
 Cap\'{\i }tulo 11.
-[35
+[39
 
 ] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 21--27
@@ -1173,9 +1222,27 @@ Underfull \hbox (badness 1728) in paragraph at lines 43--47
 []\OT1/lmr/m/n/12 Heather Hall.  Web 2.0 ex-plai-ned: Everything you need to know.  []$https : / /
  []
 
-) [36
 
-] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
+Underfull \hbox (badness 4467) in paragraph at lines 81--86
+[]\OT1/lmr/m/n/12 developers.google.com/web.  Lighthou-se.  []$https : / / chrome . google . com / webstore /
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 81--86
+\OT1/lmr/m/n/12 detail / lighthouse / blipmdconlkpinefehnmjammfjpmpbjk ? hl = es$[].  [On-li-ne; ac-ce-di-do a
+ []
+
+[40
+
+]
+Underfull \hbox (badness 2970) in paragraph at lines 94--100
+[]\OT1/lmr/m/n/12 Desarrollo web.  Co-de smell.  []$https : / / www . ionos . es / digitalguide / paginas-[]web /
+ []
+
+)
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [41] (d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
@@ -1183,20 +1250,20 @@ LaTeX Info: Redefining \% on input line 24.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AACED0FCC33EBF187B120F09B0A0D45D;4339.
+(rerunfilecheck)             Checksum: DF7CD03C7B7D36627EC30A7898E22C58;5174.
  ) 
 Here is how much of TeX's memory you used:
- 18384 strings out of 475381
- 315648 string characters out of 2776863
- 763001 words of memory out of 3000000
- 39182 multiletter control sequences out of 15000+600000
- 532960 words of font info for 63 fonts, out of 8000000 for 9000
+ 18492 strings out of 475381
+ 318403 string characters out of 2776863
+ 764656 words of memory out of 3000000
+ 39250 multiletter control sequences out of 15000+600000
+ 535906 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,12n,120p,1235b,809s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb>
-Output written on d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.pdf (43 pages, 2267912 bytes).
+ 125i,12n,120p,1235b,784s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb>
+Output written on d:\Repositorios\TFT\TFT-Front\Memoria-TFG\build\main.pdf (48 pages, 2712865 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 122 named destinations out of 1000 (max. 500000)
- 371 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

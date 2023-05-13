@@ -26,8 +26,15 @@
 \contentsline {section}{\numberline {6.4}IDE - Visual Studio Code}{28}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Trello}{29}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Figma}{30}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Metodologías}{31}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Análisis y Diseño}{32}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Desarrollo}{33}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Evaluación y resultados}{34}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones y trabajo futuro}{35}{chapter.11}%
+\contentsline {section}{\numberline {6.7}Validaciones}{30}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Lighthouse}{31}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}SonarQube}{31}{subsection.6.7.2}%
+\contentsline {section}{\numberline {6.8}Control de versiones}{32}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Git}{32}{section.6.9}%
+\contentsline {section}{\numberline {6.10}GitKraken}{33}{section.6.10}%
+\contentsline {chapter}{\numberline {7}Metodología}{34}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Marco de Trabajo SCRUM}{34}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Análisis y Diseño}{36}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Desarrollo}{37}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Evaluación y resultados}{38}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones y trabajo futuro}{39}{chapter.11}%
