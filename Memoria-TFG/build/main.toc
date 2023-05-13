@@ -15,8 +15,19 @@
 \contentsline {section}{\numberline {5.2}Páginas principales de la Web 3 en sus distintos ámbitos}{16}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Conclusión}{21}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Recursos y tecnologías}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Metodologías}{24}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Análisis y Diseño}{25}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Desarrollo}{26}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Evaluación y resultados}{27}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones y trabajo futuro}{28}{chapter.11}%
+\contentsline {section}{\numberline {6.1}Angular}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Express.JS}{24}{section.6.2}%
+\contentsline {section}{\numberline {6.3}API's}{25}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Firebase}{25}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Autenticación de usuarios}{26}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Almacenamiento en la nube}{26}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {6.3.2}Alchemy}{27}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Moralis}{28}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}IDE - Visual Studio Code}{28}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Trello}{29}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Figma}{30}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Metodologías}{31}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Análisis y Diseño}{32}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Desarrollo}{33}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Evaluación y resultados}{34}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones y trabajo futuro}{35}{chapter.11}%
