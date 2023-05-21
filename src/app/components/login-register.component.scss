@@ -10,22 +10,12 @@ h2 {
 .form {
     display: grid;
     justify-items: center;
-    width: 30%;
-    height: auto;
-    overflow-y: auto;
+    width: 100%;
+    height: 100%;
     background-color: $white;
     border-radius: 20px;
     box-shadow: 0 5px 10px 10px rgba($black, .75);
     transition: $transition4s;
-
-    &:hover {
-        transform: translateY(-20px);
-        box-shadow: 0 20px 15px 15px $black;
-
-        input.input {
-            width: 22rem;
-        }
-    }
 
     .desc2 {
         margin-top: 20px;
@@ -42,6 +32,8 @@ h2 {
 
 .container {
     align-items: center !important;
+    width: 100%;
+    height: 100%;
 }
 
 .input-flex {
@@ -114,6 +106,7 @@ button {
         transition: $transition4s;
         font-weight: bolder;
         text-decoration: none;
+        cursor: pointer;
 
         &:hover {
             color: $dark-purple;
@@ -138,30 +131,8 @@ button {
     }
 }
 
-.form {
-    &:hover {
-        transform: translateY(0);
-        box-shadow: 0 5px 10px 10px rgba($black, .75);
-
-        input.input {
-            width: 16rem;
-        }
-    }
-}
-
 /* Menos de 1440px */
 @media (max-width: 1440px) {
-    .form {
-        width: 500px;
-
-        &:hover {
-            transform: scaleY(1.01) translateY(-20px);
-
-            input.input {
-                width: 20em;
-            }
-        }
-    }
 
     input.input {
         padding: 10px;
@@ -183,26 +154,6 @@ button {
         overflow-y: hidden;
     }
 
-    $inp-width: 16rem;
-
-    .form {
-        width: 100%;
-        margin-top: 50px;
-        height: fit-content;
-
-        &:hover {
-            transform: scaleY(1) translateY(0);
-
-            input.input {
-                width: $inp-width;
-            }
-        }
-    }
-
-    input.input {
-        width: $inp-width;
-    }
-
     .change {
         height: 20px;
     }
@@ -210,25 +161,6 @@ button {
 
 /* Menos de 500px */
 @media (max-width: 500px) {
-    $inp-width: 70%;
-
-    input.input {
-        width: $inp-width;
-    }
-
-    .form {
-        margin-top: 25px;
-        height: fit-content;
-        width: 100%;
-        border-radius: 20px;
-        overflow-y: visible;
-
-        &:hover input.input {
-            width: $inp-width;
-        }
-
-    }
-
     .logo-lr {
         margin-left: 7%;
     }
@@ -237,15 +169,9 @@ button {
 
 /* Menos de 350px */
 @media (max-width: 350px) {
-    $inp-width: 60%;
 
     input.input {
-        width: $inp-width;
         font-size: medium;
-    }
-
-    .form:hover input.input {
-        width: $inp-width;
     }
 
     .logo-lr {

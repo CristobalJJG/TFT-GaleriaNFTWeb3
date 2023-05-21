@@ -50,10 +50,10 @@
         </div>
     </div>
     <div *ngIf="user==null" class="structure enter-btn">
-        <button class="login-btn" routerLink="/login" routerLinkActive="activebutton">
+        <button class="login-btn" (click)="openLogin()">
             {{'header.login' | translate}}
         </button>
-        <button class="register-btn" routerLink="/register" routerLinkActive="activebutton">
+        <button class="register-btn" (click)="openRegister()">
             {{'header.register' | translate}}
         </button>
     </div>

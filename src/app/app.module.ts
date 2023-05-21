@@ -12,8 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { LoginComponent } from './home-page/login/login.component';
-import { RegisterComponent } from './home-page/register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { NftCardComponent } from './gallery/nft-card/nft-card.component';
@@ -32,6 +30,8 @@ import { MatTableModule } from '@angular/material/table'
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { AddCollectionModalComponent } from './admin-panel/collections-admin-panel/add-collection-modal/add-collection-modal.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
