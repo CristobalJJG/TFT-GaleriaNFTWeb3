@@ -17,7 +17,6 @@ export class HeaderComponent {
   constructor(protected translate: TranslateService,
     protected auth: AuthService,
     private modal: ModalService) {
-
     this.user = User.getUserFromData();
     this.language = (localStorage.getItem('language') || 'es');
   }
@@ -36,6 +35,6 @@ export class HeaderComponent {
     this.modal.openDialog(LoginComponent, "450px", "500px");
   }
   openRegister() {
-    this.modal.openDialog(RegisterComponent, "600px", "500px");
+    this.modal.openDialog(RegisterComponent, "625px", "500px");
   }
 }
