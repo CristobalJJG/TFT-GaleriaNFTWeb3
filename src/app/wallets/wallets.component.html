@@ -1,6 +1,6 @@
 <main class="flex">
     <div class="container">
-        <div *ngIf="this.auth.getCurrentUser()">
+        <div *ngIf="userRegistered">
             <div class="nft-container">
                 <div *ngFor="let w of wallets">
                     <app-wallet-card [wallet]="w"></app-wallet-card>

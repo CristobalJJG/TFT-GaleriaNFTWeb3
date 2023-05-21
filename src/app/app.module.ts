@@ -32,6 +32,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { AddCollectionModalComponent } from './admin-panel/collections-admin-panel/add-collection-modal/add-collection-modal.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { MessageComponent } from './components/message/message.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -56,7 +57,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AddWalletComponent,
     AddWalletModalComponent,
     NftCardComponent,
-    AddCollectionModalComponent
+    AddCollectionModalComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { User } from '../class/user';
 import { ModalService } from '../services/modal.service';
 import { LoginComponent } from '../components/login/login.component';
 import { RegisterComponent } from '../components/register/register.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,7 +17,8 @@ export class HeaderComponent {
   user: User | undefined;
   constructor(protected translate: TranslateService,
     protected auth: AuthService,
-    private modal: ModalService) {
+    private modal: ModalService,
+    private router: Router) {
     this.user = User.getUserFromData();
     this.language = (localStorage.getItem('language') || 'es');
   }
@@ -29,6 +31,10 @@ export class HeaderComponent {
   onLogout() {
     this.auth.logOut();
     window.location.reload();
+  }
+
+  goToWallets() {
+    this.router.navigate(['/wallets']);
   }
 
   openLogin() {

@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.error,
+b.error {
+    color: $red;
+    fill: $red;
+}
+
+.warning,
+b.warning {
+    color: $yellow;
+    fill: $yellow;
+}
+
+.success,
+b.success {
+    color: $green;
+    fill: $green;
+}
+
+.notify,
+b.notify {
+    color: $white;
+    fill: $white;
+}
+
+#text {
+    padding: 30px;
+    font-size: 22px;
+    text-align: center;
+}
