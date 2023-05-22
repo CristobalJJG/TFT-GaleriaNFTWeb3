@@ -70,8 +70,8 @@ export class GalleryComponent implements OnInit {
   private filters_straction(f: Map<string, string[]>): boolean {
     let empty: boolean = false;
     f.forEach((value) => {
-      empty = (value.length <= 0);
-      if (empty) return;
+      let aux = (value.length <= 0)
+      if (aux) empty = aux;
     })
     return empty;
   }
