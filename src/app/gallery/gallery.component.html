@@ -5,14 +5,14 @@
             <div class="collection-img">
                 <img src="{{item.pict}}" alt="{{item.name}}">
             </div>
-            <div class="collection-name">
+            <p class="collection-name">
                 {{item.name}}
-            </div>
+            </p>
         </div>
     </div>
     <div class="container">
         <div>
-
+            <h2>{{collectionName}}</h2>
             <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
         </div>
 

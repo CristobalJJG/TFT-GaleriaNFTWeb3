@@ -7,7 +7,7 @@
 
 .collections {
     width: 90%;
-    height: 20%;
+    height: 25%;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -17,26 +17,40 @@
         margin: 0 10px;
         padding: 5px 20px;
         min-width: 250px;
-        height: 75%;
+        height: 64px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         border-radius: 10px;
         cursor: pointer;
-        box-shadow: 0 5px 5px 5px rgba($black, .5);
+        box-shadow: 0 3px 3px 3px rgba($black, .5);
         background-color: rgba($dark-gray, .5);
         transition: $transition3s;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.07);
             background-color: rgba($dark-gray, .9);
         }
 
-        .collection-img img {
-            object-fit: contain;
-            border-radius: 50%;
-            margin-right: 15px;
-            width: 75px;
+        .collection-name {
+            font-size: 16px;
+            width: 175pxpx;
+            color: $white;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .collection-img {
+            height: 64px;
+
+            img {
+                border: 2px solid $black;
+                object-fit: contain;
+                border-radius: 50%;
+                height: 64px;
+                width: 64px;
+            }
         }
     }
 }
@@ -49,6 +63,11 @@
     border-radius: 20px 0 0 20px;
     display: flex;
     align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .nft-container {
