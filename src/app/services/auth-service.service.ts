@@ -10,6 +10,7 @@ import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
 import { FirestoreService } from './firestore-service.service';
 import { User } from '../class/user';
+import { SnackbarService } from './snackbar.service';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,7 @@ export class AuthService {
   public static app = initializeApp(environment.firebaseConfig);
 
   auth = getAuth(AuthService.app);
-  constructor(protected db: FirestoreService) { }
+  constructor(protected db: FirestoreService, private snack: SnackbarService) { }
 
   getLocalUser(): User | undefined {
     let aux = localStorage.getItem("userData");
@@ -35,6 +36,7 @@ export class AuthService {
         if (data.user.email != null) {
           this.db.getUserInfo(mail);
         }
+        this.snack.openSnackBar("Inicio de Sesión correcto");
         setTimeout(function () { window.location.reload(); }, 1000);
         return "";
       })
@@ -49,6 +51,7 @@ export class AuthService {
           this.db.getUserInfo(mail);
 
         }
+        this.snack.openSnackBar("Registro correcto");
         setTimeout(function () { window.location.reload(); }, 1000);
         return "";
       })
@@ -58,5 +61,6 @@ export class AuthService {
   async logOut() {
     await signOut(this.auth);
     localStorage.clear();
+    this.snack.openSnackBar("Cierre de sesión correcto");
   }
 }

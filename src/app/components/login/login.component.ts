@@ -30,6 +30,7 @@ export class LoginComponent {
       if (msg == "") this.msgError = "";
       else this.msgError = this.error.translateError(msg)
     })
+
   }
 
   goToRegister() {

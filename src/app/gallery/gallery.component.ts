@@ -5,6 +5,7 @@ import { Nft } from 'alchemy-sdk';
 import { FilterComponent } from './filter/filter.component';
 import { Collection } from '../class/collection';
 import { CollectionService } from '../services/collection.service';
+import { SnackbarService } from '../services/snackbar.service';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -22,7 +23,8 @@ export class GalleryComponent implements OnInit {
   @ViewChild(FilterComponent) filter: any;
 
   constructor(protected nft: NftService,
-    protected collModal: CollectionService) { }
+    protected collModal: CollectionService,
+    private snack: SnackbarService) { }
 
   async ngOnInit() {
     this.getNFTs();
@@ -38,6 +40,7 @@ export class GalleryComponent implements OnInit {
     this.address = address;
     this.collectionName = this.collModal.getNameFromAddress(this.collections, address)
     this.getNFTs();
+    this.snack.openSnackBar("Cargando la coleción " + this.collModal.getNameFromAddress(this.collections, address));
   }
 
   async getCollections() {
