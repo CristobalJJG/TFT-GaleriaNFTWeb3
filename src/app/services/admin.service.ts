@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import { AuthService } from './auth-service.service';
-import { FirestoreService } from './firestore-service.service';
-import { ModalService } from './modal.service';
+import { CollectionService } from './collection.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AdminService {
-  constructor(private fire: FirestoreService) { }
+  constructor(private fire: CollectionService) { }
 
   db = getFirestore(AuthService.app);
 

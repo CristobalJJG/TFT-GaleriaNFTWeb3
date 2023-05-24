@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from '../services/auth-service.service';
 import { User } from '../class/user';
+import { ModalService } from '../services/modal.service';
+import { LoginComponent } from '../components/login/login.component';
+import { RegisterComponent } from '../components/register/register.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +16,9 @@ export class HeaderComponent {
   language: string;
   user: User | undefined;
   constructor(protected translate: TranslateService,
-    protected auth: AuthService) {
+    protected auth: AuthService,
+    private modal: ModalService,
+    private router: Router) {
     this.user = User.getUserFromData();
     this.language = (localStorage.getItem('language') || 'es');
   }
@@ -25,5 +31,16 @@ export class HeaderComponent {
   onLogout() {
     this.auth.logOut();
     window.location.reload();
+  }
+
+  goToWallets() {
+    this.router.navigate(['/wallets']);
+  }
+
+  openLogin() {
+    this.modal.openDialog(LoginComponent, "450px", "500px");
+  }
+  openRegister() {
+    this.modal.openDialog(RegisterComponent, "625px", "500px");
   }
 }

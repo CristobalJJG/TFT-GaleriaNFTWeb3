@@ -1,8 +1,8 @@
 export class Collection {
-    private address: string = "";
-    private externalURL: string = "";
-    private name: string = "";
-    private pict: string = "";
+    address: string = "";
+    externalURL: string = "";
+    name: string = "";
+    pict: string = "";
 
     constructor(address: string, externalURL: string, name: string, pict: string) {
         this.address = address;

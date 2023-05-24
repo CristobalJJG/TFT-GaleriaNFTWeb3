@@ -1,6 +1,21 @@
 <main class="flex">
+    <h2>Colecciones</h2>
+    <div class="collections">
+        <div class="collection" (click)="changeCollection(item.address)" *ngFor="let item of collections">
+            <div class="collection-img">
+                <img src="{{item.pict}}" alt="{{item.name}}">
+            </div>
+            <div class="collection-name">
+                {{item.name}}
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
+        <div>
+
+            <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
+        </div>
+
         <div class="nft-container">
             <div *ngFor="let item of showNFTs">
                 <app-nft-card [data]="item"></app-nft-card>

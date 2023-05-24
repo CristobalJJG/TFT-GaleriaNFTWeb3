@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import {
   createUserWithEmailAndPassword, getAuth,
   signInWithEmailAndPassword,
-  signOut,
-  User
+  signOut
 } from 'firebase/auth';
 
 
 import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
 import { FirestoreService } from './firestore-service.service';
+import { User } from '../class/user';
 
 @Injectable({
   providedIn: 'root'
@@ -23,8 +23,10 @@ export class AuthService {
   auth = getAuth(AuthService.app);
   constructor(protected db: FirestoreService) { }
 
-  getCurrentUser(): User | null {
-    return this.auth.currentUser;
+  getLocalUser(): User | undefined {
+    let aux = localStorage.getItem("userData");
+    if (aux) return User.fromJSONtoUser(JSON.parse(aux));
+    return undefined;
   }
 
   async logInEmailPass(mail: string, pass: string): Promise<string> {

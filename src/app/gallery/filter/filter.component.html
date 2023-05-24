@@ -1,0 +1,34 @@
+<section class="container">
+    <div class="line">
+        <div class="next">
+            <h2>{{'gallery.filter' | translate}}</h2>
+            <svg width="24" height="24" viewBox="0 0 16 16">
+                <path
+                    d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z" />
+            </svg>
+        </div>
+
+        <button (click)="clearFilter()">Clear</button>
+    </div>
+    <div class="filter" *ngFor="let item of data | keyvalue">
+        <div class="align">
+            <span class="arrow" (click)="toogleShow(item.key)">
+                <svg class="arrow{{item.key}}1 hide" width="16" height="16" viewBox="0 0 16 16">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+                <svg class="arrow{{item.key}}2" width="16" height="16" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </span>
+            <span (click)="toogleShow(item.key)" class="dropbtn">{{item.key}}</span>
+        </div>
+        <div *ngFor="let i of item.value">
+            <div class="dropdown-content {{item.key}}" id="{{item.key}}">
+                <input type="checkbox" id="{{i}}" class="checkbox" (change)="updateFilters(item.key, i)" />
+                <label for="{{i}}">{{i}}</label>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { Inject, Injectable } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,8 @@ export class ModalService {
   openDialog(component: any, heigh?: string, width?: string, data?: any) {
     this.dialog.open(component, {
       height: heigh,
-      width: width
+      width: width,
+      data
     });
   }
 
