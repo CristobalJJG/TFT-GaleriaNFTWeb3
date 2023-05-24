@@ -20,8 +20,15 @@ export class FilterComponent {
         if (list.includes(value)) {
           list = list.filter((v) => v != value);
           this.activeFilters.set(key, list);
-        } else if (value === '') {
-          this.activeFilters.set('Background', []);
+        } else if (value == '') {
+          console.log(this.activeFilters);
+          console.log(list);
+
+          this.activeFilters.set(key, [value]);
+          list = list.filter((v) => v != value);
+          console.log(list);
+
+          this.activeFilters.set(key, list);
         } else {
           list.push(value);
           this.activeFilters.set(key, list);

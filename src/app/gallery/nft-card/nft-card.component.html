@@ -1,12 +1,13 @@
 <article class="box">
-    <span class="name">
-        <p> {{data?.name}}</p>
-    </span>
-    <div class="content">
-        <img src={{data?.image}}
-            alt="Shiba inu">
-    </div>
-    <span class="price">
-        <p>{{data?.price}} ETH</p>
-    </span>
+    <a href="https://opensea.io/assets/ethereum/{{data?.address}}/{{data?.goTo}}" target="_blank">
+        <span class="name">
+            <p> {{data?.name}}</p>
+        </span>
+        <div class="content">
+            <img src={{data?.image}} alt="Shiba inu">
+        </div>
+        <span class="price">
+            <p>{{data?.price}} ETH</p>
+        </span>
+    </a>
 </article>

@@ -11,6 +11,7 @@ import { FilterComponent } from '../components/filter/filter.component';
 
 export class GalleryComponent implements OnInit {
 
+  address = "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d";
   private NFTs: NFT[] = [];
   protected showNFTs: NFT[] = [];
   protected filters = new Map();
@@ -19,7 +20,11 @@ export class GalleryComponent implements OnInit {
   constructor(protected nft: NftService) { }
 
   async ngOnInit() {
-    this.nft.getNFTs().then(data => {
+    this.getNFTs();
+  }
+
+  async getNFTs() {
+    await this.nft.getNFTs(this.address).then(data => {
       for (let item of data) {
         this.push_data_in_NFT(item);
 
@@ -48,13 +53,16 @@ export class GalleryComponent implements OnInit {
 
   /* Funciones auxiliares para mejorar el Code Smell */
   private push_data_in_NFT(item: Nft) {
+    console.log(item);
+
     this.NFTs.push(new NFT(
       item.contract.symbol + " " + item.title,
       item.contract.openSea?.description + "",
       item.media[0].gateway,
       item.contract.openSea?.floorPrice + "",
-      item.contract.contractDeployer + "",
-      item.rawMetadata?.attributes || []
+      item.contract.address + "",
+      item.rawMetadata?.attributes || [],
+      item.tokenId
     ))
   }
 
