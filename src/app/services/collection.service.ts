@@ -32,4 +32,13 @@ export class CollectionService {
       }).then(() => window.location.reload());
     } catch (e) { console.error(e); }
   }
+
+  getNameFromAddress(collections: Collection[], address: string) {
+    let name = "";
+    collections.forEach(element => {
+      if (element.address == address)
+        name = element.name;
+    });
+    return name;
+  }
 }

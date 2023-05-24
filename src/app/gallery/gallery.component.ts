@@ -13,11 +13,12 @@ import { CollectionService } from '../services/collection.service';
 
 export class GalleryComponent implements OnInit {
 
-  address = "0x23581767a106ae21c074b2276d25e5c3e136a68b";
   private NFTs: NFT[] = [];
   protected collections: Collection[] = [];
   protected showNFTs: NFT[] = [];
   protected filters = new Map();
+  protected address = "0x23581767a106ae21c074b2276d25e5c3e136a68b";
+  protected collectionName = "Moonbirds"
   @ViewChild(FilterComponent) filter: any;
 
   constructor(protected nft: NftService,
@@ -32,9 +33,11 @@ export class GalleryComponent implements OnInit {
   changeCollection(address: string) {
     this.NFTs = [];
     this.showNFTs = [];
+    this.filter = new Map();
+    this.filters = new Map();
     this.address = address;
+    this.collectionName = this.collModal.getNameFromAddress(this.collections, address)
     this.getNFTs();
-    this.filter.reset();
   }
 
   async getCollections() {
