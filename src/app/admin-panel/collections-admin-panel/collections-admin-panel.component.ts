@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { Collection } from 'src/app/class/collection';
 import { AdminService } from 'src/app/services/admin.service';
-import { FirestoreService } from 'src/app/services/firestore-service.service';
+import { CollectionService } from 'src/app/services/collection.service';
 import { ModalService } from 'src/app/services/modal.service';
 import { AddCollectionModalComponent } from './add-collection-modal/add-collection-modal.component';
 

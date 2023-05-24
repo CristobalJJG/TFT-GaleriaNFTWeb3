@@ -88,24 +88,4 @@ export class FirestoreService {
   protected toPascal(str: string) {
     return str.charAt(0).toUpperCase() + str.substring(1, str.length).toLowerCase()
   }
-
-  async getAllCollections() {
-    let users: any[] = [];
-
-    let q = query(collection(this.db, 'collections'))
-    const querySnapshot = await getDocs(q);
-    querySnapshot.forEach((doc) => { users.push(doc.data()) });
-    return users;
-  }
-
-  async addCollections(commonName: string, collection: Collection) {
-    try {
-      await setDoc(doc(this.db, "collections", commonName), {
-        address: collection.getaddress(),
-        externalURL: collection.getExternalURL(),
-        name: collection.getName(),
-        pict: collection.getPict(),
-      }).then(() => window.location.reload());
-    } catch (e) { console.error(e); }
-  }
 }

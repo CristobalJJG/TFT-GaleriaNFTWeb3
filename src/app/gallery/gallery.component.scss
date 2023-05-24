@@ -7,12 +7,38 @@
 
 .collections {
     width: 90%;
-    height: 15%;
+    height: 20%;
     margin-bottom: 15px;
-    border: 2px solid red;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    overflow: auto;
+
+    .collection {
+        margin: 0 10px;
+        padding: 5px 20px;
+        min-width: 250px;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px 5px rgba($black, .5);
+        background-color: rgba($dark-gray, .5);
+        transition: $transition3s;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: rgba($dark-gray, .9);
+        }
+
+        .collection-img img {
+            object-fit: contain;
+            border-radius: 50%;
+            margin-right: 15px;
+            width: 75px;
+        }
+    }
 }
 
 .container {

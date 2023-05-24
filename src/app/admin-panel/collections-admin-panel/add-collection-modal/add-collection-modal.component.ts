@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Collection } from 'src/app/class/collection';
-import { FirestoreService } from 'src/app/services/firestore-service.service';
+import { CollectionService } from 'src/app/services/collection.service';
 
 @Component({
   selector: 'app-add-collection-modal',
@@ -10,7 +10,7 @@ import { FirestoreService } from 'src/app/services/firestore-service.service';
 })
 export class AddCollectionModalComponent {
 
-  constructor(private db: FirestoreService) { }
+  constructor(private db: CollectionService) { }
 
   addCollection(data: any) {
     console.log(data);
