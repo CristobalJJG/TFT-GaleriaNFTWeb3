@@ -1,23 +1,27 @@
 @import '../../sass/colors';
 @import '../../sass/variable';
-
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 $accent-color: $purple;
+
 
 nav {
     height: 75px;
     z-index: 1;
     background-color: $black;
     color: $white;
+
+    .header {
+        font-family: 'Lilita One', cursive;
+        font-size: 50px;
+        text-decoration: none;
+        margin-left: 50px;
+    }
 }
 
 .structure {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
-    margin-left: 50px;
 }
 
 .btn2 {

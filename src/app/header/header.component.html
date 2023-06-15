@@ -1,6 +1,6 @@
 <nav class="structure">
     <div class="logo">
-        <a routerLink="/home" routerLinkActive="activebutton">Logo to guapo cuando haya</a>
+        <a routerLink="/home" routerLinkActive="activebutton" class="header">Galería NFT</a>
         <!-- <img src="" alt=""> -->
     </div>
 
@@ -48,13 +48,14 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div *ngIf="user==null" class="structure enter-btn">
-        <button class="login-btn" (click)="openLogin()">
-            {{'header.login' | translate}}
-        </button>
-        <button class="register-btn" (click)="openRegister()">
-            {{'header.register' | translate}}
-        </button>
+
+        <div *ngIf="user==null" class="structure enter-btn">
+            <button class="login-btn" (click)="openLogin()">
+                {{'header.login' | translate}}
+            </button>
+            <button class="register-btn" (click)="openRegister()">
+                {{'header.register' | translate}}
+            </button>
+        </div>
     </div>
 </nav>
