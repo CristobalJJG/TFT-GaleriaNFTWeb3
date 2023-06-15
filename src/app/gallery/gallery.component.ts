@@ -20,6 +20,8 @@ export class GalleryComponent implements OnInit {
   protected filters = new Map();
   protected address = "0x23581767a106ae21c074b2276d25e5c3e136a68b";
   protected collectionName = "Moonbirds"
+
+  protected loader = false;
   @ViewChild(FilterComponent) filter: any;
 
   constructor(protected nft: NftService,
@@ -27,12 +29,13 @@ export class GalleryComponent implements OnInit {
     private snack: SnackbarService) { }
 
   async ngOnInit() {
+    this.putLoader();
     this.getNFTs();
-    //this.shuffle();
     this.getCollections();
   }
 
   changeCollection(address: string) {
+    this.putLoader();
     this.NFTs = [];
     this.showNFTs = [];
     this.filter = new Map();
@@ -61,13 +64,6 @@ export class GalleryComponent implements OnInit {
       this.showNFTs = this.NFTs;
     })
   }
-
-  /* shuffle() {
-    for (var i = this.showNFTs.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1)); //random index
-      [this.showNFTs[i], this.showNFTs[j]] = [this.showNFTs[j], this.showNFTs[i]]; // swap
-    }
-  } */
 
   updateView(filters: any) {
     let f: Map<string, string[]> = filters;
@@ -101,9 +97,8 @@ export class GalleryComponent implements OnInit {
     if (this.filters.has(att['trait_type'])) {
       let list = this.filters.get(att['trait_type'])
       if (!list.includes(att['value'])) { list.push(att['value']) }
-    } else {
+    } else
       this.filters.set(att['trait_type'], [att['value']])
-    }
   }
 
   private filters_straction(f: Map<string, string[]>): boolean {
@@ -122,5 +117,14 @@ export class GalleryComponent implements OnInit {
       } else
         if (this.showNFTs.includes(n)) this.showNFTs = this.showNFTs.filter((v) => v != n);
     })
+  }
+
+  putLoader() {
+    let max = 2;
+    let time = Math.floor(Math.random() * max) * 1000 + 1000;
+    this.loader = true;
+    setTimeout(() => {
+      this.loader = false;
+    }, time);
   }
 }

@@ -10,7 +10,10 @@
             </p>
         </div>
     </div>
-    <div class="container">
+    <div class="container loader" *ngIf="showNFTs.length == 0">
+        <app-loader></app-loader>
+    </div>
+    <div class="container" *ngIf="showNFTs.length != 0">
         <div>
             <h2>{{collectionName}}</h2>
             <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
