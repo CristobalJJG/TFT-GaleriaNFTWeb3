@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { collection, doc, getDoc, getDocs, getFirestore, query, setDoc } from "firebase/firestore";
+import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
 import { AuthService } from './auth-service.service';
 import { User } from '../class/user';
-import { Wallet } from 'alchemy-sdk';
-import { Collection } from '../class/collection';
+import { Wallet } from '../class/wallet';
 
 @Injectable({
   providedIn: 'root'
@@ -63,9 +62,15 @@ export class FirestoreService {
 
   async updateUser(user: User) {
     try {
-      let wallets: Wallet[] = []
+      let wallets: any[] = []
       user.getWallets().forEach((w: any) => {
-        wallets.push(w.toJSON());
+        wallets.push({
+          "name": w.name,
+          "address": w.address,
+          "balance": w.balance,
+          "coin": w.coin,
+          "url": w.url
+        });
       })
 
       await setDoc(doc(this.db, "users", user.getEmail().split('@')[0].toLowerCase()), {

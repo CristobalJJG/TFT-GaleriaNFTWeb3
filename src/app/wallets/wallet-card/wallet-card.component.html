@@ -41,7 +41,7 @@
             <i class='bx bxs-show' *ngIf="!showAdd"></i>
         </span>
 
-        <div class="url">
+        <div class="url" *ngIf="wallet?.getUrl() != 'URL'">
             <a (click)="goToURL()">
                 <p>{{wallet?.getUrl()}}</p>
             </a>

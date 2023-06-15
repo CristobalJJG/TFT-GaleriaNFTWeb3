@@ -19,6 +19,7 @@ export class WalletsComponent implements OnInit {
   constructor(protected wallet: WalletService, protected auth: AuthService,
     private router: Router, private modal: ModalService) {
     this.userRegistered = this.auth.getLocalUser();
+    document.onclick = this.hideMenu;
     if (!this.userRegistered) {
       this.router.navigateByUrl('/home');
       this.modal.openDialog(MessageComponent, '300px', '300px', {
@@ -45,4 +46,24 @@ export class WalletsComponent implements OnInit {
         })
     }
   }
+
+  hideMenu() {
+    document.getElementById("contextMenu")!.style.display = "none";
+  }
+
+  openContextMenu(e: any) {
+    e.preventDefault();
+
+    if (document.getElementById("contextMenu")!.style.display == "block") {
+      this.hideMenu();
+    } else {
+      var menu = document.getElementById("contextMenu");
+      menu!.style.display = 'block';
+      menu!.style.left = e.pageX + "px";
+      menu!.style.top = e.pageY + "px";
+    }
+  }
+
+  edit() { }
+  delete() { }
 }
