@@ -21,7 +21,6 @@ export class GalleryComponent implements OnInit {
   protected address = "0x23581767a106ae21c074b2276d25e5c3e136a68b";
   protected collectionName = "Moonbirds"
 
-  protected loader = false;
   @ViewChild(FilterComponent) filter: any;
 
   constructor(protected nft: NftService,
@@ -29,13 +28,11 @@ export class GalleryComponent implements OnInit {
     private snack: SnackbarService) { }
 
   async ngOnInit() {
-    this.putLoader();
     this.getNFTs();
     this.getCollections();
   }
 
   changeCollection(address: string) {
-    this.putLoader();
     this.NFTs = [];
     this.showNFTs = [];
     this.filter = new Map();
@@ -117,14 +114,5 @@ export class GalleryComponent implements OnInit {
       } else
         if (this.showNFTs.includes(n)) this.showNFTs = this.showNFTs.filter((v) => v != n);
     })
-  }
-
-  putLoader() {
-    let max = 2;
-    let time = Math.floor(Math.random() * max) * 1000 + 1000;
-    this.loader = true;
-    setTimeout(() => {
-      this.loader = false;
-    }, time);
   }
 }
