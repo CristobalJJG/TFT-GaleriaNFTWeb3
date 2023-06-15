@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NFT } from 'src/app/class/nft';
 import { User } from 'src/app/class/user';
 import { Wallet } from 'src/app/class/wallet';
@@ -12,8 +13,16 @@ import { ModalService } from 'src/app/services/modal.service';
 })
 export class AddWalletModalComponent {
 
-  future_wallet: Wallet = new Wallet("Nombre", "", 0, "URL", "ETH");
-  constructor(private modal: ModalService, private db: FirestoreService) { }
+  future_wallet: Wallet;
+  constructor(private modal: ModalService, private db: FirestoreService,
+    @Inject(MAT_DIALOG_DATA) public data: any) {
+    if (data != null) {
+      let w: Wallet = data.wallet;
+      this.future_wallet = w;
+    } else {
+      this.future_wallet = new Wallet("Nombre", "", 0, "URL", "ETH");
+    }
+  }
 
   changeCoin(coin: any) {
     console.log(coin.target.value);

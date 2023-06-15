@@ -6,6 +6,7 @@ import { User } from '../class/user';
 import { Router } from '@angular/router';
 import { ModalService } from '../services/modal.service';
 import { MessageComponent } from '../components/message/message.component';
+import { AddWalletModalComponent } from './add-wallet/add-wallet-modal/add-wallet-modal.component';
 
 @Component({
   selector: 'app-wallets',
@@ -51,9 +52,9 @@ export class WalletsComponent implements OnInit {
     document.getElementById("contextMenu")!.style.display = "none";
   }
 
-  openContextMenu(e: any) {
+  openContextMenu(e: any, w: Wallet) {
     e.preventDefault();
-
+    this.choosenWallet = w;
     if (document.getElementById("contextMenu")!.style.display == "block") {
       this.hideMenu();
     } else {
@@ -63,7 +64,21 @@ export class WalletsComponent implements OnInit {
       menu!.style.top = e.pageY + "px";
     }
   }
+  choosenWallet: Wallet | undefined;
+  edit() {
+    if (!this.choosenWallet)
+      console.log("NO hay cartera para editar");
+    else {
+      this.modal.openDialog(AddWalletModalComponent, "900px", "600px", { wallet: this.choosenWallet })
+      console.log(this.choosenWallet.getName())
+    }
+  }
+  delete() {
+    if (!this.choosenWallet)
+      console.log("NO hay cartera para eliminar");
+    else {
 
-  edit() { }
-  delete() { }
+      console.log(this.choosenWallet.getName())
+    }
+  }
 }

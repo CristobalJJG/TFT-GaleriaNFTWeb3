@@ -6,7 +6,7 @@
     <div class="container" *ngIf="wallets.length != 0">
         <div class="ext-cont" *ngIf="userRegistered">
             <div class="nft-container">
-                <div *ngFor="let w of wallets" (contextmenu)="openContextMenu($event)">
+                <div *ngFor="let w of wallets" (contextmenu)="openContextMenu($event, w)">
                     <app-wallet-card [wallet]="w"></app-wallet-card>
                 </div>
                 <app-add-wallet></app-add-wallet>
