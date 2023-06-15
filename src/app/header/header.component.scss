@@ -102,6 +102,11 @@ nav {
     }
 }
 
+.filled-white {
+    margin-right: 10px;
+    fill: white;
+}
+
 .head {
     color: $white;
     text-decoration: none;
@@ -113,9 +118,11 @@ nav {
     text-align: center;
     width: 175px;
 
-    a {
-        text-decoration: none;
-        color: $white
+    .f {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7px 0;
     }
 
     &::before {
