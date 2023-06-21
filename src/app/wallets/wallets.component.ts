@@ -82,7 +82,8 @@ export class WalletsComponent implements OnInit {
       if (this.userRegistered) {
         this.db.updateUser(this.userRegistered);
         localStorage.setItem("userData", this.userRegistered.toJSON());
-      } console.log(this.choosenWallet.getName())
+      }
+      console.log(this.choosenWallet.getName())
     }
   }
 }

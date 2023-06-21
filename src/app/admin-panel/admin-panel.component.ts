@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from '../class/user';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AdminService } from '../services/admin.service';
+import { ModalService } from '../services/modal.service';
 
 @Component({
   selector: 'app-admin-panel',
@@ -11,8 +12,10 @@ import { AdminService } from '../services/admin.service';
 export class AdminPanelComponent {
   user: User | undefined;
 
-  constructor(private router: Router, private route: ActivatedRoute, private admin: AdminService) {
+  constructor(private router: Router, private route: ActivatedRoute, private admin: AdminService, private modal: ModalService) {
     this.user = User.getUserFromData()
+    if (!this.user) this.router.navigateByUrl('/home');
+
     this.isUserAdmin();
   }
 
