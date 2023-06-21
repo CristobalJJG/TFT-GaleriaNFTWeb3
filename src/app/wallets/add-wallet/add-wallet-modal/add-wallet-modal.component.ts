@@ -12,16 +12,20 @@ import { ModalService } from 'src/app/services/modal.service';
   styleUrls: ['./add-wallet-modal.component.scss']
 })
 export class AddWalletModalComponent {
-
+  nameBeforeChange: string = "";
   future_wallet: Wallet;
+  editing: boolean = false;
   constructor(private modal: ModalService, private db: FirestoreService,
     @Inject(MAT_DIALOG_DATA) public data: any) {
-    if (data != null) {
+    if (data.wallet) {
       let w: Wallet = data.wallet;
+      this.nameBeforeChange = w.getName();
       this.future_wallet = w;
     } else {
       this.future_wallet = new Wallet("Nombre", "", 0, "URL", "ETH");
     }
+
+    if (data.edit) this.editing = true;
   }
 
   changeCoin(coin: any) {
@@ -47,8 +51,11 @@ export class AddWalletModalComponent {
   }
 
   addWallet() {
+    debugger
     let user: User | undefined = User.fromJSONtoUser(JSON.parse(localStorage.getItem("userData") || ""));
     if (user) {
+      if (this.editing) user.removeWallet(this.nameBeforeChange);
+
       user.addWallet(this.future_wallet);
       this.db.updateUser(user);
       localStorage.setItem("userData", user.toJSON());

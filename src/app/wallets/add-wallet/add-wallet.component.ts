@@ -11,6 +11,6 @@ export class AddWalletComponent {
   constructor(protected modal: ModalService) { }
 
   openDialog() {
-    this.modal.openDialog(AddWalletModalComponent, "900px", "600px")
+    this.modal.openDialog(AddWalletModalComponent, "900px", "600px", {})
   }
 }

@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { ModalService } from '../services/modal.service';
 import { MessageComponent } from '../components/message/message.component';
 import { AddWalletModalComponent } from './add-wallet/add-wallet-modal/add-wallet-modal.component';
+import { FirestoreService } from '../services/firestore-service.service';
 
 @Component({
   selector: 'app-wallets',
@@ -18,7 +19,7 @@ export class WalletsComponent implements OnInit {
   userRegistered: User | undefined = undefined;
 
   constructor(protected wallet: WalletService, protected auth: AuthService,
-    private router: Router, private modal: ModalService) {
+    private router: Router, private modal: ModalService, private db: FirestoreService) {
     this.userRegistered = this.auth.getLocalUser();
     document.onclick = this.hideMenu;
     if (!this.userRegistered) {
@@ -69,7 +70,7 @@ export class WalletsComponent implements OnInit {
     if (!this.choosenWallet)
       console.log("NO hay cartera para editar");
     else {
-      this.modal.openDialog(AddWalletModalComponent, "900px", "600px", { wallet: this.choosenWallet })
+      this.modal.openDialog(AddWalletModalComponent, "900px", "600px", { wallet: this.choosenWallet.clone(), edit: true })
       console.log(this.choosenWallet.getName())
     }
   }
@@ -77,8 +78,11 @@ export class WalletsComponent implements OnInit {
     if (!this.choosenWallet)
       console.log("NO hay cartera para eliminar");
     else {
-
-      console.log(this.choosenWallet.getName())
+      this.userRegistered?.removeWallet(this.choosenWallet.getName());
+      if (this.userRegistered) {
+        this.db.updateUser(this.userRegistered);
+        localStorage.setItem("userData", this.userRegistered.toJSON());
+      } console.log(this.choosenWallet.getName())
     }
   }
 }
