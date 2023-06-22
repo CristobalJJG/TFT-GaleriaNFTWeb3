@@ -12,33 +12,24 @@ export class FilterComponent {
   activeFilters: Map<string, string[]> = new Map();
 
   updateFilters(key: string, value: string) {
-    console.log(key, value);
-
     if (this.activeFilters.has(key)) {
-      let list = this.activeFilters.get(key);
-      if (list) {
-        if (list.includes(value)) {
-          list = list.filter((v) => v != value);
-          this.activeFilters.set(key, list);
-        } else if (value == '') {
-          console.log(this.activeFilters);
-          console.log(list);
-
-          this.activeFilters.set(key, [value]);
-          list = list.filter((v) => v != value);
-          console.log(list);
-
-          this.activeFilters.set(key, list);
+      let values = this.activeFilters.get(key);
+      if (values != undefined) {
+        if (values.includes(value)) {
+          values.splice(values.indexOf(value), 1);
+          if (values.length == 0) {
+            this.activeFilters.delete(key);
+          }
         } else {
-          list.push(value);
-          this.activeFilters.set(key, list);
+          values.push(value);
         }
       }
-    } else this.activeFilters.set(key, [value]);
-    console.log(this.activeFilters);
-
-    this.updateView.emit(this.activeFilters)
+    } else {
+      this.activeFilters.set(key, [value]);
+    }
+    this.updateView.emit(this.activeFilters);
   }
+
 
   clearFilter() {
     this.activeFilters.clear();
@@ -62,9 +53,12 @@ export class FilterComponent {
   }
 
   toggleCollapse() {
-    let elementos = document.getElementsByClassName('collapsable');
+    let elementos = document.getElementsByClassName('filter');
     for (let i = 0; i < elementos.length; i++) {
       elementos[i].classList.toggle("collapsed");
     }
+
+    let container = document.getElementsByClassName('app-filter-container');
+    container[1].classList.toggle("maximized");
   }
 }

@@ -108,11 +108,14 @@ export class GalleryComponent implements OnInit {
   }
 
   private apply_filters(f: Map<string, string[]>, n: NFT) {
+    let aux: boolean = true;
     f.forEach((value, key) => {
-      if (value.includes(n.getAttributes().get(key) + "")) {
-        if (!this.showNFTs.includes(n)) this.showNFTs.push(n);
-      } else
-        if (this.showNFTs.includes(n)) this.showNFTs = this.showNFTs.filter((v) => v != n);
+      if (value.length > 0) {
+        if (!value.includes(n.getAttributes().get(key)!)) {
+          aux = false;
+        }
+      }
     })
+    if (aux) this.showNFTs.push(n);
   }
 }

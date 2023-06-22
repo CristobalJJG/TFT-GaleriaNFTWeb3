@@ -131,6 +131,13 @@ li {
     .minim h2 {
         margin: 25px 0 0 15px;
         text-align: left;
+
+        p {
+            width: 125px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
 
     .collections .collection {

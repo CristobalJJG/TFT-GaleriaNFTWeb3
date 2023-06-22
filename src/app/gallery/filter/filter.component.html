@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container app-filter-container">
     <div class="line maxim">
         <div class="next">
             <h2>{{'gallery.filter' | translate}}</h2>
@@ -22,7 +22,7 @@
 
         <!-- <button (click)="clearFilter()">Clear</button> -->
     </div>
-    <div class="filter collapsable collapsed" *ngFor="let item of data | keyvalue">
+    <div class="filter collapsed" *ngFor="let item of data | keyvalue">
         <div class="align">
             <span class="arrow" (click)="toogleShow(item.key)">
                 <svg class="arrow{{item.key}}1 hide" width="16" height="16" viewBox="0 0 16 16">
