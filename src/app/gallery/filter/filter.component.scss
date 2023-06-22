@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .container {
-    width: 350px;
+    width: 250px;
     height: 50vh;
     margin-left: 25px;
     background-color: $black;
@@ -89,3 +89,17 @@
         display: block;
     }
 }
+
+/* Menos de 1024px */
+@media (max-width: 1024px) {
+    .container {
+        margin: 0 15px;
+        width: 200px;
+    }
+}
+
+/* Menos de 768px */
+@media (max-width: 768px) {}
+
+/* Menos de 500px */
+@media (max-width: 500px) {}
