@@ -81,3 +81,20 @@ body {
         overflow-x: hidden;
     }
 }
+
+/* Menos de 5000px */
+@media (max-width: 500px) {
+    .flex {
+        height: calc(100% - 125px);
+    }
+}
+
+
+/* Menos de 1024px */
+/* @media (max-width: 1024px) {} */
+
+/* Menos de 768px */
+/* @media (max-width: 768px) {} */
+
+/* Menos de 500px */
+/* @media (max-width: 500px) {} */

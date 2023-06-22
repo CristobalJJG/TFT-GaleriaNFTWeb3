@@ -10,6 +10,10 @@ h2 {
     align-items: center;
 }
 
+.minim {
+    display: none;
+}
+
 .collections {
     width: 90%;
     height: 100px;
@@ -93,6 +97,10 @@ li {
 /* Menos de 1024px */
 @media (max-width: 1024px) {
     h2 {
+        margin: 0;
+    }
+
+    .minim h2 {
         margin: 5px 0;
     }
 
@@ -118,18 +126,39 @@ li {
     }
 }
 
-/* Menos de 768px */
-@media (max-width: 768px) {}
-
 /* Menos de 500px */
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+    .minim h2 {
+        margin: 25px 0 0 15px;
+        text-align: left;
+    }
 
+    .collections .collection {
+        min-width: 150px;
 
-/* Menos de 1024px */
-/* @media (max-width: 1024px) {} */
+        .collection-img {
+            height: 32px;
 
-/* Menos de 768px */
-/* @media (max-width: 768px) {} */
+            img {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
 
-/* Menos de 500px */
-/* @media (max-width: 500px) {} */
+    .nft-container {
+        margin-top: 50px;
+    }
+
+    .maxim {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+    }
+
+    .minim {
+        display: block;
+    }
+}

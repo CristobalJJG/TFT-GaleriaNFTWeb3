@@ -13,7 +13,12 @@
         <app-loader></app-loader>
     </div>
     <div class="container" *ngIf="showNFTs.length != 0">
-        <div>
+        <div class="maxim">
+            <h2>{{collectionName}}</h2>
+            <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
+        </div>
+
+        <div class="minim">
             <h2>{{collectionName}}</h2>
             <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
         </div>

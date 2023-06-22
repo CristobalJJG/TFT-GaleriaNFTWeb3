@@ -60,4 +60,11 @@ export class FilterComponent {
       arrows2[i].classList.toggle("hide");
     }
   }
+
+  toggleCollapse() {
+    let elementos = document.getElementsByClassName('collapsable');
+    for (let i = 0; i < elementos.length; i++) {
+      elementos[i].classList.toggle("collapsed");
+    }
+  }
 }
