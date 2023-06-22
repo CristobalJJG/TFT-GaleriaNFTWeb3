@@ -18,8 +18,9 @@ export class WalletsComponent implements OnInit {
   wallets: Wallet[] = [];
   userRegistered: User | undefined = undefined;
 
-  constructor(protected wallet: WalletService, protected auth: AuthService,
-    private router: Router, private modal: ModalService, private db: FirestoreService) {
+  constructor(protected wallet: WalletService,
+    protected auth: AuthService, private db: FirestoreService,
+    private router: Router, private modal: ModalService) {
     this.userRegistered = this.auth.getLocalUser();
     document.onclick = this.hideMenu;
     if (!this.userRegistered) {
@@ -47,16 +48,26 @@ export class WalletsComponent implements OnInit {
           ));
         })
     }
+    this.isEmpty();
+  }
+
+  notLoaded: boolean = false;
+  isEmpty() {
+    setTimeout(() => {
+      if (this.wallets.length == 0) this.notLoaded = true;
+    }, 7500);
   }
 
   hideMenu() {
-    document.getElementById("contextMenu")!.style.display = "none";
+    let cm = document.getElementById("contextMenu")
+    if (cm != undefined) cm.style.display = "none";
   }
 
   openContextMenu(e: any, w: Wallet) {
     e.preventDefault();
     this.choosenWallet = w;
-    if (document.getElementById("contextMenu")!.style.display == "block") {
+    let cm = document.getElementById("contextMenu")
+    if (cm != undefined && cm.style.display == "block") {
       this.hideMenu();
     } else {
       var menu = document.getElementById("contextMenu");
@@ -66,23 +77,21 @@ export class WalletsComponent implements OnInit {
     }
   }
   choosenWallet: Wallet | undefined;
+
   edit() {
     if (!this.choosenWallet)
       console.log("NO hay cartera para editar");
     else {
-      this.modal.openDialog(AddWalletModalComponent, "900px", "600px", { wallet: this.choosenWallet.clone(), edit: true })
+      this.modal.openDialog(AddWalletModalComponent, "900px", "600px", { wallet: this.choosenWallet })
       console.log(this.choosenWallet.getName())
     }
   }
+
   delete() {
     if (!this.choosenWallet)
       console.log("NO hay cartera para eliminar");
     else {
-      this.userRegistered?.removeWallet(this.choosenWallet.getName());
-      if (this.userRegistered) {
-        this.db.updateUser(this.userRegistered);
-        localStorage.setItem("userData", this.userRegistered.toJSON());
-      }
+
       console.log(this.choosenWallet.getName())
     }
   }
