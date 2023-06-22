@@ -5,8 +5,19 @@ h2 {
 }
 
 .container {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 50px;
     overflow-y: auto;
-    padding: 25px;
+    padding: 250px 0 0;
+}
+
+.loader {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    row-gap: 50px;
 }
 
 .ext-cont {
