@@ -102,12 +102,14 @@ h1 {
 @media (max-width: 768px) {
 
     .container {
-        height: calc(100% - 200px); //100vh - 100px de la cabecera
+        height: calc(100vh - 200px); //100vh - 100px de la cabecera
+        width: 100%;
     }
 
     h1 {
         text-align: center;
-        font-size: 64px;
+        font-size: 3rem;
+        margin-top: 50px;
     }
 
     .desc1 {
@@ -130,4 +132,8 @@ h1 {
 }
 
 /* Menos de 500px */
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+    h1 {
+        margin: 0;
+    }
+}

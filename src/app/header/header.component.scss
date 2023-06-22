@@ -24,6 +24,11 @@ nav {
     justify-content: space-between;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
 .btn2 {
     display: none;
 }
@@ -135,7 +140,6 @@ nav {
     &::before {
         content: '';
         width: 0%;
-        height: 3px;
         background: $accent-color;
         display: block;
         transition: $transition3s;
@@ -151,8 +155,13 @@ nav {
     }
 }
 
+.logo {
+    margin-left: 30px;
+    width: 300px;
+}
+
 .right {
-    margin-right: 50px;
+    margin-right: 30px;
     width: 300px;
 }
 
@@ -194,23 +203,47 @@ nav {
         display: block;
     }
 
-    .dropdown .dropdown-content {
-        transform: translateX(-5px);
+    .dropdown {
         width: 64px;
+
+        .dropdown-content {
+            transform: translateX(-5px);
+            width: inherit;
+        }
+    }
+
+    .logo {
+        margin-left: 20px;
+        width: 250px;
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+    .right {
+        margin-right: 20px;
+        width: 250px;
+    }
+
+    .filled-white {
+        margin: 0;
+    }
+
+    .f .filled-white.prof {
+        margin-right: 10px;
+        margin-left: 20px;
     }
 }
 
 /* Menos de 768px */
 @media (max-width: 768px) {
     .structure {
-        height: 120px;
+        height: 75px;
         display: grid;
         grid-template:
-            "l"
-            "p"
-            "b";
+            "l b p";
         justify-content: center;
-        justify-items: center;
     }
 
     .logo {
@@ -221,23 +254,86 @@ nav {
         }
     }
 
-    .right {
+    .profile {
         grid-area: p;
         margin: 0;
     }
 
     .buttons {
         grid-area: b;
+        height: 64px;
     }
 
-    .enter-btn {
+    .not-user {
         display: none;
     }
 }
 
 /* Menos de 500px */
 @media (max-width: 500px) {
+    .structure {
+        height: 125px;
+        grid-template:
+            "l p"
+            "b b";
+        justify-items: center;
+        padding-bottom: 20px;
+
+        &.enter-btn {
+            grid-template: "r";
+            height: fit-content;
+            margin: 0;
+
+            .register-btn {
+                grid-area: r;
+                font-size: small;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .logo a {
+        font-size: 30px;
+    }
+
+    .right,
+    .logo {
+        margin: 0;
+        width: 150px;
+        margin: 5px 0;
+    }
+
+    .name {
+        font-size: large;
+    }
+
     .buttons {
         width: 200px;
+        height: 40px;
+    }
+
+    /* Para el idioma */
+    .dropdown {
+        .head {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .dropdown-content {
+            top: 80px;
+        }
+
+    }
+
+    /* Para el perfil */
+    .dropdown.profile {
+        width: 150px;
+
+        .dropdown-content {
+            width: 150px;
+            top: 37px;
+            left: 27px;
+        }
     }
 }
