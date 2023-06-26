@@ -62,6 +62,10 @@ export class GalleryComponent implements OnInit {
     })
   }
 
+  clearFilters() {
+    this.filter.clearFilter();
+  }
+
   updateView(filters: any) {
     let f: Map<string, string[]> = filters;
 

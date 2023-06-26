@@ -9,6 +9,7 @@ import { LogLevel } from 'alchemy-sdk/dist/src/util/logger';
 export class FilterComponent {
   @Input() data: Map<any, any> | undefined;
   @Output() updateView = new EventEmitter<Map<string, string[]>>();
+  @Output() clearFilters = new EventEmitter<Map<string, string[]>>();
   activeFilters: Map<string, string[]> = new Map();
 
   updateFilters(key: string, value: string) {
@@ -33,10 +34,13 @@ export class FilterComponent {
 
   clearFilter() {
     this.activeFilters.clear();
-    this.updateFilters('Background', '')
-    console.log(this.activeFilters);
-
     this.updateView.emit(this.activeFilters);
+    this.clearFilters.emit(this.activeFilters);
+    let elementos = document.getElementsByClassName("checkbox");
+    for (let e in elementos) {
+      let aux = <HTMLInputElement>elementos[e];
+      aux.checked = false;
+    }
   }
 
   toogleShow(x: string) {
