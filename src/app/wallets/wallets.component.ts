@@ -82,7 +82,7 @@ export class WalletsComponent implements OnInit {
     if (!this.choosenWallet)
       console.log("NO hay cartera para editar");
     else {
-      this.modal.openDialog(AddWalletModalComponent, "900px", "600px", { wallet: this.choosenWallet })
+      this.modal.openDialog(AddWalletModalComponent, "900px", "600px", { wallet: this.choosenWallet, edit: true })
       console.log(this.choosenWallet.getName())
     }
   }
@@ -91,8 +91,9 @@ export class WalletsComponent implements OnInit {
     if (!this.choosenWallet)
       console.log("NO hay cartera para eliminar");
     else {
-
-      console.log(this.choosenWallet.getName())
+      this.userRegistered?.removeWallet(this.choosenWallet.getName());
+      this.db.updateUser(this.userRegistered!);
+      localStorage.setItem("userData", this.userRegistered!.toJSON());
     }
   }
 }

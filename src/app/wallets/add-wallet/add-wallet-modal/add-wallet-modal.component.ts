@@ -51,7 +51,6 @@ export class AddWalletModalComponent {
   }
 
   addWallet() {
-    debugger
     let user: User | undefined = User.fromJSONtoUser(JSON.parse(localStorage.getItem("userData") || ""));
     if (user) {
       if (this.editing) user.removeWallet(this.nameBeforeChange);
