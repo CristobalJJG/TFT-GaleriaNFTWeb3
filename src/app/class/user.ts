@@ -48,6 +48,14 @@ export class User {
     public setWallets(wallets: []) { this.wallets = wallets }
 
     public addWallet(wallet: Wallet) { this.wallets.push(<never>wallet) }
+    public removeWallet(wallet: string) {
+        for (let w of this.wallets) {
+            if (w['name'] == wallet) {
+                this.wallets.splice(this.wallets.indexOf(w), 1);
+                break;
+            }
+        }
+    }
 
     public static getUserFromData() {
         let temp = localStorage.getItem("userData")

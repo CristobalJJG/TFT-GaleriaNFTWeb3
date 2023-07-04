@@ -58,7 +58,8 @@
                         19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
                     </svg>
                 </div>
-                <span>Añadir</span>
+                <span *ngIf="!editing">Añadir</span>
+                <span *ngIf="editing">Editar</span>
             </button>
         </form>
     </section>

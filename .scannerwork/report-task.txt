@@ -1,6 +1,6 @@
 projectKey=TFT
 serverUrl=http://localhost:9000
-serverVersion=10.0.0.68432
+serverVersion=10.1.0.73491
 dashboardUrl=http://localhost:9000/dashboard?id=TFT
-ceTaskId=AYepPUGpRcpaK9y9yVsM
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYepPUGpRcpaK9y9yVsM
+ceTaskId=AYkDLzsYf2G8yf0kEIEs
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYkDLzsYf2G8yf0kEIEs

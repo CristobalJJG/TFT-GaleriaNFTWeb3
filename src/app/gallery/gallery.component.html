@@ -1,18 +1,27 @@
 <main class="flex">
     <h2>Colecciones</h2>
-    <div class="collections">
-        <div class="collection" (click)="changeCollection(item.address)" *ngFor="let item of collections">
+    <ul class="collections">
+        <li class="collection" (click)="changeCollection(item.address)" *ngFor="let item of collections">
             <div class="collection-img">
                 <img src="{{item.pict}}" alt="{{item.name}}">
             </div>
             <p class="collection-name">
                 {{item.name}}
             </p>
-        </div>
+    </ul>
+    <div class="container loader" *ngIf="showNFTs.length == 0">
+        <app-loader></app-loader>
     </div>
-    <div class="container">
-        <div>
+    <div class="container" *ngIf="showNFTs.length != 0">
+        <div class="maxim">
             <h2>{{collectionName}}</h2>
+            <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
+        </div>
+
+        <div class="minim">
+            <h2>
+                <p>{{collectionName}}</p>
+            </h2>
             <app-filter [data]="filters" (updateView)="updateView($event)"></app-filter>
         </div>
 

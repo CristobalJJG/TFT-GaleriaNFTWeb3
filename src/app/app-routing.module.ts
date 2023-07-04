@@ -7,8 +7,6 @@ import { WalletsComponent } from './wallets/wallets.component';
 import { UsersAdminPanelComponent } from './admin-panel/users-admin-panel/users-admin-panel.component';
 import { CollectionsAdminPanelComponent } from './admin-panel/collections-admin-panel/collections-admin-panel.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },

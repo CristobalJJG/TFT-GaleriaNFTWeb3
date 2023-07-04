@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NFT } from 'src/app/class/nft';
+import { Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { User } from 'src/app/class/user';
 import { Wallet } from 'src/app/class/wallet';
 import { FirestoreService } from 'src/app/services/firestore-service.service';
@@ -11,9 +11,21 @@ import { ModalService } from 'src/app/services/modal.service';
   styleUrls: ['./add-wallet-modal.component.scss']
 })
 export class AddWalletModalComponent {
+  nameBeforeChange: string = "";
+  future_wallet: Wallet;
+  editing: boolean = false;
+  constructor(private modal: ModalService, private db: FirestoreService,
+    @Inject(MAT_DIALOG_DATA) public data: any) {
+    if (data.wallet) {
+      let w: Wallet = data.wallet;
+      this.nameBeforeChange = w.getName();
+      this.future_wallet = w;
+    } else {
+      this.future_wallet = new Wallet("Nombre", "", 0, "URL", "ETH");
+    }
 
-  future_wallet: Wallet = new Wallet("Nombre", "", 0, "URL", "ETH");
-  constructor(private modal: ModalService, private db: FirestoreService) { }
+    if (data.edit) this.editing = true;
+  }
 
   changeCoin(coin: any) {
     console.log(coin.target.value);
@@ -38,8 +50,10 @@ export class AddWalletModalComponent {
   }
 
   addWallet() {
-    let user: User | undefined = User.fromJSONtoUser(JSON.parse(localStorage.getItem("userData") || ""));
+    let user: User | undefined = User.fromJSONtoUser(JSON.parse(localStorage.getItem("userData") ?? ""));
     if (user) {
+      if (this.editing) user.removeWallet(this.nameBeforeChange);
+
       user.addWallet(this.future_wallet);
       this.db.updateUser(user);
       localStorage.setItem("userData", user.toJSON());

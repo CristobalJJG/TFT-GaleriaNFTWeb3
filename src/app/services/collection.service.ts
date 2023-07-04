@@ -10,9 +10,6 @@ export class CollectionService {
 
   db = getFirestore(AuthService.app);
 
-  constructor() { }
-
-
   async getAllCollections() {
     let collections: any[] = [];
 

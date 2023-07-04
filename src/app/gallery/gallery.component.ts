@@ -20,6 +20,7 @@ export class GalleryComponent implements OnInit {
   protected filters = new Map();
   protected address = "0x23581767a106ae21c074b2276d25e5c3e136a68b";
   protected collectionName = "Moonbirds"
+
   @ViewChild(FilterComponent) filter: any;
 
   constructor(protected nft: NftService,
@@ -28,7 +29,6 @@ export class GalleryComponent implements OnInit {
 
   async ngOnInit() {
     this.getNFTs();
-    //this.shuffle();
     this.getCollections();
   }
 
@@ -62,12 +62,9 @@ export class GalleryComponent implements OnInit {
     })
   }
 
-  /* shuffle() {
-    for (var i = this.showNFTs.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1)); //random index
-      [this.showNFTs[i], this.showNFTs[j]] = [this.showNFTs[j], this.showNFTs[i]]; // swap
-    }
-  } */
+  clearFilters() {
+    this.filter.clearFilter();
+  }
 
   updateView(filters: any) {
     let f: Map<string, string[]> = filters;
@@ -92,7 +89,7 @@ export class GalleryComponent implements OnInit {
       item.media[0].gateway,
       item.contract.openSea?.floorPrice + "",
       item.contract.address + "",
-      item.rawMetadata?.attributes || [],
+      item.rawMetadata?.attributes ?? [],
       item.tokenId
     ))
   }
@@ -101,9 +98,8 @@ export class GalleryComponent implements OnInit {
     if (this.filters.has(att['trait_type'])) {
       let list = this.filters.get(att['trait_type'])
       if (!list.includes(att['value'])) { list.push(att['value']) }
-    } else {
+    } else
       this.filters.set(att['trait_type'], [att['value']])
-    }
   }
 
   private filters_straction(f: Map<string, string[]>): boolean {
@@ -116,11 +112,14 @@ export class GalleryComponent implements OnInit {
   }
 
   private apply_filters(f: Map<string, string[]>, n: NFT) {
+    let aux: boolean = true;
     f.forEach((value, key) => {
-      if (value.includes(n.getAttributes().get(key) + "")) {
-        if (!this.showNFTs.includes(n)) this.showNFTs.push(n);
-      } else
-        if (this.showNFTs.includes(n)) this.showNFTs = this.showNFTs.filter((v) => v != n);
+      if (value.length > 0) {
+        if (!value.includes(n.getAttributes().get(key)!)) {
+          aux = false;
+        }
+      }
     })
+    if (aux) this.showNFTs.push(n);
   }
 }

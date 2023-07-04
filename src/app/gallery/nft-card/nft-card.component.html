@@ -1,10 +1,10 @@
 <article class="box">
     <a href="https://opensea.io/assets/ethereum/{{data?.address}}/{{data?.goTo}}" target="_blank">
         <span class="name">
-            <p> {{data?.name}}</p>
+            <p>{{data?.name}}</p>
         </span>
         <div class="content">
-            <img src={{data?.image}} alt="Shiba inu">
+            <img src={{data?.image}} loading="lazy" alt="{{data?.name}}">
         </div>
         <span class="price">
             <p>{{data?.price}} ETH</p>

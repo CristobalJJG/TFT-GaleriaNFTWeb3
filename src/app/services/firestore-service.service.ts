@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { collection, doc, getDoc, getDocs, getFirestore, query, setDoc } from "firebase/firestore";
+import { doc, getDoc, getFirestore, setDoc } from "firebase/firestore";
 import { AuthService } from './auth-service.service';
 import { User } from '../class/user';
-import { Wallet } from 'alchemy-sdk';
-import { Collection } from '../class/collection';
 
 @Injectable({
   providedIn: 'root'
@@ -26,8 +24,7 @@ export class FirestoreService {
     let name = "";
     let surname = "";
     switch (fullname.split(" ").length) {
-      case 1: name = this.toPascal(fullname);
-        break;
+      case 1: name = this.toPascal(fullname); break;
       case 2: {
         let spl = fullname.split(" ");
         name = this.toPascal(spl[0]);
@@ -63,9 +60,15 @@ export class FirestoreService {
 
   async updateUser(user: User) {
     try {
-      let wallets: Wallet[] = []
+      let wallets: any[] = []
       user.getWallets().forEach((w: any) => {
-        wallets.push(w.toJSON());
+        wallets.push({
+          "name": w.name,
+          "address": w.address,
+          "balance": w.balance,
+          "coin": w.coin,
+          "url": w.url
+        });
       })
 
       await setDoc(doc(this.db, "users", user.getEmail().split('@')[0].toLowerCase()), {
@@ -80,9 +83,7 @@ export class FirestoreService {
         last_login: user.getLastLogin()
       });
       window.location.reload();
-    } catch (e) {
-      console.error(e);
-    }
+    } catch (e) { console.error(e) };
   }
 
   protected toPascal(str: string) {

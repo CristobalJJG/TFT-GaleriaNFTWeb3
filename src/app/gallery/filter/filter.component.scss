@@ -1,10 +1,11 @@
 @import '../../../styles.scss';
 
 .container {
-    width: 350px;
+    width: 250px;
     height: 50vh;
     margin-left: 25px;
     background-color: $black;
+    transition: $transition3s;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px 10px 10px 20px;
     overflow: auto;
@@ -32,14 +33,14 @@
         width: 75px;
         height: 25px;
         border: none;
-        background-color: $light-purple;
+        background-color: $purple;
         border-radius: 5px;
         cursor: pointer;
         outline: none;
         transition: $transition3s;
 
         &:hover {
-            background-color: $purple;
+            filter: contrast(1.5);
         }
     }
 }
@@ -87,5 +88,65 @@
 
     &.show {
         display: block;
+    }
+}
+
+.minim {
+    display: none;
+}
+
+/* Menos de 1024px */
+@media (max-width: 1024px) {
+    .container {
+        margin: 0 15px;
+        width: 200px;
+    }
+}
+
+
+/* Menos de 500px */
+@media (max-width: 500px) {
+    .container {
+        position: absolute;
+        width: 250px;
+        transition: $transition3s;
+        z-index: 13;
+        height: auto;
+        margin: -45px 175px;
+
+        &.maximized {
+            width: calc(100vw - 50px);
+            margin: -45px 10px;
+        }
+    }
+
+    .line {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .next {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .maxim {
+        display: none;
+    }
+
+    .minim {
+        display: flex;
+        cursor: pointer;
+    }
+
+    button {
+        width: 75px;
+        height: 50px;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .collapsed {
+        display: none;
     }
 }

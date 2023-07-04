@@ -31,6 +31,10 @@ export class Wallet {
     public setCoin(coin: string) { this.coin = coin }
     public setAddress(address: string) { this.address = address }
 
+    clone() {
+        return new Wallet(this.name, this.address, this.balance, this.url, this.coin);
+    }
+
     public toJSON() {
         return {
             name: this.name,

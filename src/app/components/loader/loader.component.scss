@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+@keyframes loader {
+    from {
+        opacity: 0;
+        box-shadow: 0 5px 10px 10px rgba($black, 1);
+    }
+
+    to {
+        opacity: 1;
+        box-shadow: 0 2px 25px 25px rgba($black, .5);
+    }
+}
+
+.loader {
+    display: flex;
+}
+
+$size: 50px;
+
+.square {
+    background: $white;
+    width: $size;
+    height: $size;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#sq1 {
+    animation: loader 675ms ease-in-out .105s infinite alternate;
+}
+
+#sq2 {
+    animation: loader 675ms ease-in-out .075s infinite alternate;
+}
+
+#sq3 {
+    animation: loader 675ms ease-in-out .015s infinite alternate;
+}
