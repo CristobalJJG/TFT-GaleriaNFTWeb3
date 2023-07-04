@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'front';
 
   constructor(protected translate: TranslateService) {
-    let language = (localStorage.getItem('language') || 'es');
+    let language = (localStorage.getItem('language') ?? 'es');
     translate.setDefaultLang(language);
     translate.use(language);
   }

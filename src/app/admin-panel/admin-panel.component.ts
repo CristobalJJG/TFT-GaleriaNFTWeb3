@@ -22,7 +22,7 @@ export class AdminPanelComponent {
   private isUserAdmin() {
     let username = this.user!.getEmail().split("@")[0] + "@" + this.user!.getName();
 
-    !this.admin.verifyAdmin(username)
+    this.admin.verifyAdmin(username)
       .then((res) => {
         if (this.user == undefined || !res) {
           this.navigate('login');

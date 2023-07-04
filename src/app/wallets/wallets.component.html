@@ -10,9 +10,10 @@
                 <div *ngFor="let w of wallets" (contextmenu)="openContextMenu($event, w)">
                     <app-wallet-card [wallet]="w"></app-wallet-card>
                 </div>
+                <app-add-wallet></app-add-wallet>
             </div>
         </div>
-        <app-add-wallet></app-add-wallet>
+        <app-add-wallet *ngIf="wallets.length == 0 || (wallets.length == 0 && notLoaded)"></app-add-wallet>
     </div>
     <p>Botón derecho sobre una tarjeta para ver el menú contextual.</p>
 </main>

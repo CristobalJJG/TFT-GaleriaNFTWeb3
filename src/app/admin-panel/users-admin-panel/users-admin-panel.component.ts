@@ -1,6 +1,4 @@
-import { Time } from '@angular/common';
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
+import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { User } from 'src/app/class/user';
 import { AdminService } from 'src/app/services/admin.service';

@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { LogLevel } from 'alchemy-sdk/dist/src/util/logger';
 
 @Component({
   selector: 'app-filter',

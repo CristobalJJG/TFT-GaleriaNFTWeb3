@@ -3,7 +3,7 @@
     <div>
         <input (keyup)="applyFilter($event.target)" placeholder="Filter" class="form-field">
         <table mat-table [dataSource]="dataSource" matSort>
-
+            <caption>Tabla de usuarios</caption>
             <ng-container matColumnDef="Fullname" matSort>
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Fullname </th>
                 <td mat-cell *matCellDef="let user"> {{user.name}} {{user.surname}} </td>

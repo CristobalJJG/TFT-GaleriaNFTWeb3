@@ -1,6 +1,5 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { NFT } from 'src/app/class/nft';
 import { User } from 'src/app/class/user';
 import { Wallet } from 'src/app/class/wallet';
 import { FirestoreService } from 'src/app/services/firestore-service.service';
@@ -51,7 +50,7 @@ export class AddWalletModalComponent {
   }
 
   addWallet() {
-    let user: User | undefined = User.fromJSONtoUser(JSON.parse(localStorage.getItem("userData") || ""));
+    let user: User | undefined = User.fromJSONtoUser(JSON.parse(localStorage.getItem("userData") ?? ""));
     if (user) {
       if (this.editing) user.removeWallet(this.nameBeforeChange);
 

@@ -35,7 +35,7 @@ export class WalletsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    let v = JSON.parse(localStorage.getItem('userData') || '')['wallets'];
+    let v = JSON.parse(localStorage.getItem('userData') ?? '')['wallets'];
     for (let w of v) {
       this.wallet.getBalance(w['address'])
         .then((data: any) => {
@@ -70,7 +70,7 @@ export class WalletsComponent implements OnInit {
     if (cm != undefined && cm.style.display == "block") {
       this.hideMenu();
     } else {
-      var menu = document.getElementById("contextMenu");
+      let menu = document.getElementById("contextMenu");
       menu!.style.display = 'block';
       menu!.style.left = e.pageX + "px";
       menu!.style.top = e.pageY + "px";

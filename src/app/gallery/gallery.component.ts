@@ -89,7 +89,7 @@ export class GalleryComponent implements OnInit {
       item.media[0].gateway,
       item.contract.openSea?.floorPrice + "",
       item.contract.address + "",
-      item.rawMetadata?.attributes || [],
+      item.rawMetadata?.attributes ?? [],
       item.tokenId
     ))
   }
